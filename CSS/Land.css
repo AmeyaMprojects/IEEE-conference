@@ -58,14 +58,18 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 50px 20px;
-    background-color: #3075ffd0;
+    /* background-color: #3075ffd0; */
     color: white;
     max-width: 1200px;
     margin: 0 auto;
+    background-image: url("../Photo/main_baground_image.jpg");
+    
 }
 
 .hero-content {
     max-width: 50%;
+    
+
 }
 
 .hero-content h1 {
