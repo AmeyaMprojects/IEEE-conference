@@ -24,33 +24,15 @@
             <button><a target="_blank" rel="noopener noreferrer" href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FINCIP2025">Submit Paper</a></button>
           </div>
         </nav>
-      </header>
+    </header>
     
-      <section id="about-conference">
-        </section>
-    
-      <script>
-        const aboutBtn = document.getElementById('aboutBtn');
-    
-        aboutBtn.addEventListener('click', (event) => {
-          event.preventDefault(); // Prevent default anchor link behavior (optional)
-    
-          const aboutSection = document.getElementById('about-conference');
-    
-          if (aboutSection) {
-            aboutSection.scrollIntoView({ behavior: 'smooth' });
-          } else {
-            console.warn("The 'about-conference' element was not found.");
-          }
-        });
-      </script>
     <!-- Hero Section with Background Overlay -->
     <section class="hero">
         <div class="hero-content">
             <h1>Smart Cities, Healthcare, and Autonomous Systems</h1>
             <h2>Paving the Way for Future Innovation | SCHAS 2025</h2>
             <p>IEEE Xplore | IEEE Record # 64058 | Scopus | Hybrid Mode</p>
-            <p>Venue:MIT Bengaluru. 11th and 12th December 2025.</p>
+            <p>Venue: <a href="https://www.google.com/maps?q=MIT+Bengaluru" target="_blank" rel="noopener noreferrer" class="venue-link">MIT Bengaluru. 11th and 12th December 2025.</a></p>
             <a href="#" class="submit-paper-btn">Submit Paper</a>
         </div>
     </section>
@@ -83,18 +65,86 @@
             </div>
         </div>
     </section>
+
+    <!-- About Conference Section -->
     <section class="about-conference">
         <h2>About Conference</h2>
         <div class="image_container">
-        <p>The International Conference on Next Generation Communication & Information Processing (INCIP-2025) is organized by MIT, Bengaluru. In the Information and Communication Technology (ICT) sector and organizations, Next Generation Communication and Information Computing have become "Big Buzz Words" in recent years. The advent of more advanced Communication and Information Processing are finding their new way to our day-to-day application areas like smart home and automation, automotive, healthcare, logistics, finance, and rest of the smart city applications. The purpose of holding this conference (INCIP) is to bring together, on a common platform, scientists, engineers and researchers along with other eminent academic personalities in Communication, Information computing and other related topics. The participants would get ample scope to make exchange of views, ideas and thoughts besides presentation of papers and interact amongst themselves on recent research in the area of the conference themes.</p>
-        
-
-
+            <p>The International Conference on Next Generation Communication & Information Processing (INCIP-2025) is organized by MIT, Bengaluru. In the Information and Communication Technology (ICT) sector and organizations, Next Generation Communication and Information Computing have become "Big Buzz Words" in recent years. The advent of more advanced Communication and Information Processing are finding their new way to our day-to-day application areas like smart home and automation, automotive, healthcare, logistics, finance, and rest of the smart city applications. The purpose of holding this conference (INCIP) is to bring together, on a common platform, scientists, engineers and researchers along with other eminent academic personalities in Communication, Information computing and other related topics. The participants would get ample scope to make exchange of views, ideas and thoughts besides presentation of papers and interact amongst themselves on recent research in the area of the conference themes.</p>
         </div>
-       
     </section>
-    <footer>
-        <!-- Optional footer content -->
-    </footer>
+
+    <!-- Speakers Section -->
+    <section class="speakers">
+        <h2>Our Speakers</h2>
+        <div class="speakers-container">
+            <!-- Speaker 1 -->
+            <div class="speaker-card">
+                <img src="../Photo/profile.png" alt="Professor 1">
+                <div class="speaker-info">
+                    <h3>Dr. John Doe</h3>
+                    <p>MIT Bengaluru</p>
+                </div>
+            </div>
+            <!-- Speaker 2 -->
+            <div class="speaker-card">
+                <img src="../Photo/profile.png" alt="Professor 2">
+                <div class="speaker-info">
+                    <h3>Dr. Jane Smith</h3>
+                    <p>Stanford University</p>
+                </div>
+            </div>
+            <!-- Add more speaker cards as needed -->
+            <!-- Speaker 3 -->
+            <div class="speaker-card">
+              <img src="../Photo/profile.png" alt="Professor 3">
+              <div class="speaker-info">
+                  <h3>Dr. Jane Smith</h3>
+                  <p>Stanford University</p>
+              </div>
+          </div>
+
+          <!-- Speaker 4 -->
+          <div class="speaker-card">
+            <img src="../Photo/profile.png" alt="Professor 4">
+            <div class="speaker-info">
+                <h3>Dr. Jane Smith</h3>
+                <p>Stanford University</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="logos">
+      <!-- Publications Logos -->
+      <div class="logos-container publication-logos">
+          <h3 class="logos-heading">Publications</h3>
+          <div class="logos-row">
+              <img src="../Photo/Sponser.png" alt="IEEE Logo" class="logo-item">
+              <img src="../Photo/Sponser.png" alt="Scopus Logo" class="logo-item">
+              <img src="../Photo/Sponser.png" alt="IEEE Xplore Logo" class="logo-item">
+          </div>
+      </div>
+  
+      <!-- Sponsors Logos -->
+      <div class="logos-container sponsor-logos">
+          <h3 class="logos-heading">Sponsors</h3>
+          <div class="logos-row">
+              <img src="../Photo/Sponser.png" alt="Sponsor 1 Logo" class="logo-item">
+              <img src="../Photo/Sponser.png" alt="Sponsor 2 Logo" class="logo-item">
+              <img src="../Photo/Sponser.png" alt="Sponsor 3 Logo" class="logo-item">
+          </div>
+      </div>
+  </section>
+
+  <!-- About the Organizer Section -->
+<section class="about-organizer">
+  <h2>About Organizer</h2>
+  <p class="organizer-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat, ligula at consectetur mollis, enim leo volutpat neque, nec vestibulum tortor sapien nec sapien. Curabitur ac lectus et ante lacinia mollis. Integer vestibulum libero vitae augue sollicitudin, eu sodales justo placerat. Quisque vulputate ex nec urna cursus, in aliquam libero vehicula. In auctor, mauris nec ullamcorper tincidunt, odio metus auctor augue, a vulputate lorem nisi eu turpis. Nulla facilisi. Ut ut quam ut felis sollicitudin consequat.
+  </p>
+</section>
+
+    
 </body>
 </html>
