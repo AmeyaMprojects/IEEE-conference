@@ -13,7 +13,6 @@
 }
 body {
     font-family: 'MyCustomFont', Arial, Helvetica, sans-serif; 
-    
 }
 
 
@@ -135,22 +134,6 @@ nav {
     font-size: 1.2em;
     margin-bottom: 20px; /* Space below the paragraph */
     white-space: nowrap; /* Prevent text from wrapping to the next line */
-}
-
-/* Style for the Venue Link */
-.venue-link {
-    font-size: 1.2rem; /* Adjust font size */
-    font-weight: bold; /* Make the text bold */
-    color: #f4f4f4; /* Set the color to blue for the link */
-    text-decoration: none; /* Remove the default underline */
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and hover effect */
-}
-
-/* Hover effect for the Venue Link */
-.venue-link:hover {
-    color: #2980b9; /* Darker blue color on hover */
-    transform: scale(1.05); /* Slightly increase the size of the text on hover */
-    
 }
 
 
@@ -316,221 +299,85 @@ footer p {
 }
 .about-conference {
     text-align: center;
-    margin: 40px auto;
-    background: linear-gradient(to right, #f7f7f7, #e0e0e0); /* Soft gradient background */
-    padding: 30px;
-    border-radius: 15px; /* Slightly larger rounded corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft, modern shadow */
-    max-width: 900px; /* Limit the width to make it look more centered and focused */
-    position: relative; /* For potential additional overlay or effect */
+    margin: 20px;
+    background-color: #F2F2F2; /* Light gray background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    /* background-image: url("../Photo/about_conference_image.jpg");
+    background-position: 50%; */
+}
+
+.about-conference {
+    text-align: center;
+    margin: 20px;
+    background-color: #F2F2F2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .about-conference h2 {
-    font-size: 2.8em;
+    font-size: 2.5em;
     margin-bottom: 20px;
     color: #333;
-    font-family: 'Roboto', sans-serif; /* More modern font */
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
 }
 
 .about-conference p {
-    font-size: 18px;
-    line-height: 1.8;
+    font-size: 16px;
+    line-height: 1.5;
     text-align: justify;
     margin-bottom: 20px;
-    max-width: 800px; /* Adjust for readability */
-    margin: 0 auto;
-    color: #555; /* Slightly lighter text color for contrast */
-    font-family: 'Arial', sans-serif;
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto; /* Center the text */
 }
 
-.about-conference p:first-letter {
-    font-size: 2em;
-    font-weight: bold;
-    color: #007BFF; /* Adds a pop of color for the first letter */
-}
-
-.about-conference:hover {
-    transform: scale(1.02); /* Slight hover effect for a more interactive look */
-    transition: transform 0.3s ease-in-out; /* Smooth transition */
-}
-
-.about-conference a {
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
-
-.about-conference a:hover {
-    color: #0056b3; /* Darker blue when hovered */
-    text-decoration: underline;
-}
-
-/* Optional: Add a subtle background image with some opacity (if needed) */
-.about-conference::before {
-    content: "";
-    background-image: url("../Photo/about_conference_image.jpg");
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    opacity: 0.1; /* Slight opacity to let text stand out */
-    border-radius: 15px;
-}
-
-
-
-/* Speakers Section Styles */
-.speakers {
-    padding: 50px 0;
-    background: linear-gradient(45deg, #e0f7fa, #cbe0e3); /* Light blue gradient */
-    text-align: center;
-}
-
-.speakers h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.speakers-container {
+.image_container {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 30px;
-}
-
-.speaker-card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    text-align: center;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.speaker-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.speaker-info {
-    padding: 15px;
-    background-color: #f8f8f8;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-}
-
-.speaker-info h3,
-.speaker-info p {
-    margin: 5px 0;
-    word-wrap: break-word; /* Ensures wrapping */
-}
-
-.speaker-info h3 {
-    font-size: 1.2em;
-    color: #333;
-}
-
-.speaker-info p {
-    font-size: 1em;
-    color: #777;
-    white-space: normal; /* Allow text to break to the next line */
-}
-
-.speaker-card:hover {
-    transform: scale(1.05);
-}
-
-/* Logos Section */
-.logos {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #f4f4f4;
-}
-
-/* Individual Section Headings */
-.logos-heading {
-    font-size: 2.5rem;
-    font-weight: bolder;
-    color: #333;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    /* Removed the border-bottom line */
-    padding-bottom: 5px;
-}
-
-/* Logos Row */
-.logos-row {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
 }
 
-.logo-item {
-    max-width: 150px;
-    max-height: 60px;
-    object-fit: contain;
+.about-conference__image {
+    max-width: 100%; /* Make the image responsive */
+    height: auto;
+    border-radius: 50px;
 }
 
-/* About the Organizer Section */
-.about-organizer {
-    background: linear-gradient(to right, #f0f8ff, #e0eafc); /* Soft gradient background */
-    padding: 50px 20px;
-    text-align: center;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin-top: 40px; /* Space from the previous section */
-    margin-bottom: 40px; /* Space after the section */
-}
+html {
+    scroll-behavior: smooth;
+  }
 
-/* Heading Styling */
-.about-organizer h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #34495e; /* Dark grayish-blue for text */
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
+  .hero {
+    background-image: url('../Photo/main_baground_image.jpg');
+    background-size: cover; /* Ensure the image covers the full container */
+    background-position: center; /* Ensure the image is centered */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 200px; /* Set the default height for large screens */
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    color: #fff;
     position: relative;
+    padding: 20px; 
 }
 
-/* Decorative Line Under the Heading */
-.about-organizer h2::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background-color: #3498db; /* Blue color line */
-    border-radius: 2px;
+
+
+
+.hero-content {
+    max-width: 50%;
+    text-align: left; /* Align the text to the left */
+    z-index: 1; /* Make sure content is above the background */
 }
 
-/* Paragraph Description Styling */
-.organizer-description {
-    font-size: 1.1rem;
-    color: #555; /* Medium gray color for readability */
-    line-height: 1.8; /* Improved line spacing */
-    max-width: 850px; /* Set maximum width to keep it centered */
-    margin: 0 auto;
-    text-align: justify; /* Justify the text for a cleaner look */
-    padding: 0 20px; /* Padding to prevent text from touching the edges */
-    font-family: 'Roboto', sans-serif; /* Smooth font for readability */
-    font-style: italic; /* Make the text italic for a refined look */
+.hero h2 {
+    font-size: 48px; /* Adjust font size as needed */
+    font-weight: bold;
+    margin: 0; /* Remove any default margin */
+    text-shadow: 0px 0px 4px #8e1f58;
 }
 
+.committee-container{
+    display: flex;
+}
