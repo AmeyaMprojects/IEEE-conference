@@ -1,0 +1,64 @@
+/* General Styling for Technical Program Committee Section */
+.technical-program-committee {
+    background-color: #ffffff; /* Clean white background */
+    padding: 40px 60px;
+    margin: 30px auto;
+    max-width: 900px; /* Limit width for better readability */
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.technical-program-committee:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Styling for Heading */
+.technical-program-committee h3 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2C3E50;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase; /* Add some style to headings */
+    letter-spacing: 2px; /* Space out the letters for more emphasis */
+}
+
+/* Styling for the List */
+.technical-program-committee ul {
+    font-size: 18px;
+    color: #34495E; /* A dark gray for text */
+    line-height: 1.8; /* Space between lines for better readability */
+    margin-left: 0; /* Remove default margin */
+    padding-left: 0; /* Remove default padding */
+    list-style-type: none; /* Remove default list style (bullets) */
+}
+
+/* Styling for List Items */
+.technical-program-committee ul li {
+    padding-left: 40px; /* Add padding for the bullet point */
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: relative; /* To place the custom bullet icon */
+    font-family: 'MyCustomFont', Arial, Helvetica, sans-serif;
+    transition: padding-left 0.3s ease; /* Smooth transition for padding */
+}
+
+/* Custom Bullet Points */
+.technical-program-committee ul li::before {
+    content: "•"; /* Custom bullet for the list */
+    font-size: 24px;
+    color: #941f6e; /* Purple color for bullet */
+    position: absolute;
+    left: 0; /* Adjust the position of the bullet */
+    top: 50%; /* Vertically center the bullet */
+    transform: translateY(-50%); /* Center bullet vertically */
+}
+
+/* Styling for List Item Hover */
+.technical-program-committee ul li:hover {
+    background-color: #F4F6F7; /* Light background on hover */
+    border-radius: 5px;
+    padding-left: 60px; /* Increase padding to shift the text and bullet to the right */
+    transition: padding-left 0.3s ease, background-color 0.3s ease; /* Smooth transition for padding and background */
+}

@@ -51,7 +51,7 @@
 .national-advisory-committee ul li::before {
     content: "•"; /* Custom bullet for the list */
     font-size: 24px;
-    color: #8E44AD;
+    color: #f7700a;
     position: absolute;
     left: -30px;
     top: 50%;
