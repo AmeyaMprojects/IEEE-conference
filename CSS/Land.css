@@ -1,70 +1,153 @@
-
-/* Basic styling */
-body {
-    font-family: Arial, sans-serif;
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header and Navigation */
 header {
-    background-color: #f0f0f0;
-    padding: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.nav-links ul {
+.logo img {
+    width: 150px;
+}
+
+.nav-links {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
 }
 
 .nav-links li {
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
 .nav-links a {
+    color: white;
     text-decoration: none;
-    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
 }
 
-/* Hero section */
+.nav-links a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Hero Section */
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: 50px 20px;
+    background-color: #3075ffd0;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .hero-content {
-    text-align: center;
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-content h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
 .submit-paper-btn {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    display: inline-block;
+    background-color: #e60000;
+    color: white;
+    padding: 12px 20px;
     text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
-/* Important dates section */
+.submit-paper-btn:hover {
+    background-color: #b30000;
+}
+
+.hero-image img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Important Dates Section */
 .important-dates {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px;
+    background-color: #fff;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.important-dates h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
 }
 
 .date-card {
-    text-align: center;
-    border: 1px solid #ccc;
+    display: inline-block;
+    background-color: #f1f1f1;
     padding: 20px;
+    margin: 10px;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Add more CSS rules for specific elements and layout adjustments as needed */
+.date-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.date-card p {
+    font-size: 1.2em;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1em;
+}
