@@ -5,6 +5,26 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../Photo/hp-simplified-hans-light.ttf') format('woff2');
+    font-weight: normal; /* Normal weight */
+    font-style: normal; /* Normal style */
+}
+body {
+    font-family: 'MyCustomFont', Arial, Helvetica, sans-serif; 
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'MyCustomFont', serif; 
+}
+
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -142,16 +162,18 @@ nav {
 
 /* Blue Box for Heading */
 .important-dates h2 {
-    font-size: 2em; /* Slightly smaller heading font */
-    margin-bottom: 20px;
-    padding: 12px 25px;
-    background-color: #007bff; /* Blue background */
-    color: white;
-    display: inline-block;
-    border-radius: 30px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
+    font-size: 2em;
+    margin-bottom: 20px; 
+    padding: 0px 23px; 
+    color: rgba(0, 0, 0, 0.727); 
+    border-radius: 0px; 
+    font-weight: 525; 
+    letter-spacing: 0.5px; 
+    text-align: left;
+    border-bottom: 3px solid #007bff;
+    padding-left: 10px; 
 }
+
 
 /* Container for Date Cards */
 .date-card-container {
