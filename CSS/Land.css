@@ -126,37 +126,124 @@ nav {
 }
 
 /* Important Dates Section */
+
+/* Important Dates Section */
 .important-dates {
-    background-color: #fff;
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 40px auto;
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px 30px; /* Adjusted padding for a tighter layout */
+    width: 100%;
     text-align: center;
+    margin-top: -40px;
+    border-radius: 16px; /* Slightly rounded corners */
+    max-width: 1200px;
+    margin: 50px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow to make it stand out */
 }
 
+/* Blue Box for Heading */
 .important-dates h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-}
-
-.date-card {
+    font-size: 2em; /* Slightly smaller heading font */
+    margin-bottom: 20px;
+    padding: 12px 25px;
+    background-color: #007bff; /* Blue background */
+    color: white;
     display: inline-block;
-    background-color: #f1f1f1;
-    padding: 20px;
-    margin: 10px;
-    width: 200px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
 }
 
+/* Container for Date Cards */
+.date-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Reduced gap for a tighter layout */
+    margin-top: 20px;
+    flex-wrap: nowrap; /* Ensure the cards stay in a single line */
+    overflow-x: auto; /* Allow horizontal scrolling if the container overflows */
+}
+
+/* Date Card */
+.date-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0; /* Light border for separation */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    width: 180px; /* Smaller width for compactness */
+}
+
+/* Hover effect for Date Cards */
+.date-card:hover {
+    transform: translateY(-5px);
+    background-color: #f1faff; /* Light blue hover background */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow on hover */
+}
+
+/* Date Card Heading */
 .date-card h3 {
-    font-size: 1.5em;
+    font-size: 1.3em;
+    color: #007bff;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
-.date-card p {
-    font-size: 1.2em;
+/* Date Card Date */
+.date-card .date {
+    font-size: 1.6em; /* Smaller date size */
+    color: #333333;
+    font-weight: 500;
+    margin-bottom: 8px;
 }
+
+/* Date Card Description */
+.date-card p {
+    font-size: 0.9em;
+    color: #555;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Stylish Long Tail Arrows (Pointing Right) */
+.arrow {
+    position: relative;
+    width: 70px;
+    height: 20px;
+    margin: 0 10px;
+}
+
+/* Long Tail Arrow */
+.right-arrow::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background-color: #007bff;
+    transform: translateY(-50%);
+}
+
+.right-arrow::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -12px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid #007bff;
+    transform: translateY(-50%);
+}
+
+
+
+
 
 /* Footer Section */
 footer {
