@@ -63,11 +63,13 @@ nav {
 }
 
 /* Hero Section */
+/* Hero Section */
 .hero {
     background-image: url('../Photo/main_baground_image.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 200px;
+    background-size: cover; /* Ensure the image covers the full container */
+    background-position: center; /* Ensure the image is centered */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 200px; /* Set the default height for large screens */
     display: flex;
     align-items: center; /* Centers content vertically */
     justify-content: center; /* Centers content horizontally */
@@ -75,6 +77,8 @@ nav {
     position: relative;
     padding: 20px; 
 }
+
+
 
 
 .hero-content {
@@ -90,7 +94,7 @@ nav {
     text-shadow: 0px 0px 4px #8e1f58;
 }
 
-/* para section styles */
+/* Paragraph Section */
 .para { 
     display: flex;
     justify-content: center;
@@ -112,6 +116,7 @@ nav {
 
 /* Track Section */
 
+/* Default Styles (for larger screens) */
 .track-container {
     display: flex;
     justify-content: space-around;
@@ -124,9 +129,10 @@ nav {
 /* Individual track card styling */
 .track {
     border-radius: 10px; 
-    padding: 25px;
-    width: 250px; 
+    padding: 30px;
+    width: 250px; /* Fixed width for track cards */
     background: linear-gradient(145deg, #f3f4f6, #e0e3e8);
+    border: 0.5px solid #000000; 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
@@ -169,7 +175,7 @@ nav {
 /* Hover effect for individual list items */
 .track li:hover {
     color: transparent;
-    background-image: linear-gradient(45deg, #d89b51, #82325d,#455db2);
+    background-image: linear-gradient(45deg, #d89b51, #82325d, #455db2);
     -webkit-background-clip: text;
     background-clip: text;
     cursor: pointer;
@@ -185,20 +191,122 @@ body {
     padding: 0;
 }
 
-
 /* Responsive Design */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 36px; /* Adjust font size for smaller screens */
+
+/* For devices with a width of 1024px and below (Desktops/Tablets) */
+@media (max-width: 1024px) {
+    .hero {
+        height: 250px; /* Adjust height for tablets */
+    }
+
+    .hero-content {
+        max-width: 70%; /* Increase the width of content on tablets */
+    }
+
+    .hero h2 {
+        font-size: 36px; /* Reduce font size */
+        text-shadow: 0px 0px 3px #8e1f58;
+    }
+
+    .para h4 {
+        font-size: 18px; /* Adjust font size for paragraphs on tablets */
     }
 
     .track-container {
-        flex-direction: column;
-        align-items: center;
+        justify-content: space-between;
     }
 
     .track {
-        width: 90%; /* Full width for smaller screens */
-        margin: 10px 0;
+        width: 45%; /* Make track cards take 45% width on tablets */
+    }
+
+    .track h3 {
+        font-size: 16px;
+    }
+
+    .track li {
+        font-size: 16px;
+    }
+}
+
+/* For devices with a width of 768px and below (tablets and smaller screens) */
+@media (max-width: 768px) {
+    .hero {
+        height: 200px; /* Reduce hero section height for small screens */
+        padding: 10px;
+    }
+
+    .hero-content {
+        max-width: 90%; /* Allow the hero content to take up more space */
+        text-align: center; /* Center align text for better visibility */
+    }
+
+    .hero h2 {
+        font-size: 28px; /* Reduce font size further */
+        text-shadow: 0px 0px 2px #8e1f58;
+    }
+
+    .para h4 {
+        font-size: 16px; /* Adjust font size for smaller devices */
+        max-width: 95%;
+    }
+
+    .track-container {
+        flex-direction: column; /* Stack track cards vertically */
+        align-items: center; /* Center the cards */
+    }
+
+    .track {
+        width: 90%; /* Make track cards take up 90% of the width */
+        margin: 10px 0; /* Add vertical spacing between the track cards */
+    }
+
+    .track h3 {
+        font-size: 18px; /* Slightly smaller title */
+    }
+
+    .track li {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* For devices with a width of 480px and below (smaller phones) */
+@media (max-width: 480px) {
+    .hero {
+        height: 150px; /* Make the hero section smaller on phones */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .hero-content {
+        max-width: 100%; /* Full width content on mobile */
+        text-align: center; /* Ensure content is centered */
+    }
+
+    .hero h2 {
+        font-size: 24px; /* Further reduce font size */
+        text-shadow: none; /* Remove text shadow for readability */
+    }
+
+    .para h4 {
+        font-size: 14px; /* Make the paragraph text smaller */
+        max-width: 100%;
+    }
+
+    .track-container {
+        flex-direction: column; /* Stack track cards vertically */
+        align-items: center; /* Center the cards */
+    }
+
+    .track {
+        width: 100%; /* Make track cards take up 100% width */
+        margin: 15px 0; /* Add more space between the cards */
+    }
+
+    .track h3 {
+        font-size: 14px; /* Further adjust the title font size */
+    }
+
+    .track li {
+        font-size: 14px; /* Smaller font size for list items */
     }
 }
