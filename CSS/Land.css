@@ -59,7 +59,8 @@ nav {
     align-items: center;
     padding: 50px 20px;
     color: white;
-    max-width: 1200px;
+    width: 100%; /* Full width of the container */
+    height: 60vh; /* Full height of the viewport */
     margin: 0 auto;
     position: relative;
 }
@@ -74,9 +75,11 @@ nav {
     background-image: url("../Photo/main_baground_image.jpg");
     background-size: cover;
     background-position: center;
-    opacity: 0.5; /* Adjust the opacity here (0.0 to 1.0) */
+    opacity: 1; /* Adjust the opacity here (0.0 to 1.0) */
     z-index: -1;
+    filter: blur(4px); /* Add this line to apply a blur */
 }
+
 
 .hero-content {
     max-width: 50%;
