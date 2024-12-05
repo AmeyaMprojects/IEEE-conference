@@ -58,18 +58,31 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 50px 20px;
-    background-color: #3075ffd0;
     color: white;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url("../Photo/main_baground_image.jpg");
-    
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Adjust the opacity here (0.0 to 1.0) */
+    z-index: -1;
 }
 
 .hero-content {
     max-width: 50%;
-    
-
+    text-align: center; /* Center the text */
+    z-index: 1; /* Make sure content is above the background */
+    padding: 20px;
 }
 
 .hero-content h1 {
@@ -96,6 +109,7 @@ nav {
     border-radius: 5px;
     font-weight: bold;
     margin-bottom: 20px;
+    transition: background-color 0.3s ease;
 }
 
 .submit-paper-btn:hover {
