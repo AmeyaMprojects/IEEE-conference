@@ -1,0 +1,69 @@
+/* General Styling for Advisory Committee Sections */
+.international-advisory-committee,
+.national-advisory-committee {
+    background-color: #ffffff; /* Clean white background */
+    padding: 40px 30px;
+    margin: 30px auto;
+    max-width: 900px; /* Limit width for better readability */
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.international-advisory-committee:hover,
+.national-advisory-committee:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for Heading */
+.international-advisory-committee h3,
+.national-advisory-committee h3 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2C3E50;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Remove default list style */
+.international-advisory-committee ul,
+.national-advisory-committee ul {
+    list-style: none;
+    font-size: 18px;
+    color: #34495E; 
+    line-height: 1.8; 
+    margin-left: 40px; 
+    padding-left: 25px;
+}
+
+/* Styling for List Items */
+.international-advisory-committee ul li,
+.national-advisory-committee ul li {
+    padding: 8px 0;
+    position: relative; /* To place the bullet icon */
+    font-family: 'MyCustomFont', Arial, Helvetica, sans-serif;
+}
+
+/* Custom Bullet Points */
+.international-advisory-committee ul li::before,
+.national-advisory-committee ul li::before {
+    content: "•"; /* Custom bullet for the list */
+    font-size: 24px;
+    color: #8E44AD;
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+/* Styling for List Item Hover */
+.international-advisory-committee ul li:hover,
+.national-advisory-committee ul li:hover {
+    background-color: #F4F6F7;
+    border-radius: 5px;
+    padding-left: 10px;
+    transition: padding 0.2s ease, background-color 0.3s ease; /* Smooth transition for padding and background */
+}
+
