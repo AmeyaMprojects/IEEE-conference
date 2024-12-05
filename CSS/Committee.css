@@ -377,3 +377,7 @@ html {
     margin: 0; /* Remove any default margin */
     text-shadow: 0px 0px 4px #8e1f58;
 }
+
+.committee-container{
+    display: flex;
+}
