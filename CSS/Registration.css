@@ -2,12 +2,18 @@
 .Table {
     font-family: 'Arial', sans-serif;
     padding: 20px;
-    background-color: transparent;  /* Transparent background for the section */
+    background-color: transparent;
     margin: 20px auto;
-    border-radius: 10px;
+    border-radius: 15px; /* Curved corners */
     max-width: 90%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 4px solid transparent;
+    border-image: linear-gradient(to right, #ff7e5f, #e57cff,blue);
+    border-image-slice: 1; /* Ensures the gradient covers the border */
+    overflow: hidden; /* Prevents child elements from exceeding border-radius */
 }
+
+
 
 /* Heading styles */
 .Table h2 {
