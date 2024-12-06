@@ -41,7 +41,7 @@ nav {
     border: none;
     cursor: pointer;
     font-size: 16px;
-    color: #333;
+    color: #000000;
     padding: 10px;
 }
 
@@ -57,8 +57,17 @@ nav {
     transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
-.nav-links a:hover {
+
+.nav-links button:hover a {
+    color: white; /* Make the text white on hover */
+}
+
+
+.nav-links button:hover {
     transform: scale(1.05);
+    background-color: #666;
+    border-radius: 5px;
+    color: white;
     
 }
 
