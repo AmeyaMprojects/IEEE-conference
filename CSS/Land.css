@@ -16,6 +16,16 @@ body {
     
 }
 
+.nav-links button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000000;
+    padding: 10px;
+    margin: 0px 10px;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'MyCustomFont', serif; 
@@ -32,92 +42,8 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Header and Navigation */
-header {
-    background-color: #ffffff;
-    color: rgb(255, 255, 255);
-    padding: 10px 0;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.logo img {
-    width: 150px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-.nav-links button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    color: #000000;
-    padding: 10px;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease; /* Smooth hover effect */
-}
-
-
-.nav-links button:hover a {
-    color: white; /* Make the text white on hover */
-}
-
-
-.nav-links button:hover {
-    transform: scale(1.05);
-    background-color: #666;
-    border-radius: 5px;
-    color: white;
-    
-}
-
-.blue-submit-btnn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    background: linear-gradient(45deg, #d89b51, #82325d, #455db2);
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.blue-submit-btnn a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.blue-submit-btnn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
 /* Hero Section */
-.hero {
+.hero1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,7 +55,7 @@ nav {
     position: relative;
 }
 
-.hero::before {
+.hero1:before {
     content: '';
     position: absolute;
     top: 0;
@@ -145,7 +71,7 @@ nav {
 }
 
 
-.hero-content {
+.hero-content1 {
     max-width: 50%; /* Control the width of the content */
     text-align: left; /* Align the text to the left */
     z-index: 1; /* Ensure content is above the background */
@@ -153,19 +79,19 @@ nav {
     margin-left: 0; /* Ensure the content starts from the extreme left */
 }
 
-.hero-content h1 {
+.hero-content1 h1 {
     font-size: 3em;
     margin-bottom: 10px; /* Space below the h1 */
     white-space: nowrap; /* Prevent text from wrapping to the next line */
 }
 
-.hero-content h2 {
+.hero-content1 h2 {
     font-size: 2em;
     margin-bottom: 15px; /* Space below the h2 */
     white-space: nowrap; /* Prevent text from wrapping to the next line */
 }
 
-.hero-content p {
+.hero-content1 p {
     font-size: 1.2em;
     margin-bottom: 20px; /* Space below the paragraph */
     white-space: nowrap; /* Prevent text from wrapping to the next line */
@@ -335,66 +261,157 @@ nav {
 
 
 /* Footer Section */
-/* Footer Section Styling */
-.footer {
-    background-color: #004a99; /* Dark blue background */
+footer {
+    background-color: #333;
     color: white;
-    padding: 20px 10px;
     text-align: center;
-  }
-  
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
-    max-width: 1200px;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1em;
+}
+.about-conference {
+    text-align: center;
+    margin: 40px auto;
+    background: linear-gradient(to right, #f7f7f7, #e0e0e0); /* Soft gradient background */
+    padding: 30px;
+    border-radius: 15px; /* Slightly larger rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft, modern shadow */
+    max-width: 900px; /* Limit the width to make it look more centered and focused */
+    position: relative; /* For potential additional overlay or effect */
+}
+
+.about-conference h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Roboto', sans-serif; /* More modern font */
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.about-conference p {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px;
+    max-width: 800px; /* Adjust for readability */
     margin: 0 auto;
-  }
-  
-  .footer-section {
-    flex: 1;
-    min-width: 200px;
-    margin: 10px;
-  }
-  
-  .footer-section h4 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
-  .footer-section p, .footer-section a {
-    color: white;
+    color: #555; /* Slightly lighter text color for contrast */
+    font-family: 'Arial', sans-serif;
+}
+
+.about-conference p:first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    color: #007BFF; /* Adds a pop of color for the first letter */
+}
+
+.about-conference:hover {
+    transform: scale(1.02); /* Slight hover effect for a more interactive look */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.about-conference a {
+    color: #007BFF;
     text-decoration: none;
-    font-size: 0.9em;
-  }
-  
-  .footer-section a:hover {
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.about-conference a:hover {
+    color: #0056b3; /* Darker blue when hovered */
     text-decoration: underline;
-  }
-  
-  .social-icons img {
-    width: 24px;
-    height: 24px;
-    margin: 0 5px;
+}
+
+/* Optional: Add a subtle background image with some opacity (if needed) */
+.about-conference::before {
+    content: "";
+    background-image: url("../Photo/about_conference_image.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.1; /* Slight opacity to let text stand out */
+    border-radius: 15px;
+}
+
+
+
+/* Speakers Section Styles */
+.speakers {
+    padding: 50px 0;
+    background: linear-gradient(45deg, #e0f7fa, #cbe0e3); /* Light blue gradient */
+    text-align: center;
+}
+
+.speakers h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.speakers-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.speaker-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    overflow: hidden;
     transition: transform 0.3s ease;
-  }
-  
-  .social-icons img:hover {
-    transform: scale(1.2);
-  }
-  
-  .footer-bottom {
-    margin-top: 20px;
-    font-size: 0.8em;
-    color: #cce6ff;
-  }
-  
-  .footer-section.logo img {
-    width: 100px;
-  }
-  
+}
+
+.speaker-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.speaker-info {
+    padding: 15px;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.speaker-info h3,
+.speaker-info p {
+    margin: 5px 0;
+    word-wrap: break-word; /* Ensures wrapping */
+}
+
+.speaker-info h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.speaker-info p {
+    font-size: 1em;
+    color: #777;
+    white-space: normal; /* Allow text to break to the next line */
+}
+
+.speaker-card:hover {
+    transform: scale(1.05);
+}
+
 /* Logos Section */
 .logos {
     text-align: center;
