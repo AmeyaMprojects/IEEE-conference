@@ -11,22 +11,9 @@
     font-weight: normal; /* Normal weight */
     font-style: normal; /* Normal style */
 }
-body {
-    font-family: 'MyCustomFont', Arial, Helvetica, sans-serif; 
-}
-
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'MyCustomFont', serif; 
-}
-
-
-code {
-    font-family: 'Courier New', Courier, monospace;
-}
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'MyCustomFont', Arial, Helvetica, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
 }
@@ -34,7 +21,6 @@ body {
 /* Header and Navigation */
 header {
     background-color: #ffffff;
-    color: rgb(255, 255, 255);
     padding: 10px 0;
 }
 
@@ -52,9 +38,10 @@ nav {
 }
 
 .nav-links {
-    list-style: none;
     display: flex;
+    list-style: none;
 }
+
 .nav-links button {
     background-color: transparent;
     border: none;
@@ -62,6 +49,7 @@ nav {
     font-size: 16px;
     color: #000000;
     padding: 10px;
+    margin: 0px 10px;
 }
 
 .nav-links li {
@@ -73,22 +61,20 @@ nav {
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    transition: background-color 0.3s ease;
 }
-
 
 .nav-links button:hover a {
-    color: white; /* Make the text white on hover */
+    color: white;
 }
-
 
 .nav-links button:hover {
     transform: scale(1.05);
     background-color: #666;
     border-radius: 5px;
     color: white;
-    
 }
+
 .blue-submit-btnn {
     display: inline-block;
     padding: 10px 20px;
@@ -114,39 +100,66 @@ nav {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-
 html {
     scroll-behavior: smooth;
-  }
-
-  .hero {
-    background-image: url('../Photo/main_baground_image.jpg');
-    background-size: cover; /* Ensure the image covers the full container */
-    background-position: center; /* Ensure the image is centered */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    height: 200px; /* Set the default height for large screens */
-    display: flex;
-    align-items: center; /* Centers content vertically */
-    justify-content: center; /* Centers content horizontally */
-    color: #fff;
-    position: relative;
-    padding: 20px; 
 }
 
+/* Hero Section */
+.hero {
+    background-image: url('../Photo/main_baground_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+    padding: 20px;
+}
 
 .hero-content {
     max-width: 50%;
-    text-align: left; /* Align the text to the left */
-    z-index: 1; /* Make sure content is above the background */
+    text-align: left;
+    z-index: 1;
 }
 
 .hero h2 {
-    font-size: 48px; /* Adjust font size as needed */
+    font-size: 48px;
     font-weight: bold;
-    margin: 0; /* Remove any default margin */
+    margin: 0;
     text-shadow: 0px 0px 4px #8e1f58;
 }
 
-.committee-container{
-    display: flex;
+/* Responsive Adjustments */
+@media screen and (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        align-items: center; /* Center horizontally */
+        justify-content: center; /* Center vertically */
+        text-align: center; /* Ensure text is centered */
+        padding: 10px 20px;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .nav-links button {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .hero {
+        height: 150px;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
 }
