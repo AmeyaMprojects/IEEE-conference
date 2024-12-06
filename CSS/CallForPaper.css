@@ -209,33 +209,5 @@ body {
     flex-direction: column;
 }
 
-<<<<<<< HEAD
-
-=======
-.blue-submit-btnn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    background: linear-gradient(45deg, #d89b51, #82325d, #455db2);
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.blue-submit-btnn a {
-    color: white;
-    text-decoration: none;
-}
-
-.blue-submit-btnn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
->>>>>>> 7fe30b5be3e49b7830aa696bbf6d55ef84cc23b4
 
 
