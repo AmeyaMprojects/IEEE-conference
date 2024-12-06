@@ -107,7 +107,7 @@ nav {
 }
 
 .blue-submit-btnn a {
-    color: inherit;
+    color: white;
     text-decoration: none;
 }
 
@@ -268,8 +268,16 @@ nav {
 /* Hover effect for Date Cards */
 .date-card:hover {
     transform: translateY(-5px);
-    background-color: #f1faff; /* Light blue hover background */
+    background: linear-gradient(45deg, rgb(255, 209, 125), rgb(255, 103, 171), rgb(128, 253, 255)); /* Gradient background on hover */
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow on hover */
+}
+
+.date-card:hover h3{
+    color: white;
+}
+
+.date-card:hover p{
+    color: white;
 }
 
 /* Date Card Heading */
@@ -312,7 +320,7 @@ nav {
     left: 0;
     width: 60px;
     height: 2px;
-    background-color: #007bff;
+    background-color: #626262;
     transform: translateY(-50%);
 }
 
@@ -325,7 +333,7 @@ nav {
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-left: 20px solid #007bff;
+    border-left: 20px solid #626262;
     transform: translateY(-50%);
 }
 
