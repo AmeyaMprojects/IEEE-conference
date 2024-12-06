@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333; /* Default text color */
+}
+
 @font-face {
     font-family: 'MyCustomFont';
     src: url('../Photo/hp-simplified-hans-light.ttf') format('woff2');
@@ -16,6 +23,11 @@ body {
     
 }
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
 .nav-links button {
     background-color: transparent;
     border: none;
@@ -36,10 +48,35 @@ code {
     font-family: 'Courier New', Courier, monospace;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+
+/* Hero Section */
+.hero1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    color: white;
+    width: 100%; /* Full width of the container */
+    height: 60vh; /* Full height of the viewport */
+    margin: 0 auto;
+    position: relative;
+    flex-direction: row; /* Default layout for larger screens */
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+}
+
+.hero1:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../Photo/main_baground_image.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    z-index: -1;
+    filter: blur(1px); /* Add this line to apply a blur */
 }
 
 /* Hero Section */
@@ -53,6 +90,8 @@ body {
     height: 60vh; /* Full height of the viewport */
     margin: 0 auto;
     position: relative;
+    flex-direction: row; /* Default layout for larger screens */
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
 }
 
 .hero1:before {
@@ -65,36 +104,37 @@ body {
     background-image: url("../Photo/main_baground_image.jpg");
     background-size: cover;
     background-position: center;
-    opacity: 1; /* Adjust the opacity here (0.0 to 1.0) */
+    opacity: 1;
     z-index: -1;
     filter: blur(1px); /* Add this line to apply a blur */
 }
 
-
+/* Hero content */
 .hero-content1 {
     max-width: 50%; /* Control the width of the content */
     text-align: left; /* Align the text to the left */
     z-index: 1; /* Ensure content is above the background */
     padding: 20px;
     margin-left: 0; /* Ensure the content starts from the extreme left */
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
 }
 
 .hero-content1 h1 {
     font-size: 3em;
     margin-bottom: 10px; /* Space below the h1 */
-    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    white-space: nowrap; /* Prevent text wrapping for larger screens */
 }
 
 .hero-content1 h2 {
     font-size: 2em;
     margin-bottom: 15px; /* Space below the h2 */
-    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    white-space: nowrap; /* Prevent text wrapping for larger screens */
 }
 
 .hero-content1 p {
     font-size: 1.2em;
     margin-bottom: 20px; /* Space below the paragraph */
-    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    white-space: nowrap; /* Prevent text wrapping for larger screens */
 }
 
 /* Style for the Venue Link */
@@ -110,11 +150,9 @@ body {
 .venue-link:hover {
     color: #2980b9; /* Darker blue color on hover */
     transform: scale(1.05); /* Slightly increase the size of the text on hover */
-    
 }
 
-
-
+/* Submit Paper Button */
 .submit-paper-btn {
     display: inline-block;
     background-color: #e60000;
@@ -131,11 +169,133 @@ body {
     background-color: #b30000;
 }
 
-.hero-image img {
+/* Hero Image */
+.hero-image1 img {
     max-width: 500px;
     height: auto;
     border-radius: 10px;
 }
+
+/* Mobile Responsiveness (up to 1024px) */
+@media (max-width: 1024px) {
+    .hero1 {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        padding: 30px 15px; /* Adjust padding */
+    }
+
+    .hero-content1 {
+        max-width: 90%; /* Increase content width */
+        text-align: center; /* Center the text */
+        margin-left: 0; /* Remove any left margin */
+    }
+
+    .hero-content1 h1 {
+        font-size: 2em; /* Adjust font size for mid-range devices */
+        white-space: normal; /* Allow word wrapping */
+    }
+
+    .hero-content1 h2 {
+        font-size: 1.6em; /* Adjust font size */
+        white-space: normal; /* Allow word wrapping */
+    }
+
+    .hero-content1 p {
+        font-size: 1.1em; /* Adjust font size for readability */
+        white-space: normal; /* Allow word wrapping */
+    }
+
+    .hero-image1 img {
+        max-width: 100%; /* Ensure image is responsive */
+        margin-top: 20px; /* Space between image and text */
+    }
+}
+
+/* Larger Devices (Above 1024px, no wrapping) */
+@media (min-width: 1025px) {
+    .hero1 {
+        flex-direction: row; /* Default row layout */
+        padding: 50px 20px; /* More space on large screens */
+    }
+
+    .hero-content1 {
+        max-width: 50%; /* Set content width to 50% */
+        text-align: left;
+    }
+
+    .hero-content1 h1 {
+        font-size: 3em; /* Large font size */
+        white-space: nowrap; /* Prevent word wrapping */
+    }
+
+    .hero-content1 h2 {
+        font-size: 2.5em; /* Large font size */
+        white-space: nowrap; /* Prevent word wrapping */
+    }
+
+    .hero-content1 p {
+        font-size: 1.2em; /* Slightly smaller text for readability */
+        white-space: nowrap; /* Prevent word wrapping */
+    }
+
+    .hero-image1 img {
+        max-width: 500px; /* Control image size */
+    }
+}
+
+/* Smaller Devices (Tablets and below) */
+@media (max-width: 480px) {
+    .hero-content1 {
+        max-width: 90%; /* Maximize content width */
+        text-align: center; /* Center the text */
+        margin-left: 0; /* Remove any left margin */
+    }
+
+    .hero-content1 h1 {
+        font-size: 2em; /* Reduce font size for very small devices */
+    }
+
+    .hero-content1 h2 {
+        font-size: 1.6em; /* Adjust font size for very small devices */
+    }
+
+    .hero-content1 p {
+        font-size: 1em; /* Adjust font size for very small devices */
+    }
+
+    .submit-paper-btn {
+        padding: 10px 15px; /* Adjust button padding for smaller screens */
+    }
+}
+
+/* For Extremely Small Devices */
+@media (max-width: 320px) {
+    .hero-content1 {
+        max-width: 90%; /* Maximize content width */
+        text-align: center;
+        padding: 10px; /* Reduce padding */
+    }
+
+    .hero-content1 h1 {
+        font-size: 1.8em; /* Adjust font size */
+        margin-bottom: 8px; /* Reduce margin */
+    }
+
+    .hero-content1 h2 {
+        font-size: 1.4em; /* Adjust font size */
+        margin-bottom: 12px; /* Reduce margin */
+    }
+
+    .hero-content1 p {
+        font-size: 0.9em; /* Adjust font size */
+    }
+
+    .submit-paper-btn {
+        padding: 8px 12px; /* Reduce button padding */
+        font-size: 0.9em; /* Reduce font size */
+    }
+}
+
+
 
 /* Important Dates Section */
 
