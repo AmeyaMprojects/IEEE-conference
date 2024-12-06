@@ -103,99 +103,6 @@ nav {
     text-shadow: 0px 0px 4px #8e1f58;
 }
 
-/* Paragraph Section */
-.para { 
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.para h4 {
-    margin-top: 2rem;
-    font-size: 20px;
-    text-align: center;
-    max-width: 90%;
-}
-
-/* Call For Paper Section Link */
-
-/* Track Section */
-
-/* Default Styles (for larger screens) */
-.track-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-    flex-wrap: wrap;
-    gap: 20px; 
-    padding: 0 10px;
-}
-
-/* Individual track card styling */
-.track {
-    border-radius: 10px; 
-    padding: 30px;
-    width: 250px; /* Fixed width for track cards */
-    background: linear-gradient(145deg, #f3f4f6, #e0e3e8);
-    border: 0.5px solid #000000; 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    text-align: left;
-}
-
-
-/* Hover effect for track cards */
-.track:hover {
-    transform: translateY(-5px); 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
-}
-
-/* Title styling */
-.track h3 {
-    font-size: 15px; 
-    margin-bottom: 15px;
-    color: #333;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-    text-align: left; 
-}
-
-/* Styling for the track list */
-.track ul {
-    padding-left: 0;
-    margin-top: 10px;
-}
-
-/* List items inside track */
-.track li {
-    font-size: 18px; 
-    color: #666;
-    margin-bottom: 8px;
-    line-height: 1.5;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left;
-}
-
-/* Hover effect for individual list items */
-.track li:hover {
-    color: transparent;
-    background-image: linear-gradient(45deg, #d89b51, #82325d, #455db2);
-    -webkit-background-clip: text;
-    background-clip: text;
-    cursor: pointer;
-}
-
-/* Additional global styles for better typography */
-body {
-    font-family: 'Arial', sans-serif; 
-    background-color: #f7f9fc;
-    color: #333; 
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
 /* Responsive Design */
 
 /* For devices with a width of 1024px and below (Desktops/Tablets) */
@@ -217,21 +124,7 @@ body {
         font-size: 18px; /* Adjust font size for paragraphs on tablets */
     }
 
-    .track-container {
-        justify-content: space-between;
-    }
-
-    .track {
-        width: 45%; /* Make track cards take 45% width on tablets */
-    }
-
-    .track h3 {
-        font-size: 16px;
-    }
-
-    .track li {
-        font-size: 16px;
-    }
+    
 }
 
 /* For devices with a width of 768px and below (tablets and smaller screens) */
@@ -251,28 +144,7 @@ body {
         text-shadow: 0px 0px 2px #8e1f58;
     }
 
-    .para h4 {
-        font-size: 16px; /* Adjust font size for smaller devices */
-        max-width: 95%;
-    }
-
-    .track-container {
-        flex-direction: column; /* Stack track cards vertically */
-        align-items: center; /* Center the cards */
-    }
-
-    .track {
-        width: 90%; /* Make track cards take up 90% of the width */
-        margin: 10px 0; /* Add vertical spacing between the track cards */
-    }
-
-    .track h3 {
-        font-size: 18px; /* Slightly smaller title */
-    }
-
-    .track li {
-        font-size: 16px; /* Adjust font size for smaller screens */
-    }
+    
 }
 
 /* For devices with a width of 480px and below (smaller phones) */
@@ -297,23 +169,7 @@ body {
         max-width: 100%;
     }
 
-    .track-container {
-        flex-direction: column; /* Stack track cards vertically */
-        align-items: center; /* Center the cards */
-    }
-
-    .track {
-        width: 100%; /* Make track cards take up 100% width */
-        margin: 15px 0; /* Add more space between the cards */
-    }
-
-    .track h3 {
-        font-size: 14px; /* Further adjust the title font size */
-    }
-
-    .track li {
-        font-size: 14px; /* Smaller font size for list items */
-    }
+    
 }
 
 .main{
