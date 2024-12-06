@@ -15,7 +15,9 @@ main {
     border-radius: 0;  /* Remove border-radius */
 }
 
-h2 {
+
+
+.content h2 {
     font-size: 1.8em;
     color: #0044cc;
     margin-bottom: 1em;
@@ -73,14 +75,14 @@ section {
 }
 
 /* Links Styling */
-a {
+.content a {
     color: #0044cc;
     text-decoration: none;
     font-weight: bold;
     border-bottom: 2px solid #0044cc;
 }
 
-a:hover {
+.content a:hover {
     color: #002d73;
     border-bottom: 2px solid #002d73;
 }
