@@ -1,350 +1,96 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333; /* Default text color */
-}
-
-/* Header and Navigation */
-header {
-    background-color: #ffffff;
-    color: rgb(255, 255, 255);
-    padding: 10px 0;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.logo img {
-    width: 150px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-.nav-links button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    color: #000000;
-    padding: 10px;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease; /* Smooth hover effect */
-}
-
-
-.nav-links button:hover a {
-    color: white; /* Make the text white on hover */
-}
-
-
-.nav-links button:hover {
-    transform: scale(1.05);
-    background-color: #666;
-    border-radius: 5px;
-    color: white;
-    
-}
-
-/* Hero Section */
-/* Hero Section */
-.hero {
-    background-image: url('../Photo/main_baground_image.jpg');
-    background-size: cover; /* Ensure the image covers the full container */
-    background-position: center; /* Ensure the image is centered */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    height: 200px; /* Set the default height for large screens */
-    display: flex;
-    align-items: center; /* Centers content vertically */
-    justify-content: center; /* Centers content horizontally */
-    color: #fff;
-    position: relative;
-    padding: 20px; 
-}
-
-
-
-
-.hero-content {
-    max-width: 50%;
-    text-align: left; /* Align the text to the left */
-    z-index: 1; /* Make sure content is above the background */
-}
-
-.hero h2 {
-    font-size: 48px; /* Adjust font size as needed */
-    font-weight: bold;
-    margin: 0; /* Remove any default margin */
-    text-shadow: 0px 0px 4px #8e1f58;
-}
-
-/* Paragraph Section */
-.para { 
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.para h4 {
-    margin-top: 2rem;
-    font-size: 20px;
-    text-align: center;
+/* Apply styles to the entire section */
+.Table {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: transparent;  /* Transparent background for the section */
+    margin: 20px auto;
+    border-radius: 10px;
     max-width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Call For Paper Section Link */
-
-/* Track Section */
-
-/* Default Styles (for larger screens) */
-.track-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-    flex-wrap: wrap;
-    gap: 20px; 
-    padding: 0 10px;
+/* Heading styles */
+.Table h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-/* Individual track card styling */
-.track {
-    border-radius: 10px; 
-    padding: 30px;
-    width: 250px; /* Fixed width for track cards */
-    background: linear-gradient(145deg, #f3f4f6, #e0e3e8);
-    border: 0.5px solid #000000; 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    text-align: left;
-}
-
-
-/* Hover effect for track cards */
-.track:hover {
-    transform: translateY(-5px); 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
-}
-
-/* Title styling */
-.track h3 {
-    font-size: 15px; 
+.Table h3 {
+    font-size: 1.5em;
+    color: #333;
     margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+/* Table styling */
+.Table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: transparent; /* Transparent background for the table */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Table headers styling */
+.Table th {
+    background-color: transparent; /* Transparent background for table headers */
+    color: #333;
+    font-size: 1.1em;
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Table data styling */
+.Table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Even rows background color */
+.Table tr:nth-child(even) {
+    background-color: #f9f9f9;  /* Light gray for alternating rows */
+}
+
+/* Hover effect for rows */
+.Table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Style for the last row (extra note) */
+.Table p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Styling for payment link */
+.Table a {
     color: #333;
     font-weight: bold;
-    letter-spacing: 0.5px;
-    text-align: left; 
-}
-
-/* Styling for the track list */
-.track ul {
-    padding-left: 0;
-    margin-top: 10px;
-}
-
-/* List items inside track */
-.track li {
-    font-size: 18px; 
-    color: #666;
-    margin-bottom: 8px;
-    line-height: 1.5;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left;
-}
-
-/* Hover effect for individual list items */
-.track li:hover {
-    color: transparent;
-    background-image: linear-gradient(45deg, #d89b51, #82325d, #455db2);
-    -webkit-background-clip: text;
-    background-clip: text;
-    cursor: pointer;
-}
-
-/* Additional global styles for better typography */
-body {
-    font-family: 'Arial', sans-serif; 
-    background-color: #f7f9fc;
-    color: #333; 
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-/* Responsive Design */
-
-/* For devices with a width of 1024px and below (Desktops/Tablets) */
-@media (max-width: 1024px) {
-    .hero {
-        height: 250px; /* Adjust height for tablets */
-    }
-
-    .hero-content {
-        max-width: 70%; /* Increase the width of content on tablets */
-    }
-
-    .hero h2 {
-        font-size: 36px; /* Reduce font size */
-        text-shadow: 0px 0px 3px #8e1f58;
-    }
-
-    .para h4 {
-        font-size: 18px; /* Adjust font size for paragraphs on tablets */
-    }
-
-    .track-container {
-        justify-content: space-between;
-    }
-
-    .track {
-        width: 45%; /* Make track cards take 45% width on tablets */
-    }
-
-    .track h3 {
-        font-size: 16px;
-    }
-
-    .track li {
-        font-size: 16px;
-    }
-}
-
-/* For devices with a width of 768px and below (tablets and smaller screens) */
-@media (max-width: 768px) {
-    .hero {
-        height: 200px; /* Reduce hero section height for small screens */
-        padding: 10px;
-    }
-
-    .hero-content {
-        max-width: 90%; /* Allow the hero content to take up more space */
-        text-align: center; /* Center align text for better visibility */
-    }
-
-    .hero h2 {
-        font-size: 28px; /* Reduce font size further */
-        text-shadow: 0px 0px 2px #8e1f58;
-    }
-
-    .para h4 {
-        font-size: 16px; /* Adjust font size for smaller devices */
-        max-width: 95%;
-    }
-
-    .track-container {
-        flex-direction: column; /* Stack track cards vertically */
-        align-items: center; /* Center the cards */
-    }
-
-    .track {
-        width: 90%; /* Make track cards take up 90% of the width */
-        margin: 10px 0; /* Add vertical spacing between the track cards */
-    }
-
-    .track h3 {
-        font-size: 18px; /* Slightly smaller title */
-    }
-
-    .track li {
-        font-size: 16px; /* Adjust font size for smaller screens */
-    }
-}
-
-/* For devices with a width of 480px and below (smaller phones) */
-@media (max-width: 480px) {
-    .hero {
-        height: 150px; /* Make the hero section smaller on phones */
-        padding: 10px; /* Adjust padding */
-    }
-
-    .hero-content {
-        max-width: 100%; /* Full width content on mobile */
-        text-align: center; /* Ensure content is centered */
-    }
-
-    .hero h2 {
-        font-size: 24px; /* Further reduce font size */
-        text-shadow: none; /* Remove text shadow for readability */
-    }
-
-    .para h4 {
-        font-size: 14px; /* Make the paragraph text smaller */
-        max-width: 100%;
-    }
-
-    .track-container {
-        flex-direction: column; /* Stack track cards vertically */
-        align-items: center; /* Center the cards */
-    }
-
-    .track {
-        width: 100%; /* Make track cards take up 100% width */
-        margin: 15px 0; /* Add more space between the cards */
-    }
-
-    .track h3 {
-        font-size: 14px; /* Further adjust the title font size */
-    }
-
-    .track li {
-        font-size: 14px; /* Smaller font size for list items */
-    }
-}
-
-.main{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.blue-submit-btnn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    background: linear-gradient(45deg, #d89b51, #82325d, #455db2);
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.blue-submit-btnn a {
-    color: inherit;
     text-decoration: none;
 }
 
-.blue-submit-btnn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+.Table a:hover {
+    text-decoration: underline;
 }
 
-
+/* Responsive design for small screens */
+@media screen and (max-width: 768px) {
+    .Table table {
+        width: 100%;
+        font-size: 0.9em;
+    }
+    .Table th, .Table td {
+        padding: 8px;
+    }
+    .Table h2, .Table h3 {
+        font-size: 1.5em;
+    }
+}
