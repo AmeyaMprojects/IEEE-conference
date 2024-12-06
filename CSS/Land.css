@@ -260,20 +260,7 @@ body {
 
 
 
-/* Footer Section */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
 
-footer p {
-    font-size: 1em;
-}
 .about-conference {
     text-align: center;
     margin: 40px auto;
