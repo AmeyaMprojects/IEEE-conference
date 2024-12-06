@@ -261,92 +261,66 @@ body {
 
 
 /* Footer Section */
-footer {
-    background-color: #333;
+/* Footer Section Styling */
+.footer {
+    background-color: #004a99; /* Dark blue background */
     color: white;
+    padding: 20px 10px;
     text-align: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    font-size: 1em;
-}
-.about-conference {
-    text-align: center;
-    margin: 40px auto;
-    background: linear-gradient(to right, #f7f7f7, #e0e0e0); /* Soft gradient background */
-    padding: 30px;
-    border-radius: 15px; /* Slightly larger rounded corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft, modern shadow */
-    max-width: 900px; /* Limit the width to make it look more centered and focused */
-    position: relative; /* For potential additional overlay or effect */
-}
-
-.about-conference h2 {
-    font-size: 2.8em;
-    margin-bottom: 20px;
-    color: #333;
-    font-family: 'Roboto', sans-serif; /* More modern font */
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.about-conference p {
-    font-size: 18px;
-    line-height: 1.8;
-    text-align: justify;
-    margin-bottom: 20px;
-    max-width: 800px; /* Adjust for readability */
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
     margin: 0 auto;
-    color: #555; /* Slightly lighter text color for contrast */
-    font-family: 'Arial', sans-serif;
-}
-
-.about-conference p:first-letter {
-    font-size: 2em;
-    font-weight: bold;
-    color: #007BFF; /* Adds a pop of color for the first letter */
-}
-
-.about-conference:hover {
-    transform: scale(1.02); /* Slight hover effect for a more interactive look */
-    transition: transform 0.3s ease-in-out; /* Smooth transition */
-}
-
-.about-conference a {
-    color: #007BFF;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+  
+  .footer-section h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p, .footer-section a {
+    color: white;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
-
-.about-conference a:hover {
-    color: #0056b3; /* Darker blue when hovered */
+    font-size: 0.9em;
+  }
+  
+  .footer-section a:hover {
     text-decoration: underline;
-}
-
-/* Optional: Add a subtle background image with some opacity (if needed) */
-.about-conference::before {
-    content: "";
-    background-image: url("../Photo/about_conference_image.jpg");
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    opacity: 0.1; /* Slight opacity to let text stand out */
-    border-radius: 15px;
-}
-
-
-
+  }
+  
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.2);
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #cce6ff;
+  }
+  
+  .footer-section.logo img {
+    width: 100px;
+  }
+  
 /* Speakers Section Styles */
 .speakers {
     padding: 50px 0;
