@@ -319,21 +319,34 @@ body {
   .footer-section.logo img {
     width: 100px;
   }
-  
 
-
-
+/* About Conference Section */
 .about-conference {
     text-align: center;
     margin: 40px auto;
-    background: linear-gradient(to right, #f7f7f7, #e0e0e0); /* Soft gradient background */
+    background: linear-gradient(to right, #f7f7f7, #e0e0e0); 
     padding: 30px;
-    border-radius: 15px; /* Slightly larger rounded corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft, modern shadow */
-    max-width: 900px; /* Limit the width to make it look more centered and focused */
-    position: relative; /* For potential additional overlay or effect */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 900px; 
+    position: relative; 
+    overflow: hidden; 
+    transition: background-image 0.6s ease-out 
 }
 
+/* Hover Effect with Light Image Behind the Text */
+.about-conference:hover {
+    background-image: url('../Photo/about_conference_image.png');
+    background-size: contain;         
+    background-position: center;    
+    background-blend-mode: lighten;
+    background-repeat: no-repeat; 
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 100%;                  
+    width: 100%;                    
+}
+
+/* Heading Styling */
 .about-conference h2 {
     font-size: 2.8em;
     margin-bottom: 20px;
@@ -344,6 +357,7 @@ body {
     text-transform: uppercase;
 }
 
+/* Paragraph Styling */
 .about-conference p {
     font-size: 18px;
     line-height: 1.8;
@@ -351,21 +365,21 @@ body {
     margin-bottom: 20px;
     max-width: 800px; /* Adjust for readability */
     margin: 0 auto;
-  }
+}
+
+
   
-  
-  
-  .social-icons img {
+.social-icons img {
     width: 24px;
     height: 24px;
     margin: 0 5px;
     transition: transform 0.3s ease;
-  }
+}
   
-  .social-icons img:hover {
+.social-icons img:hover {
     transform: scale(1.2);
-  }
-  
+}
+
   
 
 /* Logos Section */

@@ -11,7 +11,11 @@
   <!-- Custom CSS Links -->
   <link rel="stylesheet" href="../CSS/Committee.css">
   <link rel="stylesheet" href="../CSS/Land.css">
-
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
   <!-- Custom JavaScript -->
   <script src="script.js"></script>
 </head>
@@ -25,7 +29,7 @@
       </div>
       <div class="nav-links">
         <button class="home"><a href="Land.html">Home</a></button>
-        <button id="aboutBtn"><a href="#">About</a></button>
+        <button id="aboutBtn"><a href="#about-section">About</a></button>
         <button class="CallForPaperr"><a href="CallForPaper.html">Call for Paper</a></button>
          
         <!-- Committee Dropdown -->
@@ -106,7 +110,7 @@
   </section>
 
   <!-- About the Conference Section -->
-  <section class="about-conference">
+  <section class="about-conference" id="about-section">
     <h2>About Conference</h2>
     <div class="image_container">
       <p>Welcome to Smart Cities, Healthcare, and Autonomous Systems (SCHAS) 2025, a transformative conference designed
@@ -192,4 +196,4 @@
     crossorigin="anonymous"></script>
 </body>
 
-</html>
+</html> now i want if i press about it should scroll down to about section
