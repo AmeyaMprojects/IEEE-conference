@@ -1,3 +1,18 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333; /* Default text color */
+}
+
+
 /* General Styling for Advisory Committee Sections */
 .international-advisory-committee,
 .national-advisory-committee {
@@ -9,6 +24,14 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
     transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
+
+/* .nav-links a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+} */
 
 .international-advisory-committee:hover,
 .national-advisory-committee:hover {

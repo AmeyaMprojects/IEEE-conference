@@ -1,3 +1,19 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333; /* Default text color */
+}
+
+
+
 /* General layout for the committee container */
 .committee-container {
     display: flex;
