@@ -39,9 +39,12 @@ ul li {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Ensures content is aligned at the top */
-    min-height: 200px; /* Ensures even sections with little content take up space */
+    min-height: auto; /* Height adjusts based on content */
+    overflow: hidden; /* Ensures there's no overflow */
+    margin-bottom: 0; /* Ensure no additional margin at the bottom */
 }
 
+/* Hover Effect */
 .section:hover {
     transform: translateY(-10px);
 }
@@ -49,6 +52,7 @@ ul li {
 /* Specific Section Styles (optional) */
 #chief-patron {
     background-color: #f2f2f2;
+    
 }
 
 #patrons {
