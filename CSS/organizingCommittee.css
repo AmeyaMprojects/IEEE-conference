@@ -2,42 +2,39 @@
 .committee-container {
     display: flex;
     flex-direction: column; 
-    gap: 30px; 
-    margin: 30px auto; 
-    max-width: 1200px; 
-    width: 90%; 
-    padding: 30px; 
-    
+    gap: 20px;
+    margin: 20px auto; 
+    max-width: 1000px;
+    width: 85%; /* Adjusted width */
+    padding: 20px; 
     font-family: 'MyCustomFont', Arial, Helvetica, sans-serif; 
-    
     transition: transform 0.3s ease-in-out; 
 }
 
-.committee-container:hover {
-    transform: scale(1.02);
-}
+
 .committee-container .section ul li::marker {
-    color: #227ece;
+    color: #227ece; /* Bullet point color */
 }
+
 /* Style for each section box */
 .committee-container .section {
     background-color: #fff; 
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px; 
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; 
 }
 
 .committee-container .section:hover {
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); 
 }
 
 /* Style for section headers */
 .committee-container .section h3 {
     text-align: center;
-    color: #34495e;
-    font-size: 2rem;
-    margin-bottom: 20px;
+    color: #34495e; 
+    font-size: 1.8rem; 
+    margin-bottom: 20px; 
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1.5px;
@@ -50,14 +47,14 @@
 /* Style for the list container */
 .committee-container .section ul {
     list-style-type: disc; 
-    padding-left: 30px; 
+    padding-left: 25px; 
     margin-left: 0; 
 }
 
 /* Style for individual list items */
 .committee-container .section ul li {
-    font-size: 1.3rem; 
-    padding: 10px 0; 
+    font-size: 1.2rem;
+    padding: 8px 0; 
     color: #34495e; 
     transition: transform 0.3s ease, padding-left 0.3s ease; 
 }
@@ -65,11 +62,8 @@
 /* Hover effect for list items */
 .committee-container .section ul li:hover {
     transform: translateX(10px);
-    padding-left: 15px;
+    padding-left: 12px;
 }
-
-/* Change text color when hovering over list items */
-
 
 /* For small screens, adjust the layout to be responsive */
 @media (max-width: 768px) {
