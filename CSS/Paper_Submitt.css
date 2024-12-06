@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;  /* Set the background color to white */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 80%;
+    margin: 2em auto;
+    padding: 20px;
+    background-color: #ffffff;  /* White background for the main content */
+    border-radius: 0;  /* Remove border-radius */
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #0044cc;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #0044cc;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.4em;
+    color: #0044cc;
+    margin-top: 1.5em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 3px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    margin-bottom: 1em;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 2em;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin-bottom: 0.6em;
+}
+
+strong {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Sections Styling */
+section {
+    margin-bottom: 2.5em;
+}
+
+#manuscript-prep, #general-guidelines {
+    padding: 20px;
+    border-left: 4px solid #ff8c00;
+}
+
+#paper-upload {
+    padding: 20px;
+    border-left: 4px solid #ff0088;
+}
+
+#general-guidelines {
+    padding: 20px;
+    border-left: 4px solid #0037ff;
+}
+
+/* Links Styling */
+a {
+    color: #0044cc;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid #0044cc;
+}
+
+a:hover {
+    color: #002d73;
+    border-bottom: 2px solid #002d73;
+}
+
+/* Important Section Styling */
+strong {
+    color: #d9534f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    p, ul li {
+        font-size: 1em;
+    }
+}
