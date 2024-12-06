@@ -5,36 +5,15 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'MyCustomFont';
-    src: url('../Photo/hp-simplified-hans-light.ttf') format('woff2');
-    font-weight: normal; /* Normal weight */
-    font-style: normal; /* Normal style */
-}
-body {
-    font-family: 'MyCustomFont', Arial, Helvetica, sans-serif; 
-}
-
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'MyCustomFont', serif; 
-}
-
-
-code {
-    font-family: 'Courier New', Courier, monospace;
-}
-
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
 }
 
 /* Header and Navigation */
 header {
     background-color: #ffffff;
-    color: rgb(255, 255, 255);
     padding: 10px 0;
 }
 
@@ -45,16 +24,20 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    position: relative;
 }
 
 .logo img {
     width: 150px;
 }
 
+/* Navigation Links */
 .nav-links {
     list-style: none;
     display: flex;
+    align-items: center;
 }
+
 .nav-links button {
     background-color: transparent;
     border: none;
@@ -73,22 +56,48 @@ nav {
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    transition: background-color 0.3s ease;
 }
 
-
-.nav-links button:hover a {
-    color: white; /* Make the text white on hover */
-}
-
-
-.nav-links button:hover {
-    transform: scale(1.05);
-    background-color: #666;
+/* Hover Effect for Navigation Links */
+.nav-links a:hover {
+    background-color: #ddd;
     border-radius: 5px;
-    color: white;
-    
 }
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Submit Paper Button */
 .blue-submit-btnn {
     display: inline-block;
     padding: 10px 20px;
@@ -114,39 +123,41 @@ nav {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-
-html {
-    scroll-behavior: smooth;
-  }
-
-  .hero {
-    background-image: url('../Photo/main_baground_image.jpg');
-    background-size: cover; /* Ensure the image covers the full container */
-    background-position: center; /* Ensure the image is centered */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    height: 200px; /* Set the default height for large screens */
-    display: flex;
-    align-items: center; /* Centers content vertically */
-    justify-content: center; /* Centers content horizontally */
-    color: #fff;
-    position: relative;
-    padding: 20px; 
+/* Hamburger Icon (Hidden by default) */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
 }
 
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
 
-.hero-content {
-    max-width: 50%;
-    text-align: left; /* Align the text to the left */
-    z-index: 1; /* Make sure content is above the background */
-}
+    .nav-links.active {
+        display: flex;
+    }
 
-.hero h2 {
-    font-size: 48px; /* Adjust font size as needed */
-    font-weight: bold;
-    margin: 0; /* Remove any default margin */
-    text-shadow: 0px 0px 4px #8e1f58;
-}
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
 
-.committee-container{
-    display: flex;
+    .nav-links a {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    /* Make Hamburger Icon Visible */
+    .hamburger {
+        display: block;
+    }
 }
