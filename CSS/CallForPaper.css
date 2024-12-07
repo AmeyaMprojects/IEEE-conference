@@ -210,7 +210,7 @@ body {
 }
 .footer {
     position: relative;
-    background-color: #004a99; /* Dark blue background */
+    background: linear-gradient(to bottom right, #8e44ad, #004a99); /* Gradient from purple to blue */
     color: white;
     padding: 20px 10px;
     text-align: center;
@@ -220,7 +220,7 @@ body {
     margin-top: 5rem;
 }
 
-/* Add this for larger curves using pseudo-element */
+/* Pseudo-element for the larger curve */
 .footer::before {
     content: "";
     position: absolute;
@@ -228,7 +228,7 @@ body {
     left: -100px; /* Shift to left */
     width: 300px; /* Width of the curve */
     height: 300px; /* Height of the curve */
-    background-color: #004a99; /* Footer background color */
+    background: linear-gradient(to bottom right, #8e44ad, #004a99); /* Same gradient for the curve */
     border-radius: 50%; /* Creates the circular shape */
     z-index: -1; /* Places it behind the footer content */
 }
