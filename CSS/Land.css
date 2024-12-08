@@ -234,6 +234,7 @@ code {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     width: 180px; /* Smaller width for compactness */
+    height: 134px;
 }
 
 /* Hover effect for Date Cards */
@@ -268,15 +269,15 @@ code {
 }
 
 /* Stylish Long Tail Arrows (Pointing Right) */
-.arrow {
+/* .arrow {
     position: relative;
     width: 70px;
     height: 20px;
     margin: 0 10px;
-}
+} */
 
 /* Long Tail Arrow */
-.right-arrow::before {
+/* .right-arrow::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -285,9 +286,9 @@ code {
     height: 2px;
     background-color: #007bff;
     transform: translateY(-50%);
-}
+} */
 
-.right-arrow::after {
+/* .right-arrow::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -298,7 +299,7 @@ code {
     border-bottom: 10px solid transparent;
     border-left: 20px solid #007bff;
     transform: translateY(-50%);
-}
+} */
 
 
 /* About Conference Section */
@@ -492,12 +493,15 @@ code {
     }
 
     .date-card-container {
-        flex-wrap: wrap; /* Allow cards to wrap */
-        justify-content: space-around;
+        display: flex;            /* Ensure it’s a flex container */
+        flex-wrap: wrap;          /* Allow cards to wrap */
+        justify-content: space-between;  /* Distribute space between items */
+        gap: 10px;  
     }
 
     .date-card {
         width: 250px; /* Adjust width for better spacing */
+        height: 111px;
         margin: 10px 0;
     }
 }
