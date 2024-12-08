@@ -143,7 +143,7 @@ code {
 
 /* Style for the Venue Link */
 .venue-link {
-    font-size: 1.2rem; /* Adjust font size */
+    font-size: 1.0rem; /* Adjust font size */
     font-weight: bold; /* Make the text bold */
     color: #f4f4f4; /* Set the color to blue for the link */
     text-decoration: none; /* Remove the default underline */
@@ -178,125 +178,6 @@ code {
     max-width: 500px;
     height: auto;
     border-radius: 10px;
-}
-
-/* Mobile Responsiveness (up to 1024px) */
-@media (max-width: 1024px) {
-    .hero1 {
-        flex-direction: column; /* Stack content vertically on smaller screens */
-        padding: 30px 15px; /* Adjust padding */
-    }
-
-    .hero-content1 {
-        max-width: 90%; /* Increase content width */
-        text-align: center; /* Center the text */
-        margin-left: 0; /* Remove any left margin */
-    }
-
-    .hero-content1 h1 {
-        font-size: 1.3em; /* Adjust font size for mid-range devices */
-        white-space: normal; /* Allow word wrapping */
-    }
-
-    .hero-content1 h2 {
-        font-size: 1.6em; /* Adjust font size */
-        white-space: normal; /* Allow word wrapping */
-    }
-
-    .hero-content1 p {
-        font-size: 1.1em; /* Adjust font size for readability */
-        white-space: normal; /* Allow word wrapping */
-    }
-
-    .hero-image1 img {
-        max-width: 100%; /* Ensure image is responsive */
-        margin-top: 20px; /* Space between image and text */
-    }
-}
-
-/* Larger Devices (Above 1024px, no wrapping) */
-@media (min-width: 1025px) {
-    .hero1 {
-        flex-direction: row; /* Default row layout */
-        padding: 50px 20px; /* More space on large screens */
-    }
-
-    .hero-content1 {
-        max-width: 50%; /* Set content width to 50% */
-        text-align: left;
-    }
-
-    .hero-content1 h1 {
-        font-size: 3em; /* Large font size */
-        white-space: nowrap; /* Prevent word wrapping */
-    }
-
-    .hero-content1 h2 {
-        font-size: 2.5em; /* Large font size */
-        white-space: nowrap; /* Prevent word wrapping */
-    }
-
-    .hero-content1 p {
-        font-size: 1.2em; /* Slightly smaller text for readability */
-        white-space: nowrap; /* Prevent word wrapping */
-    }
-
-    .hero-image1 img {
-        max-width: 500px; /* Control image size */
-    }
-}
-
-/* Smaller Devices (Tablets and below) */
-@media (max-width: 480px) {
-    .hero-content1 {
-        max-width: 90%; /* Maximize content width */
-        text-align: center; /* Center the text */
-        margin-left: 0; /* Remove any left margin */
-    }
-
-    .hero-content1 h1 {
-        font-size: 2em; /* Reduce font size for very small devices */
-    }
-
-    .hero-content1 h2 {
-        font-size: 1.6em; /* Adjust font size for very small devices */
-    }
-
-    .hero-content1 p {
-        font-size: 1em; /* Adjust font size for very small devices */
-    }
-
-    .submit-paper-btn {
-        padding: 10px 15px; /* Adjust button padding for smaller screens */
-    }
-}
-
-/* For Extremely Small Devices */
-@media (max-width: 320px) {
-    .hero-content1 {
-        max-width: 90%; /* Maximize content width */
-        text-align: center;
-        padding: 10px; /* Reduce padding */
-    }
-
-    .hero-content1 h1 {
-        font-size: 1.8em; /* Adjust font size */
-        margin-bottom: 8px; /* Reduce margin */
-    }
-
-    .hero-content1 h2 {
-        font-size: 1.4em; /* Adjust font size */
-        margin-bottom: 12px; /* Reduce margin */
-    }
-
-    .hero-content1 p {
-        font-size: 0.9em; /* Adjust font size */
-    }
-
-    .submit-paper-btn {
-        padding: 8px 12px; /* Reduce button padding */
-        font-size: 0.9em; /* Reduce font size */
-    }
 }
 
 
@@ -419,12 +300,6 @@ code {
     transform: translateY(-50%);
 }
 
-/* Footer Section Styling */
-
-  
-  .footer-section.logo img {
-    width: 200px;
-  }
 
 /* About Conference Section */
 .about-conference {
@@ -570,3 +445,339 @@ code {
     font-style: italic; /* Make the text italic for a refined look */
 }
 
+
+
+/* Mobile Responsiveness (up to 1024px) */
+@media (max-width: 1024px) {
+    .hero1 {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        padding: 30px 15px; /* Adjust padding */
+    }
+
+    .hero-content1 {
+        max-width: 90%; /* Increase content width */
+        text-align: center; /* Center the text */
+        margin-left: 0; /* Remove any left margin */
+    }
+
+    .hero-content1 h1 {
+        font-size: 1.3em; /* Adjust font size for mid-range devices */
+        white-space: normal; /* Allow word wrapping */
+    }
+
+    .hero-content1 h2 {
+        font-size: 1.6em; /* Adjust font size */
+        white-space: normal; /* Allow word wrapping */
+    }
+
+    .hero-content1 p {
+        font-size: 1.1em; /* Adjust font size for readability */
+        white-space: normal; /* Allow word wrapping */
+    }
+
+    .hero-image1 img {
+        max-width: 100%; /* Ensure image is responsive */
+        margin-top: 20px; /* Space between image and text */
+    }
+
+    /* Important Dates Responsive */
+    .important-dates {
+        padding: 20px 15px;
+        margin: 20px auto;
+    }
+
+    .important-dates h2 {
+        font-size: 1.6em;
+        text-align: center;
+    }
+
+    .date-card-container {
+        flex-wrap: wrap; /* Allow cards to wrap */
+        justify-content: space-around;
+    }
+
+    .date-card {
+        width: 250px; /* Adjust width for better spacing */
+        margin: 10px 0;
+    }
+}
+
+/* Larger Devices (Above 1024px, no wrapping) */
+@media (min-width: 1025px) {
+    .hero1 {
+        flex-direction: row; /* Default row layout */
+        padding: 50px 20px; /* More space on large screens */
+    }
+
+    .hero-content1 {
+        max-width: 50%; /* Set content width to 50% */
+        text-align: left;
+    }
+
+    .hero-content1 h1 {
+        font-size: 3em; /* Large font size */
+        white-space: nowrap; /* Prevent word wrapping */
+    }
+
+    .hero-content1 h2 {
+        font-size: 2.5em; /* Large font size */
+        white-space: nowrap; /* Prevent word wrapping */
+    }
+
+    .hero-content1 p {
+        font-size: 1.2em; /* Slightly smaller text for readability */
+        white-space: nowrap; /* Prevent word wrapping */
+    }
+
+    .hero-image1 img {
+        max-width: 500px; /* Control image size */
+    }
+
+    /* Important Dates for Large Screens */
+    .important-dates {
+        padding: 20px 30px;
+        margin: 50px auto;
+    }
+
+    .important-dates h2 {
+        font-size: 2em;
+        text-align: left;
+    }
+
+    .date-card-container {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .date-card {
+        width: 180px; /* Keep default width */
+    }
+}
+
+/* 720px Devices */
+@media (max-width: 720px) {
+    .hero1 {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        padding: 30px 15px; /* Adjust padding */
+    }
+
+    .hero-content1 {
+        max-width: 85%; /* Adjust content width for 720px screens */
+        text-align: center; /* Center the text */
+        margin-left: 0; /* Remove any left margin */
+    }
+
+    .hero-content1 h1 {
+        font-size: 1.7em; /* Adjust font size */
+        white-space: normal; /* Allow word wrapping */
+    }
+
+    .hero-content1 h2 {
+        font-size: 1.8em; /* Adjust font size */
+        white-space: normal; /* Allow word wrapping */
+    }
+
+    .hero-content1 p {
+        font-size: 1.0em; /* Adjust font size for readability */
+        white-space: normal; /* Allow word wrapping */
+    }
+
+    .hero-image1 img {
+        max-width: 100%; /* Ensure image is responsive */
+        margin-top: 20px; /* Space between image and text */
+    }
+
+    /* Important Dates for 720px Devices */
+    .important-dates {
+        padding: 20px 15px;
+    }
+
+    .important-dates h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .date-card-container {
+        flex-wrap: wrap;
+        gap: 20px; /* More space between the cards */
+    }
+
+    .date-card {
+        width: 220px;
+    }
+}
+
+/* 520px Devices */
+@media (max-width: 520px) {
+    .hero1 {
+        flex-direction: column; /* Stack content vertically */
+        padding: 25px 10px; /* Adjust padding */
+    }
+
+    .hero-content1 {
+        max-width: 90%; /* Maximize content width */
+        text-align: center; /* Center the text */
+        margin-left: 0; /* Remove any left margin */
+    }
+
+    .hero-content1 h1 {
+        font-size: 1.6em; /* Adjust font size */
+        white-space: normal; /* Allow word wrapping */
+    }
+
+    .hero-content1 h2 {
+        font-size: 1.7em; /* Adjust font size */
+        white-space: normal; /* Allow word wrapping */
+    }
+
+    .hero-content1 p {
+        font-size: 1em; /* Adjust font size for readability */
+        white-space: normal; /* Allow word wrapping */
+    }
+
+    .hero-image1 img {
+        max-width: 100%; /* Ensure image is responsive */
+        margin-top: 20px; /* Space between image and text */
+    }
+
+    .submit-paper-btn {
+        padding: 8px 12px; /* Adjust button padding */
+    }
+
+    /* Important Dates for 520px Devices */
+    .important-dates {
+        padding: 15px 10px;
+    }
+
+    .important-dates h2 {
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    .date-card-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .date-card {
+        width: 100%; /* Cards will take full width on small screens */
+        margin-bottom: 20px;
+    }
+}
+
+/* 480px Devices */
+@media (max-width: 480px) {
+    .hero-content1 {
+        max-width: 90%; /* Maximize content width */
+        text-align: center; /* Center the text */
+        margin-left: 0; /* Remove any left margin */
+    }
+
+    .hero-content1 h1 {
+        font-size: 1.6em; /* Reduce font size for very small devices */
+    }
+
+    .hero-content1 h2 {
+        font-size: 1.3em; /* Adjust font size for very small devices */
+    }
+
+    .hero-content1 p {
+        font-size: 0.8em; /* Adjust font size for very small devices */
+    }
+
+    .submit-paper-btn {
+        padding: 10px 15px; /* Adjust button padding for smaller screens */
+    }
+
+    /* Important Dates for 480px Devices */
+    .important-dates {
+        padding: 12px 8px;
+    }
+
+    .important-dates h2 {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .date-card-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .date-card {
+        width: 100%; /* Full-width for ultra small screens */
+        margin-bottom: 20px;
+    }
+
+    .date-card h3 {
+        font-size: 1.1em;
+    }
+
+    .date-card .date {
+        font-size: 1.4em;
+    }
+
+    .date-card p {
+        font-size: 0.8em;
+    }
+}
+
+/* For Extremely Small Devices (320px and below) */
+@media (max-width: 380px) {
+    .hero-content1 {
+        max-width: 90%; /* Maximize content width */
+        text-align: center;
+        padding: 10px; /* Reduce padding */
+    }
+
+    .hero-content1 h1 {
+        font-size: 1.6em; /* Adjust font size */
+        margin-bottom: 8px; /* Reduce margin */
+    }
+
+    .hero-content1 h2 {
+        font-size: 1.3em; /* Adjust font size */
+        margin-bottom: 12px; /* Reduce margin */
+    }
+
+    .hero-content1 p {
+        font-size: 0.8em; /* Adjust font size */
+    }
+
+    .submit-paper-btn {
+        padding: 8px 12px; /* Reduce button padding */
+        font-size: 0.9em; /* Reduce font size */
+    }
+
+    /* Important Dates for Extremely Small Devices */
+    .important-dates {
+        padding: 10px 5px;
+    }
+
+    .important-dates h2 {
+        font-size: 1.2em;
+    }
+
+    .date-card-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .date-card {
+        width: 100%; /* Full-width for extremely small screens */
+        margin-bottom: 15px;
+    }
+
+    .date-card h3 {
+        font-size: 1em;
+    }
+
+    .date-card .date {
+        font-size: 1.2em;
+    }
+
+    .date-card p {
+        font-size: 0.7em;
+    }
+}
