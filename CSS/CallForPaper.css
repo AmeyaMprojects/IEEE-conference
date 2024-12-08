@@ -28,7 +28,7 @@ body {
 
 /* Call For Paper Section Link */
 .CallForPaperr a {
-    color: grey;
+    
     text-decoration: none;
 }
 
@@ -39,6 +39,7 @@ body {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
+    margin-bottom: 30px;
     flex-wrap: wrap;
     gap: 20px; 
     padding: 0 10px;
@@ -208,84 +209,7 @@ body {
     justify-content: center;
     flex-direction: column;
 }
-.footer {
-    position: relative;
-    background: linear-gradient(to bottom right, #8e44ad, #004a99); /* Gradient from purple to blue */
-    color: white;
-    padding: 20px 10px;
-    text-align: center;
-    border-top-left-radius: 100px; /* Creates a curve */
-    border-top-right-radius: 0;
-    overflow: hidden; /* Ensures the content stays within the curve */
-    margin-top: 5rem;
-}
 
-/* Pseudo-element for the larger curve */
-.footer::before {
-    content: "";
-    position: absolute;
-    top: -100px; /* Position above footer */
-    left: -100px; /* Shift to left */
-    width: 300px; /* Width of the curve */
-    height: 300px; /* Height of the curve */
-    background: linear-gradient(to bottom right, #8e44ad, #004a99); /* Same gradient for the curve */
-    border-radius: 50%; /* Creates the circular shape */
-    z-index: -1; /* Places it behind the footer content */
-}
-
-  
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .footer-section {
-    flex: 1;
-    min-width: 200px;
-    margin: 10px;
-  }
-  
-  .footer-section h4 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
-  .footer-section p, .footer-section a {
-    color: white;
-    text-decoration: none;
-    font-size: 0.9em;
-  }
-  
-  .footer-section a:hover {
-    text-decoration: underline;
-  }
-  
-  .social-icons img {
-    width: 24px;
-    height: 24px;
-    margin: 0 5px;
-    transition: transform 0.3s ease;
-  }
-  
-  .social-icons img:hover {
-    transform: scale(1.2);
-  }
-  
-  .footer-bottom {
-    margin-top: 20px;
-    font-size: 0.8em;
-    color: #cce6ff;
-    margin-bottom: 5rem;
-  }
-  
-  .footer-section.logo img {
-    width: 200px;
-  }
 
 
 
