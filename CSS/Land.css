@@ -461,7 +461,7 @@ code {
     }
 
     .hero-content1 h1 {
-        font-size: 1.3em; /* Adjust font size for mid-range devices */
+        font-size: 1.9em; /* Adjust font size for mid-range devices */
         white-space: normal; /* Allow word wrapping */
     }
 

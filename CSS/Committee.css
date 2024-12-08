@@ -142,6 +142,36 @@ html {
         text-align: center; /* Ensure text is centered */
         padding: 10px 20px;
     }
+
+    .dropdown-menu {
+        left: 50% !important;
+        transform: translateX(-50%) !important; /* Shift the menu left by 50% of its width */
+        right: auto !important; /* Remove any right alignment */
+        text-align: center; /* Center the text items inside the dropdown */
+        top: 42% !important; /* Ensure the menu opens directly below the button */
+        position: relative !important; /* Make sure dropdown is positioned correctly */
+    }
+
+    /* Center the dropdown button's arrow indicator */
+    .dropdown-toggle::after {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+
+    /* Ensure Authors' Info dropdown takes full width */
+    #dropdownMenu2 + .dropdown-menu {
+        top: 42% !important; /* Ensures it opens below the button */
+        position: relative !important; /* Forces the dropdown to stay below */
+        width: 100% !important; /* Makes the dropdown full width */
+        left: 0 !important; /* Align the dropdown to the left edge */
+        transform: none !important; /* Reset any transforms */
+    }
+
+    /* Make the links inside the "Authors' Info" dropdown full width as well */
+    #dropdownMenu2 + .dropdown-menu .dropdown-item {
+        width: 100% !important;
+        text-align: center; /* Center text inside each item */
+    }
     
     .nav-links {
         flex-direction: column;
