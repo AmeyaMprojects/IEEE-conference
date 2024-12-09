@@ -125,18 +125,7 @@ body {
 
 
 @media screen and (max-width: 768px) {
-    .nav-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
     
-    .nav-links button {
-        width: 100%;
-        margin: 5px 0;
-        padding: 10px;
-        font-size: 1em;
-    }
 
     .Table h2 {
         font-size: 1.6em;
@@ -184,25 +173,13 @@ body {
         font-size: 0.8em;
     }
 
-    .footer-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-section {
-        margin-bottom: 10px;
-        text-align: center;
-    }
+    
     
 }
 
 /* 480px Devices */
 @media (max-width: 415px) {
-    .nav-links button {
-        padding: 8px;
-        font-size: 0.8em;
-    }
+    
 
     .Table{
         padding: 10px;
@@ -221,23 +198,13 @@ body {
         font-size: 1em;
     }
 
-    .footer-container {
-        padding: 10px;
-    }
-
-    .footer-section {
-        margin-bottom: 5px;
-    }
     
     
 }
 
 /* For Extremely Small Devices (320px and below) */
 @media (max-width: 376px) {
-    .nav-links button {
-        padding: 8px;
-        font-size: 0.7em;
-    }
+    
 
     .Table{
         padding: 10px;
@@ -256,13 +223,7 @@ body {
         font-size: 0.8em;
     }
 
-    .footer-container {
-        padding: 10px;
-    }
-
-    .footer-section {
-        margin-bottom: 5px;
-    }
+   
     
 }
 
