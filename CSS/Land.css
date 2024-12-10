@@ -378,13 +378,13 @@ code {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
 .logo-item {
-    max-width: 150px;
-    max-height: 60px;
+    max-width: 350px;
+    max-height: 100px;
     object-fit: contain;
 }
 
