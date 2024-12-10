@@ -151,7 +151,7 @@ body {
 }
 
 /* 520px Devices */
-@media (max-width: 520px) {
+@media (max-width: 578px) {
     .Table h2 {
         font-size: 1.4em;
     }
@@ -170,7 +170,7 @@ body {
     }
 
     .Table table {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 
     
@@ -178,7 +178,7 @@ body {
 }
 
 /* 480px Devices */
-@media (max-width: 415px) {
+@media (max-width: 417px) {
     
 
     .Table{
@@ -203,7 +203,7 @@ body {
 }
 
 /* For Extremely Small Devices (320px and below) */
-@media (max-width: 376px) {
+@media (max-width: 390px) {
     
 
     .Table{
