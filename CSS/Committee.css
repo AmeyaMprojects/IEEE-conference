@@ -31,6 +31,7 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    max-height: 45.7px;
 }
 
 .logo img {
@@ -197,7 +198,7 @@ html {
 
 .footer {
     position: relative;
-    background: linear-gradient(to bottom right, #8e44ad, #004a99); /* Gradient from purple to blue */
+    background: linear-gradient(to bottom right, #ffae3d, #4a50ff); /* Gradient from purple to blue */
     color: white;
     padding: 5px 10px; /* Reduced padding */
     text-align: center;
@@ -226,6 +227,7 @@ html {
     align-items: center;
     gap: 15px; /* Reduced gap between items */
     max-width: 1000px; /* Reduced width */
+    max-height: 110.176px;
     margin: 0 auto;
 }
 
@@ -247,10 +249,13 @@ html {
     font-size: 0.8em; /* Reduced font size */
 }
 
+
 .footer-section a:hover {
     text-decoration: underline;
 }
-
+.leaglies{
+    margin-top: 2rem;
+}
 .social-icons img {
     width: 20px; /* Smaller icon size */
     height: 20px; /* Smaller icon size */
