@@ -31,7 +31,7 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    max-height: 45.7px;
+    /* max-height: 45.7px; */
 }
 
 .logo img {
@@ -135,6 +135,8 @@ html {
 }
 
 /* Responsive Adjustments */
+
+
 @media screen and (max-width: 1067px) {
     nav {
         flex-direction: column;
