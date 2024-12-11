@@ -283,8 +283,8 @@ html {
 .fa {
     padding: 8px;
     font-size: 25px;
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
@@ -300,6 +300,8 @@ html {
 .fa-facebook {
     background: #3B5998;
     color: white;
+    font-size: 25px;
+
 }
 
 .fa-twitter {
@@ -310,14 +312,20 @@ html {
 .fa-linkedin {
     background: #007bb5;
     color: white;
+    font-size: 25px;
+
 }
 
 .fa-youtube {
     background: #bb0000;
     color: white;
+    font-size: 25px;
+
 }
 
 .fa-instagram {
     background: #fe259c;
     color: white;
+    font-size: 25px;
+
 }
