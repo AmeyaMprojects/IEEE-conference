@@ -270,7 +270,7 @@ code {
     transform: translateY(-10px) scale(1.05);
     background: linear-gradient(135deg, #ff7b00, #7b5bff); /* Orange to Purple gradient */
     color: #ffffff;
-    border-color: #ff7b00;
+    border-color: #ffffff;
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 .date-card:hover h3,
