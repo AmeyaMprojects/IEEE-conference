@@ -183,90 +183,123 @@ code {
 
 
 /* Important Dates Section */
-
-/* Important Dates Section */
 .important-dates {
-    background-color: #f8f9fa; /* Light gray background */
-    padding: 20px 30px; /* Adjusted padding for a tighter layout */
-    width: 100%;
-    text-align: center;
-    margin-top: -40px;
-    border-radius: 16px; /* Slightly rounded corners */
+    background: linear-gradient(135deg, #ffffff, #f8f9fa); /* Soft gradient background */
+    padding: 30px 40px;
+    border-radius: 20px;
     max-width: 1400px;
     margin: 50px auto;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow to make it stand out */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
 }
 
-/* Blue Box for Heading */
+/* Section Heading */
 .important-dates h2 {
-    font-size: 2em;
-    margin-bottom: 20px; 
-    padding: 0px 23px; 
-    color: rgba(0, 0, 0, 0.727); 
-    border-radius: 0px; 
-    font-weight: 525; 
-    letter-spacing: 0.5px; 
-    text-align: left;
-    border-bottom: 3px solid #007bff;
-    padding-left: 10px; 
+    font-size: 2.5em;
+    color: #333333;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 5px solid #ff7b00; /* Orange highlight */
 }
 
+/* Gradient Animated Background Effect */
+.important-dates::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(0, 102, 255, 0.1); /* Blue circle */
+    border-radius: 50%;
+    z-index: 0;
+    animation: float 6s infinite alternate;
+}
+.important-dates::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(153, 51, 255, 0.1); /* Purple circle */
+    border-radius: 50%;
+    z-index: 0;
+    animation: float 6s infinite alternate-reverse;
+}
+@keyframes float {
+    to {
+        transform: translateY(20px);
+    }
+}
 
 /* Container for Date Cards */
 .date-card-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px; /* Reduced gap for a tighter layout */
-    margin-top: 20px;
-    flex-wrap: nowrap; /* Ensure the cards stay in a single line */
-    overflow-x: auto; /* Allow horizontal scrolling if the container overflows */
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    padding-top: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    z-index: 1;
+    position: relative;
 }
 
 /* Date Card */
 .date-card {
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 12px;
-    border: 1px solid #e0e0e0; /* Light border for separation */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05); /* Soft shadow */
-    position: relative;
+    background: linear-gradient(135deg, #ffffff, #fdfdff);
+    border: 2px solid #e0e0e0;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    width: 180px; /* Smaller width for compactness */
-    height: 134px;
+    padding: 20px 15px;
+    width: 200px;
+    transition: all 0.4s ease;
+    position: relative;
 }
 
-/* Hover effect for Date Cards */
+/* Hover effect */
 .date-card:hover {
-    transform: translateY(-5px);
-    background-color: #f1faff; /* Light blue hover background */
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow on hover */
+    transform: translateY(-10px) scale(1.05);
+    background: linear-gradient(135deg, #ff7b00, #7b5bff); /* Orange to Purple gradient */
+    color: #ffffff;
+    border-color: #ff7b00;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+.date-card:hover h3,
+.date-card:hover p {
+    color: #ffffff;
 }
 
 /* Date Card Heading */
 .date-card h3 {
-    font-size: 1.3em;
-    color: #007bff;
+    font-size: 1.4em;
     font-weight: 700;
+    color: #007bff; /* Default Blue */
     margin-bottom: 10px;
+    transition: color 0.3s ease;
 }
 
-/* Date Card Date */
-.date-card .date {
-    font-size: 1.6em; /* Smaller date size */
-    color: #333333;
-    font-weight: 500;
-    margin-bottom: 8px;
-}
-
-/* Date Card Description */
+/* Date Card Content */
 .date-card p {
-    font-size: 0.9em;
+    font-size: 1.1em;
     color: #555;
-    margin: 0;
     line-height: 1.4;
+    margin: 0;
+    transition: color 0.3s ease;
 }
+
+/* Arrows */
+
+
+
 
 /* Stylish Long Tail Arrows (Pointing Right) */
 /* .arrow {
