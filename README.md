@@ -17,3 +17,25 @@
         the ideal platform for discussing emerging technologies and exploring their potential to create sustainable,
         inclusive, and intelligent solutions for the future.Join us as we pave the way for the next generation of
         innovation in smart cities, healthcare, and autonomous systems. Together, we can transform our world for the
+
+
+## Technical Details
+### Technologies Used
+
+### Key Features
+
+- **Responsive Design**: The website is fully responsive and works on all devices.
+- **Navigation**: Easy navigation with dropdown menus for different sections.
+- **Hero Section**: A visually appealing hero section with background images and text.
+- **Important Dates**: A section highlighting important dates for the conference.
+- **About Section**: Information about the conference and the organizer.
+- **Committee Pages**: Dedicated pages for different committees involved in the conference.
+- **Paper Submission**: Information and guidelines for paper submission.
+- **Registration**: Details about registration fees and process.
+- **Footer**: Contact information and social media links.
+
+### How to Run
+
+1. Clone the repository:
+   ```sh
+   git clone <repository-url>
