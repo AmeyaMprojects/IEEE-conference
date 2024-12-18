@@ -1,6 +1,6 @@
 /* Basic Reset */
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -31,7 +31,7 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    /* max-height: 45.7px; */
+    position: relative; /* Added relative positioning */
 }
 
 .logo img {
@@ -135,58 +135,80 @@ html {
     text-shadow: 0px 0px 4px #8e1f58;
 }
 
-/* Responsive Adjustments */
+/* Hamburger Menu Styles */
+.hamburger-icon {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    position: absolute; /* Position relative to the nearest positioned ancestor */
+    top: 10px; /* Space from the top of the page */
+    left: 20px; /* Move hamburger icon to the left */
+}
 
+.hamburger-icon .bar {
+    width: 30px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
 
+/* Active class for the bars to transform into a cross */
+.hamburger-icon.active .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.hamburger-icon.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Responsive Adjustments for Hamburger */
 @media screen and (max-width: 1067px) {
     nav {
         flex-direction: column;
-        align-items: center; /* Center horizontally */
-        justify-content: center; /* Center vertically */
-        text-align: center; /* Ensure text is centered */
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         padding: 10px 20px;
+    }
+
+    .hamburger-icon {
+        display: flex; /* Display the hamburger icon */
+    }
+
+    .nav-links {
+        display: none; /* Initially hide the navigation */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        justify-content: center;  /* Centers items vertically */
+        align-items: center;      /* Centers items horizontally */
+    }
+    
+    .nav-links.active {
+        display: flex; /* Show navigation when active */
+    }
+    
+    .nav-links button {
+        width: 100%;
+        text-align: center;  /* Centers text within button */
+        padding: 15px 0;
     }
 
     .dropdown-menu {
         left: 50% !important;
-        transform: translateX(-50%) !important; /* Shift the menu left by 50% of its width */
-        right: auto !important; /* Remove any right alignment */
-        text-align: center; /* Center the text items inside the dropdown */
-        top: 42% !important; /* Ensure the menu opens directly below the button */
-        position: relative !important; /* Make sure dropdown is positioned correctly */
-    }
-
-    /* Center the dropdown button's arrow indicator */
-    .dropdown-toggle::after {
-        left: 50% !important;
         transform: translateX(-50%) !important;
-    }
-
-    /* Ensure Authors' Info dropdown takes full width */
-    #dropdownMenu2 + .dropdown-menu {
-        top: 42% !important; /* Ensures it opens below the button */
-        position: relative !important; /* Forces the dropdown to stay below */
-        width: 100% !important; /* Makes the dropdown full width */
-        left: 0 !important; /* Align the dropdown to the left edge */
-        transform: none !important; /* Reset any transforms */
-    }
-
-    /* Make the links inside the "Authors' Info" dropdown full width as well */
-    #dropdownMenu2 + .dropdown-menu .dropdown-item {
-        width: 100% !important;
-        text-align: center; /* Center text inside each item */
-    }
-    
-    .nav-links {
-        flex-direction: column;
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    .nav-links button {
-        width: 100%;
+        right: auto !important;
         text-align: center;
-        padding: 15px 0;
+        top: 42% !important;
+        position: relative !important;
     }
 
     .hero {
@@ -198,6 +220,8 @@ html {
         max-width: 100%;
     }
 }
+
+/* Footer */
 .footer {
     position: relative;
     background: linear-gradient(to bottom right, #ffae3d, #4a50ff); /* Gradient from orange to purple */
@@ -301,7 +325,6 @@ html {
     background: #3B5998;
     color: white;
     font-size: 25px;
-
 }
 
 .fa-twitter {
@@ -313,23 +336,21 @@ html {
     background: #007bb5;
     color: white;
     font-size: 25px;
-
 }
 
 .fa-youtube {
     background: #bb0000;
     color: white;
     font-size: 25px;
-
 }
 
 .fa-instagram {
     background: #fe259c;
     color: white;
     font-size: 25px;
-
 }
-.footer-img{
+
+.footer-img {
     width: 200px;
     height: auto;
 }

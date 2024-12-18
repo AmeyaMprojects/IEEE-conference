@@ -18,28 +18,35 @@
 </head>
 <body>
   <header>
-    <nav>
-           <div class="logo">
-        <a href="../index.html">
+    <nav class="Made with love by Ameya and Rushil!">
+      <div class="logo">
+        <a href="./index.html">
           <img src="../Photo/SCHAS__2_-removebg-preview.png" alt="SCHAS 2025 Conference Logo">
-      </a>
-      
+        </a>
       </div>
-      <div class="nav-links">
-        <!-- <button class="home"><a href="../index.html">Home</a></button> -->
+      
+      <!-- Hamburger Icon (visible on small screens) -->
+      <div class="hamburger-icon" id="hamburgerIcon">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+  
+      <div class="nav-links" id="navLinks">
         <button id="aboutBtn"><a href="../index.html#about-section">About</a></button>
         <button class="CallForPaperr"><a href="CallForPaper.html">Call for Paper</a></button>
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="committeeButton" 
+  
+        <button class="btn btn-secondary dropdown-toggle" style="font-weight: bold;" type="button" id="committeeButton"
           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Committee</button>
-          <div class="dropdown-menu" aria-labelledby="committeeButton">
-            <a class="dropdown-item" href="../HTML/Advisory_Committee.html">Advisory Committee</a>
-            <a class="dropdown-item" href="../HTML/Technical_Program_Committee.html">Technical Program Committee</a>
-            <a class="dropdown-item" href="../HTML/Organizing_Committee.html">Organizing Committee</a>
-          </div>
+        <div class="dropdown-menu" aria-labelledby="committeeButton">
+          <a class="dropdown-item" href="Advisory_Committee.html">Advisory Committee</a>
+          <a class="dropdown-item" href="Technical_Program_Committee.html">Technical Program Committee</a>
+          <a class="dropdown-item" href="Organizing_Committee.html">Organizing Committee</a>
         </div>
+  
         <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button style="font-weight: bold;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Authors' info
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -54,6 +61,13 @@
       </div>
     </nav>
   </header>
+  <script>
+    // JavaScript to toggle the navigation menu
+    document.getElementById('hamburgerIcon').addEventListener('click', function() {
+        const navLinks = document.getElementById('navLinks');
+        navLinks.classList.toggle('active');
+    });
+  </script>
   <section class="hero">
     <div class="hero-content">
       <h2 class="animate__animated  animate__slideInDown">Advisory Committee</h2>

@@ -13,52 +13,57 @@
     <link rel="stylesheet" href="../CSS/Registration.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">
-        <a href="../index.html">
-          <img src="../Photo/SCHAS__2_-removebg-preview.png" alt="SCHAS 2025 Conference Logo">
-      </a>
+    <header>
+        <nav class="Made with love by Ameya and Rushil!">
+          <div class="logo">
+            <a href="../index.html">
+              <img src="../Photo/SCHAS__2_-removebg-preview.png" alt="SCHAS 2025 Conference Logo">
+            </a>
+          </div>
+          
+          <!-- Hamburger Icon (visible on small screens) -->
+          <div class="hamburger-icon" id="hamburgerIcon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
       
-      </div>
-      <div class="nav-links">
-        <!-- <button class="home"><a href="../index.html">Home</a></button> -->
-            <!-- About Button -->
+          <div class="nav-links" id="navLinks">
             <button id="aboutBtn"><a href="../index.html#about-section">About</a></button>
-            <!-- Call for Paper Button -->
             <button class="CallForPaperr"><a href="CallForPaper.html">Call for Paper</a></button>
-
-            <!-- Committee Dropdown -->
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="committeeButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Committee
-                </button>
-                <div class="dropdown-menu" aria-labelledby="committeeButton">
-                    <a class="dropdown-item" href="../HTML/Advisory_Committee.html">Advisory Committee</a>
-                    <a class="dropdown-item" href="../HTML/Technical_Program_Committee.html">Technical Program Committee</a>
-                    <a class="dropdown-item" href="../HTML/Organizing_Committee.html">Organizing Committee</a>
-                </div>
+      
+            <button class="btn btn-secondary dropdown-toggle" style="font-weight: bold;" type="button" id="committeeButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Committee</button>
+            <div class="dropdown-menu" aria-labelledby="committeeButton">
+              <a class="dropdown-item" href="Advisory_Committee.html">Advisory Committee</a>
+              <a class="dropdown-item" href="Technical_Program_Committee.html">Technical Program Committee</a>
+              <a class="dropdown-item" href="Organizing_Committee.html">Organizing Committee</a>
             </div>
-
-            <!-- Authors' Info Dropdown -->
+      
             <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Authors' info
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <a class="dropdown-item" href="../HTML/paper_submission.html">Paper Submission</a>
-                    <a class="dropdown-item" href="../HTML/Registration.html">Registration</a>
-                    <a class="dropdown-item" href="#" target="_blank" rel="noopener noreferrer">schas brochure🔗</a>
-                </div>
+              <button style="font-weight: bold;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Authors' info
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <a class="dropdown-item" href="paper_submission.html">Paper Submission</a>
+                <a class="dropdown-item" href="Registration.html">Registration</a>
+                <a class="dropdown-item" href="#">schas brochure🔗</a>
+              </div>
             </div>
-
-            <!-- Submit Paper Button -->
             <button class="blue-submit-btnn">
-                <a target="_blank" rel="noopener noreferrer" href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FINCIP2025">Submit Paper</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FINCIP2025">Submit Paper</a>
             </button>
-        </div>
-    </nav>
-  </header>
+          </div>
+        </nav>
+      </header>
+      <script>
+        // JavaScript to toggle the navigation menu
+        document.getElementById('hamburgerIcon').addEventListener('click', function() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        });
+      </script>
 
     <!-- Hero Section with Background Overlay -->
     <section class="hero">
