@@ -18,11 +18,11 @@
         inclusive, and intelligent solutions for the future.Join us as we pave the way for the next generation of
         innovation in smart cities, healthcare, and autonomous systems. Together, we can transform our world for the
 
-
+<!-- 
 ## Technical Details
-### Technologies Used
+### Technologies Used -->
 
-### Key Features
+<!-- ### Key Features
 
 - **Responsive Design**: The website is fully responsive and works on all devices.
 - **Navigation**: Easy navigation with dropdown menus for different sections.
@@ -32,10 +32,9 @@
 - **Committee Pages**: Dedicated pages for different committees involved in the conference.
 - **Paper Submission**: Information and guidelines for paper submission.
 - **Registration**: Details about registration fees and process.
-- **Footer**: Contact information and social media links.
+- **Footer**: Contact information and social media links. -->
 
-### How to Run
-
-1. Clone the repository:
-   ```sh
-   git clone <repository-url>
+### created by  
+Ameya Mhatre   
+Rushil Bakori
+Aditya Jemshetty
