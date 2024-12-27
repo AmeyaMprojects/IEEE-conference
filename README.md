@@ -35,6 +35,6 @@
 - **Footer**: Contact information and social media links. -->
 
 ### created by  
-Ameya Mhatre   
-Rushil Bakori
+Ameya Mhatre
+Rushil Bakori 
 Aditya Jemshetty
