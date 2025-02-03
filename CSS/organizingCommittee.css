@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+li {
+    font-size: larger;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -69,7 +73,7 @@ body {
 
 /* Style for individual list items */
 .committee-container .section ul li {
-    font-size: 1.2rem;
+    font-size: larger;
     padding: 8px 0; 
     color: #34495e; 
     transition: transform 0.3s ease, padding-left 0.3s ease; 

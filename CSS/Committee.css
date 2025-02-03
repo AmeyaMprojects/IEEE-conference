@@ -8,8 +8,12 @@
 @font-face {
     font-family: 'MyCustomFont';
     src: url('../Photo/hp-simplified-hans-light.ttf') format('woff2');
-    font-weight: normal; /* Normal weight */
-    font-style: normal; /* Normal style */
+    font-weight: bolder; 
+    font-style: normal;
+}
+
+li{
+    font-size: larger;
 }
 
 body {
