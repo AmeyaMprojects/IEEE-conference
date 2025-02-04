@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paper Submission</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper Submission</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/Committee.css"> 
-    <link rel="stylesheet" href="../CSS/Paper_Submitt.css">
-    <link rel="icon" type="image/x-icon" href="/Photo/SACHS_LOGO_WHITE.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../CSS/Committee.css">
+  <link rel="stylesheet" href="../CSS/Paper_Submitt.css">
+  <link rel="icon" type="image/x-icon" href="/Photo/SACHS_LOGO_WHITE.png">
 
-    <style>
-      .footer{
+  <style>
+    .footer {
 
-        bottom: -44px;
-      }
-    </style>
+      bottom: -44px;
+    }
+  </style>
 
 </head>
+
 <body>
   <header>
     <nav class="Made with love by Ameya and Rushil!">
@@ -31,26 +31,23 @@
           <img src="/Photo/SCHAS__2_-removebg-preview.png" alt="SCHAS 2025 Conference Logo">
         </a>
       </div>
-      
+
       <!-- Hamburger Icon (visible on small screens) -->
       <div class="hamburger-icon" id="hamburgerIcon">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
-  
+
       <div class="nav-links" id="navLinks">
         <button id="aboutBtn"><a href="../index.html#about-section">About</a></button>
         <button class="CallForPaperr"><a href="CallForPaper.html">Call for Paper</a></button>
-  
-        <button class="btn btn-secondary dropdown-toggle" style="font-weight: bold;" type="button" id="committeeButton"
-          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Committee</button>
-        <div class="dropdown-menu" aria-labelledby="committeeButton">
-          <a class="dropdown-item" href="Advisory_Committee.html">Advisory Committee</a>
-          <a class="dropdown-item" href="Technical_Program_Committee.html">Technical Program Committee</a>
-          <a class="dropdown-item" href="Organizing_Committee.html">Organizing Committee</a>
-        </div>
-  
+
+        <button class="btn btn-secondary" style="font-weight: bold;" type="button"
+          onclick="window.location.href='Organizing_Committee.html';">
+          Committee
+        </button>
+
         <div class="dropdown">
           <button style="font-weight: bold;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -70,114 +67,139 @@
   </header>
   <script>
     // JavaScript to toggle the navigation menu
-    document.getElementById('hamburgerIcon').addEventListener('click', function() {
-        const navLinks = document.getElementById('navLinks');
-        navLinks.classList.toggle('active');
+    document.getElementById('hamburgerIcon').addEventListener('click', function () {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
     });
   </script>
 
-    <!-- Hero Section with Background Overlay -->
-    <section class="hero">
-        <div class="hero-content">
-            <h2 class="animate__animated animate__slideInDown">Paper Submission</h2>
+  <!-- Hero Section with Background Overlay -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2 class="animate__animated animate__slideInDown">Paper Submission</h2>
+    </div>
+  </section>
+
+  <main>
+    <div id="content">
+      <!-- Manuscript Preparation Section -->
+      <section id="manuscript-prep">
+        <h2>Manuscript Preparation</h2>
+        <p>All papers are required to be prepared and submitted following the IEEE Standard two-column conference format
+          of A4 size in English.</p>
+        <ul>
+          <li>Length: 4-6 pages (including text, figures, references)</li>
+          <li>Format: A4 size, English language</li>
+          <li>Template: Use standard IEEE manuscript template (download from IEEE website)</li>
+          <li>Submission format: Electronic, IEEE Xplore compliant PDF (*.pdf)</li>
+        </ul>
+        <p><strong>Important:</strong> Updates and resubmissions are not allowed after initial submission.</p>
+        <p>The paper must be original and unpublished, with specific results. The introduction should clearly explain
+          the paper's unique aspects and its relation to previous work.</p>
+        <p>Type 3 fonts (bitmaps) are not accepted. Use IEEE PDF eXpress for compliant PDF generation for final
+          submission.</p>
+      </section>
+
+      <!-- Paper Upload Section -->
+      <section id="paper-upload">
+        <h2>Paper Upload</h2>
+        <p>All papers must be submitted in PDF or Microsoft Word format via the Microsoft Conference Management Toolkit
+          (CMT):</p>
+        <a href="https://cmt3.research.microsoft.com/INCIP2025">Submit Paper</a>
+        <p>You may need to create a CMT account before uploading. Provide the title, abstract (maximum 250 words), and
+          keywords during upload.</p>
+        <p><strong>Note:</strong> Accepted papers requiring presentation must be registered. Accepted and presented
+          papers will be submitted for possible inclusion in IEEE Xplore. Authors must agree to IEEE copyright
+          conditions.</p>
+        <p>All submissions will be peer-reviewed by the Technical Program Committees (TPC).</p>
+      </section>
+
+      <!-- General Guidelines Section -->
+      <section id="general-guidelines">
+        <h2>General Guidelines and Policies</h2>
+        <p>schas25 invites original research contributions from various fields mentioned in the Call for Papers. Clearly
+          explain the context of your work.</p>
+        <p>Papers must be submitted before the deadline. Authors can edit existing submissions but cannot register new
+          ones after the deadline.</p>
+        <p>Include at least one primary area for your paper and remove author information from the manuscript. You will
+          receive a unique paper ID upon submission.</p>
+
+        <h3>Confidentiality</h3>
+        <p>The review process is strictly confidential. Reviewers are volunteers and their efforts are appreciated.
+          Misuse of confidential information is a severe offense.</p>
+
+        <h3>Review Process</h3>
+        <p>Submitted papers undergo peer review by expert reviewers after plagiarism checking (using software like
+          Turnitin). Papers with over 30% similarity will be rejected without review. The final camera-ready submission
+          must have a similarity index below 15%.</p>
+
+        <h3>Plagiarism</h3>
+        <p>schas2025 respects intellectual property rights. Plagiarism is strictly prohibited. Papers with over 20%
+          plagiarized text will be rejected.</p>
+
+        <h3>Dual/Double Submissions</h3>
+        <p>The conference aims to publish original work and avoid reviewer duplication. Submitted manuscripts must not
+          be previously published or accepted for publication elsewhere. Violations will lead to rejection and reports
+          to other venues.</p>
+
+        <p>Submissions should not overlap with prior publications or concurrent submissions. If citing your own
+          concurrent submission, argue its non-triviality and include it in supplemental material. Contact the
+          Organizing Chairs for clarifications.</p>
+
+        <h3>Attendance Responsibilities</h3>
+        <p>If a paper is accepted, at least one author must register and present it at the conference. Acceptance
+          doesn't guarantee publication. Only presented papers are forwarded to the publication partner. Presenters
+          receive a paper presentation certificate.</p>
+
+        <h3>Publication</h3>
+        <p>Accepted and presented papers will be submitted for publication to our publication partner. Visit the
+          conference website for updates on publication details.</p>
+
+        <h3>Publicity on Social Media</h3>
+        <p>Papers submitted to the conference must not be publicized in social media/press until official acceptance
+          notifications are available with the authors from the conference committee via EasyChair. Violations may
+          result in the paper being rejected or removed from the conference proceedings.</p>
+      </section>
+    </div>
+  </main>
+  <section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section contact">
+          <h4>Contact Us</h4>
+          <p>Dr. Megha Mam: +91 95210 99200</p>
+          <p>Dr. Shaleen Mam: +91 86182 18389</p>
         </div>
-    </section>
-
-    <main>
-        <div id="content">
-            <!-- Manuscript Preparation Section -->
-            <section id="manuscript-prep">
-                <h2>Manuscript Preparation</h2>
-                <p>All papers are required to be prepared and submitted following the IEEE Standard two-column conference format of A4 size in English.</p>
-                <ul>
-                    <li>Length: 4-6 pages (including text, figures, references)</li>
-                    <li>Format: A4 size, English language</li>
-                    <li>Template: Use standard IEEE manuscript template (download from IEEE website)</li>
-                    <li>Submission format: Electronic, IEEE Xplore compliant PDF (*.pdf)</li>
-                </ul>
-                <p><strong>Important:</strong> Updates and resubmissions are not allowed after initial submission.</p>
-                <p>The paper must be original and unpublished, with specific results. The introduction should clearly explain the paper's unique aspects and its relation to previous work.</p>
-                <p>Type 3 fonts (bitmaps) are not accepted. Use IEEE PDF eXpress for compliant PDF generation for final submission.</p>
-            </section>
-
-            <!-- Paper Upload Section -->
-            <section id="paper-upload">
-                <h2>Paper Upload</h2>
-                <p>All papers must be submitted in PDF or Microsoft Word format via the Microsoft Conference Management Toolkit (CMT):</p>
-                <a href="https://cmt3.research.microsoft.com/INCIP2025">Submit Paper</a>
-                <p>You may need to create a CMT account before uploading. Provide the title, abstract (maximum 250 words), and keywords during upload.</p>
-                <p><strong>Note:</strong> Accepted papers requiring presentation must be registered. Accepted and presented papers will be submitted for possible inclusion in IEEE Xplore. Authors must agree to IEEE copyright conditions.</p>
-                <p>All submissions will be peer-reviewed by the Technical Program Committees (TPC).</p>
-            </section>
-
-            <!-- General Guidelines Section -->
-            <section id="general-guidelines">
-                <h2>General Guidelines and Policies</h2>
-                <p>schas25 invites original research contributions from various fields mentioned in the Call for Papers. Clearly explain the context of your work.</p>
-                <p>Papers must be submitted before the deadline. Authors can edit existing submissions but cannot register new ones after the deadline.</p>
-                <p>Include at least one primary area for your paper and remove author information from the manuscript. You will receive a unique paper ID upon submission.</p>
-
-                <h3>Confidentiality</h3>
-                <p>The review process is strictly confidential. Reviewers are volunteers and their efforts are appreciated. Misuse of confidential information is a severe offense.</p>
-
-                <h3>Review Process</h3>
-                <p>Submitted papers undergo peer review by expert reviewers after plagiarism checking (using software like Turnitin). Papers with over 30% similarity will be rejected without review. The final camera-ready submission must have a similarity index below 15%.</p>
-
-                <h3>Plagiarism</h3>
-                <p>schas2025 respects intellectual property rights. Plagiarism is strictly prohibited. Papers with over 20% plagiarized text will be rejected.</p>
-
-                <h3>Dual/Double Submissions</h3>
-                <p>The conference aims to publish original work and avoid reviewer duplication. Submitted manuscripts must not be previously published or accepted for publication elsewhere. Violations will lead to rejection and reports to other venues.</p>
-
-                <p>Submissions should not overlap with prior publications or concurrent submissions. If citing your own concurrent submission, argue its non-triviality and include it in supplemental material. Contact the Organizing Chairs for clarifications.</p>
-
-                <h3>Attendance Responsibilities</h3>
-                <p>If a paper is accepted, at least one author must register and present it at the conference. Acceptance doesn't guarantee publication. Only presented papers are forwarded to the publication partner. Presenters receive a paper presentation certificate.</p>
-
-                <h3>Publication</h3>
-                <p>Accepted and presented papers will be submitted for publication to our publication partner. Visit the conference website for updates on publication details.</p>
-
-                <h3>Publicity on Social Media</h3>
-                <p>Papers submitted to the conference must not be publicized in social media/press until official acceptance notifications are available with the authors from the conference committee via EasyChair. Violations may result in the paper being rejected or removed from the conference proceedings.</p>
-            </section>
+        <div class="footer-section email">
+          <h4>Email Us</h4>
+          <p><a href="mailto:schas.conference@gmail.com">schas.conference@gmail.com</a></p>
+          <p><a href="mailto:schas2025@manipal.edu">schas2025@manipal.edu</a></p>
         </div>
-    </main>
-    <section>
-      <footer class="footer">
-        <div class="footer-container">
-          <div class="footer-section contact">
-            <h4>Contact Us</h4>
-            <p>Dr. Megha Mam: +91 95210 99200</p>
-        <p>Dr. Shaleen Mam: +91 86182 18389</p>
-          </div>
-          <div class="footer-section email">
-            <h4>Email Us</h4>
-            <p><a href="mailto:schas.conference@gmail.com">schas.conference@gmail.com</a></p>
-            <p><a href="mailto:schas2025@manipal.edu">schas2025@manipal.edu</a></p>
-          </div>
-          <div class="footer-section social">
-            <h4>Follow Us</h4>
-              <div class="social-icons">
-                <!-- <a href="#" class="fa fa-facebook"></a>      
+        <div class="footer-section social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <!-- <a href="#" class="fa fa-facebook"></a>      
               <a href="#" class="fa fa-twitter"></a> -->
-              <a href="#" class="fa fa-instagram"></a>
-              <a href="#" class="fa fa-youtube"></a>
-              <a href="#" class="fa fa-linkedin"></a>
-              </div>
-            </div>
-          <div class="footer-section logo0">
-  <img class="footer-img" src="..Photo/SCHAS__2_-removebg-preview.png" alt="schas Logo">            </div>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+          </div>
         </div>
-        <div class="footer-bottom">
-          <p class="leaglies"> 2025 SCHAS Conference. All Rights Reserved.</p>
+        <div class="footer-section logo0">
+          <img class="footer-img" src="/Photo/SCHAS__2_-removebg-preview.png" alt="schas Logo">
         </div>
-      </footer>
-      
-    </section>
+      </div>
+      <div class="footer-bottom">
+        <p class="leaglies"> 2025 SCHAS Conference. All Rights Reserved.</p>
+      </div>
+    </footer>
 
-    <!-- Add jQuery, Popper.js, and Bootstrap JS for dropdown functionality -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+  </section>
+
+  <!-- Add jQuery, Popper.js, and Bootstrap JS for dropdown functionality -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>

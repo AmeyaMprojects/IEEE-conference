@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advisory Committee</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advisory Committee</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="icon" type="image/x-icon" href="/Photo/SACHS_LOGO_WHITE.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="/Photo/SACHS_LOGO_WHITE.png">
 
-    <link rel="stylesheet" href="../CSS/Committee.css">
-    <link rel="stylesheet" href="../CSS/Advisory.css">
+  <link rel="stylesheet" href="../CSS/Committee.css">
+  <link rel="stylesheet" href="../CSS/Advisory.css">
 </head>
+
 <body>
   <header>
     <nav class="Made with love by Ameya and Rushil!">
@@ -24,26 +24,23 @@
           <img src="/Photo/SCHAS__2_-removebg-preview.png" alt="SCHAS 2025 Conference Logo">
         </a>
       </div>
-      
+
       <!-- Hamburger Icon (visible on small screens) -->
       <div class="hamburger-icon" id="hamburgerIcon">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
-  
+
       <div class="nav-links" id="navLinks">
         <button id="aboutBtn"><a href="../index.html#about-section">About</a></button>
         <button class="CallForPaperr"><a href="CallForPaper.html">Call for Paper</a></button>
-  
-        <button class="btn btn-secondary dropdown-toggle" style="font-weight: bold;" type="button" id="committeeButton"
-          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Committee</button>
-        <div class="dropdown-menu" aria-labelledby="committeeButton">
-          <a class="dropdown-item" href="Advisory_Committee.html">Advisory Committee</a>
-          <a class="dropdown-item" href="Technical_Program_Committee.html">Technical Program Committee</a>
-          <a class="dropdown-item" href="Organizing_Committee.html">Organizing Committee</a>
-        </div>
-  
+
+        <button class="btn btn-secondary" style="font-weight: bold;" type="button"
+          onclick="window.location.href='Organizing_Committee.html';">
+          Committee
+        </button>
+
         <div class="dropdown">
           <button style="font-weight: bold;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -63,9 +60,9 @@
   </header>
   <script>
     // JavaScript to toggle the navigation menu
-    document.getElementById('hamburgerIcon').addEventListener('click', function() {
-        const navLinks = document.getElementById('navLinks');
-        navLinks.classList.toggle('active');
+    document.getElementById('hamburgerIcon').addEventListener('click', function () {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
     });
   </script>
   <section class="hero">
@@ -77,49 +74,49 @@
     <h3>INTERNATIONAL ADVISORY COMMITTEE</h3>
     <ul>
       <li>Jason Yao, Professor, Carolina University, Greenville, USA</li>
-    <li>Stephanie Gillespie, Associate Dean, University of New Haven, USA</li>
-    <li>Maheshi B Dissanayake, Professor, University of Peradeniya, Sri Lanka</li>
-    <li>Pedro Wightman, Professor, Universidad del Rosario, Columbia</li>
-    <li>Raghavendra Prasad SG, Vice Chair, IEEE Education Society, RVCE, Bangalore</li>
-    <li>Dr. Vijayalakshmi Biradar, Chair, IEEE WIE MP section, Kalinga University, Raipur</li>
-    <li>Deyasini Majumdar, Sr. Design Engineer, MKS Instruments, Andover, USA</li>
-        <li>Dr. Jaume Anguera, Universitat Ramon Llull, Barcelona, Spain</li>
-        <li>Dr. Madhu Chetty, Federation University, Australia</li>
-        <li>Prof. Guy A. E. Vandenbosch, KU Leuven, Belgium</li>
-        <li>Dr. Zayar Aung, Applied Mathematics and Informatics National Research University, Russian</li>
-        <li>Prof. Chintha Tellambura, University of Alberta, Canada</li>
-        <li>Prof. Mihaela Albu, Politehnica University of Bucharest, Romania</li>
-        <li>Prof. Marcin Paprzycki, Polish Academy of Sciences, Poland</li>
-        <li>Dr. Suresh Vishwakarma, University of Trinidad and Tobago, Vancouver, Canada</li>
-        <li>Prof. Aime Lay-Ekuakille, University of Salento, Lecce, Italy</li>
-        <li>Dr. Danish Ather, Amity University, Tashkent</li>
-        <li>Prof. Yeon Ho Chung, Pukyong National University, Busan, South Korea</li>
-        <li>Prof. Hanjung Song, Inje University, South Korea</li>
-        <li>Prof. Sunday, Ekpo, Manchester Metropolitan University, UK</li>
-        <li>Ms. Shirin Bhambhani, Senior Solutions Architect, Amazon Web Services, USA</li>
+      <li>Stephanie Gillespie, Associate Dean, University of New Haven, USA</li>
+      <li>Maheshi B Dissanayake, Professor, University of Peradeniya, Sri Lanka</li>
+      <li>Pedro Wightman, Professor, Universidad del Rosario, Columbia</li>
+      <li>Raghavendra Prasad SG, Vice Chair, IEEE Education Society, RVCE, Bangalore</li>
+      <li>Dr. Vijayalakshmi Biradar, Chair, IEEE WIE MP section, Kalinga University, Raipur</li>
+      <li>Deyasini Majumdar, Sr. Design Engineer, MKS Instruments, Andover, USA</li>
+      <li>Dr. Jaume Anguera, Universitat Ramon Llull, Barcelona, Spain</li>
+      <li>Dr. Madhu Chetty, Federation University, Australia</li>
+      <li>Prof. Guy A. E. Vandenbosch, KU Leuven, Belgium</li>
+      <li>Dr. Zayar Aung, Applied Mathematics and Informatics National Research University, Russian</li>
+      <li>Prof. Chintha Tellambura, University of Alberta, Canada</li>
+      <li>Prof. Mihaela Albu, Politehnica University of Bucharest, Romania</li>
+      <li>Prof. Marcin Paprzycki, Polish Academy of Sciences, Poland</li>
+      <li>Dr. Suresh Vishwakarma, University of Trinidad and Tobago, Vancouver, Canada</li>
+      <li>Prof. Aime Lay-Ekuakille, University of Salento, Lecce, Italy</li>
+      <li>Dr. Danish Ather, Amity University, Tashkent</li>
+      <li>Prof. Yeon Ho Chung, Pukyong National University, Busan, South Korea</li>
+      <li>Prof. Hanjung Song, Inje University, South Korea</li>
+      <li>Prof. Sunday, Ekpo, Manchester Metropolitan University, UK</li>
+      <li>Ms. Shirin Bhambhani, Senior Solutions Architect, Amazon Web Services, USA</li>
     </ul>
   </div>
   <div class="national-advisory-committee">
     <h3>NATIONAL ADVISORY COMMITTEE</h3>
     <ul>
-        <li>Prof. Sriram Kumar, NIT Trichy</li>
-        <li>Prof. John D'Souza, NITK Surathkal</li>
-        <li>Prof. Anil Kumar Dahiya, DIT University, Dehradun</li>
-        <li>Prof. Sumit Srivastava, Manipal University, Jaipur</li>
-        <li>Prof. Neelawar Sekhar Vittal Shet, NITK Surathkal</li>
-        <li>Prof. Santosh k. Vishwakarma, Gyan Ganga Institute of Technology and Sciences Jabalpur</li>
-        <li>Prof. Geeta Sikka, NIT, Delhi</li>
-        <li>Prof. T. Laxminidhi, NITK Surathkal</li>
-        <li>Dr. Pooja Jain, IIIT, Nagpur</li>
-        <li>Prof. Muralidhar Kulkarni, NITK Surathkal</li>
-        <li>Dr. Tapan Jain, IIIT, Nagpur</li>
-        <li>Prof. Brajesh Kaushik, IIT Roorkee</li>
-        <li>Prof. Binod Kumar Kanuajia, JNU, New Delhi</li>
-        <li>Dr. Neelakandan R, IIT, Goa</li>
-        <li>Dr. A A Bazil Raj, DIAT, Pune</li>
-        <li>Prof. M. Ganesh Madhan, MIT, Anna University, Chennai</li>
-        <li>Prof. S. J. Thiruvengadam, TCE, Madurai</li>
-        <li>Prof. Sivanantha Raja Avaninathan, ACCET, Tamil Nadu</li>
+      <li>Prof. Sriram Kumar, NIT Trichy</li>
+      <li>Prof. John D'Souza, NITK Surathkal</li>
+      <li>Prof. Anil Kumar Dahiya, DIT University, Dehradun</li>
+      <li>Prof. Sumit Srivastava, Manipal University, Jaipur</li>
+      <li>Prof. Neelawar Sekhar Vittal Shet, NITK Surathkal</li>
+      <li>Prof. Santosh k. Vishwakarma, Gyan Ganga Institute of Technology and Sciences Jabalpur</li>
+      <li>Prof. Geeta Sikka, NIT, Delhi</li>
+      <li>Prof. T. Laxminidhi, NITK Surathkal</li>
+      <li>Dr. Pooja Jain, IIIT, Nagpur</li>
+      <li>Prof. Muralidhar Kulkarni, NITK Surathkal</li>
+      <li>Dr. Tapan Jain, IIIT, Nagpur</li>
+      <li>Prof. Brajesh Kaushik, IIT Roorkee</li>
+      <li>Prof. Binod Kumar Kanuajia, JNU, New Delhi</li>
+      <li>Dr. Neelakandan R, IIT, Goa</li>
+      <li>Dr. A A Bazil Raj, DIAT, Pune</li>
+      <li>Prof. M. Ganesh Madhan, MIT, Anna University, Chennai</li>
+      <li>Prof. S. J. Thiruvengadam, TCE, Madurai</li>
+      <li>Prof. Sivanantha Raja Avaninathan, ACCET, Tamil Nadu</li>
     </ul>
   </div>
   <section>
@@ -140,22 +137,34 @@
           <div class="social-icons">
             <!-- <a href="#" class="fa fa-facebook"></a>      
             <a href="#" class="fa fa-twitter"></a> -->
-<a target="_blank" style="font-size: 24px;" href="https://www.instagram.com/ieeeorg/?hl=en" class="fa fa-instagram"></a>
-            <a target="_blank" style="font-size: 24px;" href="https://www.youtube.com/@mahebengaluru" class="fa fa-youtube"></a>
-            <a target="_blank" style="font-size: 24px;" href="https://www.linkedin.com/in/mit-bengaluru-089168224?originalSubdomain=in" class="fa fa-linkedin"></a>
+            <a target="_blank" style="font-size: 24px;" href="https://www.instagram.com/ieeeorg/?hl=en"
+              class="fa fa-instagram"></a>
+            <a target="_blank" style="font-size: 24px;" href="https://www.youtube.com/@mahebengaluru"
+              class="fa fa-youtube"></a>
+            <a target="_blank" style="font-size: 24px;"
+              href="https://www.linkedin.com/in/mit-bengaluru-089168224?originalSubdomain=in"
+              class="fa fa-linkedin"></a>
           </div>
         </div>
         <div class="footer-section logo0">
-<img class="footer-img" src="..Photo/SCHAS__2_-removebg-preview.png" alt="schas Logo">        </div>
+          <img class="footer-img" src="..Photo/SCHAS__2_-removebg-preview.png" alt="schas Logo">
+        </div>
       </div>
       <div class="footer-bottom">
         <p class="leaglies"> 2025 SCHAS Conference. All Rights Reserved.</p>
       </div>
     </footer>
-    
+
   </section>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

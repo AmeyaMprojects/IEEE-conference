@@ -19,11 +19,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<!-- Custom CSS Links -->
+  <!-- Custom CSS Links -->
 
-<link rel="stylesheet" href="CSS/Committee.css">
+  <link rel="stylesheet" href="CSS/Committee.css">
 
-<link rel="stylesheet" href="CSS/Land.css">
+  <link rel="stylesheet" href="CSS/Land.css">
   <style>
     html {
       scroll-behavior: smooth;
@@ -41,26 +41,23 @@
           <img src="/Photo/SCHAS__2_-removebg-preview.png" alt="SCHAS 2025 Conference Logo">
         </a>
       </div>
-      
+
       <!-- Hamburger Icon (visible on small screens) -->
       <div class="hamburger-icon" id="hamburgerIcon">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
-  
+
       <div class="nav-links" id="navLinks">
         <button id="aboutBtn"><a href="#about-section">About</a></button>
         <button class="CallForPaperr"><a href="./HTML/CallForPaper.html">Call for Paper</a></button>
-  
-        <button class="btn btn-secondary dropdown-toggle" style="font-weight: bold;" type="button" id="committeeButton"
-          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Committee</button>
-        <div class="dropdown-menu" aria-labelledby="committeeButton">
-          <a class="dropdown-item" href="./HTML/Advisory_Committee.html">Advisory Committee</a>
-          <a class="dropdown-item" href="./HTML/Technical_Program_Committee.html">Technical Program Committee</a>
-          <a class="dropdown-item" href="./HTML/Organizing_Committee.html">Organizing Committee</a>
-        </div>
-  
+
+        <button class="btn btn-secondary" style="font-weight: bold;" type="button"
+          onclick="window.location.href='HTML/Organizing_Committee.html';">
+          Committee
+        </button>
+
         <div class="dropdown">
           <button style="font-weight: bold;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -89,8 +86,7 @@
       <p>Venue: <a href="https://www.google.com/maps?q=MIT+Bengaluru" target="_blank" rel="noopener noreferrer"
           class="venue-link">Manipal Institute of Technology , Bengaluru. 11th and 12th December 2025.</a></p>
       <button class="blue-submit-btnn">
-        <a target="_blank" rel="noopener noreferrer"
-          href="">Submit Paper</a>
+        <a target="_blank" rel="noopener noreferrer" href="">Submit Paper</a>
       </button>
     </div>
   </section>
@@ -140,16 +136,17 @@
         to explore the future of technology in urban development, healthcare, and autonomous systems. Our mission is to
         bring together thought leaders, innovators, and experts from diverse fields to share insights, discuss
         cutting-edge research, and collaborate on sustainable solutions that shape the cities of tomorrow.</p>
-        <p>
-          <br>
+      <p>
+        <br>
         As we stand on
         the brink of a new era of technological advancements, SCHAS 2025 focuses on how smart cities, advanced
         healthcare solutions, and autonomous systems can work synergistically to improve the quality of life, streamline
         services, and drive economic growth. With a focus on innovation and practical implementation, this conference
         aims to foster cross-disciplinary collaboration to solve some of the most pressing challenges facing society
-        today.</p>
-        <br>
-         <p>Whether you're a researcher, a policy maker, a tech enthusiast, or an industry professional, SCHAS 2025 is
+        today.
+      </p>
+      <br>
+      <p>Whether you're a researcher, a policy maker, a tech enthusiast, or an industry professional, SCHAS 2025 is
         the ideal platform for discussing emerging technologies and exploring their potential to create sustainable,
         inclusive, and intelligent solutions for the future.Join us as we pave the way for the next generation of
         innovation in smart cities, healthcare, and autonomous systems. Together, we can transform our world for the
@@ -245,13 +242,13 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 
-    <script>
-      // JavaScript to toggle the navigation menu
-      document.getElementById('hamburgerIcon').addEventListener('click', function() {
-          const navLinks = document.getElementById('navLinks');
-          navLinks.classList.toggle('active');
-      });
-    </script>
+  <script>
+    // JavaScript to toggle the navigation menu
+    document.getElementById('hamburgerIcon').addEventListener('click', function () {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 
 </html>

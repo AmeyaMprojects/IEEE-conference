@@ -16,8 +16,6 @@ body {
     color: #333; /* Default text color */
 }
 
-
-
 /* General layout for the committee container */
 .committee-container {
     display: flex;
@@ -30,7 +28,6 @@ body {
     font-family: 'MyCustomFont', Arial, Helvetica, sans-serif; 
     transition: transform 0.3s ease-in-out; 
 }
-
 
 .committee-container .section ul li::marker {
     color: #227ece; /* Bullet point color */
@@ -62,8 +59,6 @@ body {
     transition: color 0.3s ease-in-out;
 }
 
-
-
 /* Style for the list container */
 .committee-container .section ul {
     list-style-type: disc; 
@@ -74,8 +69,9 @@ body {
 /* Style for individual list items */
 .committee-container .section ul li {
     font-size: larger;
+    font-weight: 700; /* Make font weight bold */
+    color: #2c3e50; /* Darker blackish color */
     padding: 8px 0; 
-    color: #34495e; 
     transition: transform 0.3s ease, padding-left 0.3s ease; 
 }
 

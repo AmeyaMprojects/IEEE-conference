@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,62 +9,61 @@
     <link rel="icon" type="image/x-icon" href="/Photo/SACHS_LOGO_WHITE.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/Committee.css">
     <link rel="stylesheet" href="../CSS/Registration.css">
 </head>
+
 <body>
     <header>
         <nav class="Made with love by Ameya and Rushil!">
-          <div class="logo">
-            <a href="../index.html">
-              <img src="/Photo/SCHAS__2_-removebg-preview.png" alt="SCHAS 2025 Conference Logo">
-            </a>
-          </div>
-          
-          <!-- Hamburger Icon (visible on small screens) -->
-          <div class="hamburger-icon" id="hamburgerIcon">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-      
-          <div class="nav-links" id="navLinks">
-            <button id="aboutBtn"><a href="../index.html#about-section">About</a></button>
-            <button class="CallForPaperr"><a href="CallForPaper.html">Call for Paper</a></button>
-      
-            <button class="btn btn-secondary dropdown-toggle" style="font-weight: bold;" type="button" id="committeeButton"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Committee</button>
-            <div class="dropdown-menu" aria-labelledby="committeeButton">
-              <a class="dropdown-item" href="Advisory_Committee.html">Advisory Committee</a>
-              <a class="dropdown-item" href="Technical_Program_Committee.html">Technical Program Committee</a>
-              <a class="dropdown-item" href="Organizing_Committee.html">Organizing Committee</a>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="/Photo/SCHAS__2_-removebg-preview.png" alt="SCHAS 2025 Conference Logo">
+                </a>
             </div>
-      
-            <div class="dropdown">
-              <button style="font-weight: bold;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Authors' info
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <a class="dropdown-item" href="paper_submission.html">Paper Submission</a>
-                <a class="dropdown-item" href="Registration.html">Registration</a>
-                <a class="dropdown-item" href="#">schas brochure🔗</a>
-              </div>
+
+            <!-- Hamburger Icon (visible on small screens) -->
+            <div class="hamburger-icon" id="hamburgerIcon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-            <button class="blue-submit-btnn">
-              <a target="_blank" rel="noopener noreferrer" href="">Submit Paper</a>
-            </button>
-          </div>
+
+            <div class="nav-links" id="navLinks">
+                <button id="aboutBtn"><a href="../index.html#about-section">About</a></button>
+                <button class="CallForPaperr"><a href="CallForPaper.html">Call for Paper</a></button>
+
+                <button class="btn btn-secondary" style="font-weight: bold;" type="button"
+                    onclick="window.location.href='Organizing_Committee.html';">
+                    Committee
+                </button>
+
+                <div class="dropdown">
+                    <button style="font-weight: bold;" class="btn btn-secondary dropdown-toggle" type="button"
+                        id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Authors' info
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <a class="dropdown-item" href="paper_submission.html">Paper Submission</a>
+                        <a class="dropdown-item" href="Registration.html">Registration</a>
+                        <a class="dropdown-item" href="#">schas brochure🔗</a>
+                    </div>
+                </div>
+                <button class="blue-submit-btnn">
+                    <a target="_blank" rel="noopener noreferrer" href="">Submit Paper</a>
+                </button>
+            </div>
         </nav>
-      </header>
-      <script>
+    </header>
+    <script>
         // JavaScript to toggle the navigation menu
-        document.getElementById('hamburgerIcon').addEventListener('click', function() {
+        document.getElementById('hamburgerIcon').addEventListener('click', function () {
             const navLinks = document.getElementById('navLinks');
             navLinks.classList.toggle('active');
         });
-      </script>
+    </script>
 
     <!-- Hero Section with Background Overlay -->
     <section class="hero">
@@ -71,13 +71,13 @@
             <h2 class="animate__animated animate__slideInDown">Registration</h2>
         </div>
     </section>
-  
+
     <!-- Table and content -->
 
 
     <section class="Table">
         <h2>Registration Details Are As Follows:</h2>
-        
+
         <h3>Early bird Registration:</h3>
         <table>
             <thead>
@@ -121,151 +121,158 @@
         <!-- <p>6 pages are the limit of the paper.</p>
         <p>Payment Link: <a href="#" target="_blank">#</a></p>
         <p>Authors are requested to submit full-length papers online through <a href="#">CMT Link</a>.</p> -->
-      </section>
-     
+    </section>
+
     <section class="Table">
-      <h2>Registration Details Are As Follows:</h2>
-      
-      <h3>Conference Registration Fee:</h3>
-      <table>
-          <thead>
-              <tr>
-                  <th>Delegates</th>
-                  <th colspan="2">Indian (INR)</th>
-                  <th colspan="2">International (USD)</th>
-              </tr>
-              <tr>
-                  <th></th>
-                  <th>IEEE member</th>
-                  <th>Non-IEEE member</th>
-                  <th>IEEE member</th>
-                  <th>Non-IEEE member</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>Students/Research Scholars</td>
-                  <td>8000</td>
-                  <td>8500</td>
-                  <td>200</td>
-                  <td>250</td>
-              </tr>
-              <tr>
-                  <td>Faculty from Academics</td>
-                  <td>9000</td>
-                  <td>9500</td>
-                  <td>250</td>
-                  <td>300</td>
-              </tr>
-              <tr>
-                  <td>Delegates from Industry</td>
-                  <td>10000</td>
-                  <td>11000</td>
-                  <td>325</td>
-                  <td>375</td>
-              </tr>
-              <tr>
-                  <td>Attendee</td>
-                  <td>3000</td>
-                  <td>5000</td>
-                  <td>75</td>
-                  <td>100</td>
-              </tr>
-              <tr>
-                  <td>Workshop</td>
-                  <td>400</td>
-                  <td>500</td>
-                  <td>50</td>
-                  <td>75</td>
-              </tr>
-          </tbody>
-      </table>
-      <p>6 pages are the limit of the paper.</p>
-      <p>Payment Link: <a href="#" target="_blank">#</a></p>
-      <p>Authors are requested to submit full-length papers online through <a href="#">CMT Link</a>.</p>
+        <h2>Registration Details Are As Follows:</h2>
+
+        <h3>Conference Registration Fee:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Delegates</th>
+                    <th colspan="2">Indian (INR)</th>
+                    <th colspan="2">International (USD)</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>IEEE member</th>
+                    <th>Non-IEEE member</th>
+                    <th>IEEE member</th>
+                    <th>Non-IEEE member</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Students/Research Scholars</td>
+                    <td>8000</td>
+                    <td>8500</td>
+                    <td>200</td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>Faculty from Academics</td>
+                    <td>9000</td>
+                    <td>9500</td>
+                    <td>250</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>Delegates from Industry</td>
+                    <td>10000</td>
+                    <td>11000</td>
+                    <td>325</td>
+                    <td>375</td>
+                </tr>
+                <tr>
+                    <td>Attendee</td>
+                    <td>3000</td>
+                    <td>5000</td>
+                    <td>75</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Workshop</td>
+                    <td>400</td>
+                    <td>500</td>
+                    <td>50</td>
+                    <td>75</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>6 pages are the limit of the paper.</p>
+        <p>Payment Link: <a href="#" target="_blank">#</a></p>
+        <p>Authors are requested to submit full-length papers online through <a href="#">CMT Link</a>.</p>
     </section>
 
     <section class="hotels-section">
         <h1>Hotels in Bangalore</h1>
         <p>Please note: SCHAS 2025 does not currently have any partnerships with nearby hotels</p>
-      
+
         <div class="hotel-card">
             <div class="hotel-image">
                 <img src="../Photo/Hotel/1.jpg" alt="Hotel Attide">
             </div>
             <div class="hotel-info">
                 <h2><a href="https://www.attidehotels.com/" target="_blank">Hotel Attide</a></h2>
-                <p>Bellary Road, Opposite Agni Aero Sports Adventures Academy - Jakkur aerodrome, Yashoda Nagar, Yelahanka, Bengaluru, Karnataka 560065</p>
+                <p>Bellary Road, Opposite Agni Aero Sports Adventures Academy - Jakkur aerodrome, Yashoda Nagar,
+                    Yelahanka, Bengaluru, Karnataka 560065</p>
                 <p>Phone: 099020 00200</p>
             </div>
         </div>
-      
+
         <div class="hotel-card">
             <div class="hotel-image">
                 <img src="../Photo/Hotel/2.png" alt="Ramada Resort">
             </div>
             <div class="hotel-info">
-                <h2><a href="https://www.wyndhamhotels.com/ramada/bengaluru-india/ramada-by-wyndham-bengaluru-yelahanka/overview" target="_blank">Ramada Resort</a></h2>
+                <h2><a href="https://www.wyndhamhotels.com/ramada/bengaluru-india/ramada-by-wyndham-bengaluru-yelahanka/overview"
+                        target="_blank">Ramada Resort</a></h2>
                 <p>No 45/2, Honnenahalli, Doddaballapur Main Rd, Yelahanka, Bengaluru, Karnataka 560064</p>
                 <p>Phone: 080 4804 4044</p>
             </div>
         </div>
-      
+
         <div class="hotel-card">
             <div class="hotel-image">
                 <img src="../Photo/Hotel/3.png" alt="Royal Orchid Resort">
             </div>
             <div class="hotel-info">
-                <h2><a href="https://www.royalorchidhotels.com/royal-orchid-resort-convention-centre-bangalore/overview" target="_blank">Royal Orchid Resort and Convention Center</a></h2>
+                <h2><a href="https://www.royalorchidhotels.com/royal-orchid-resort-convention-centre-bangalore/overview"
+                        target="_blank">Royal Orchid Resort and Convention Center</a></h2>
                 <p>Jakkur Flying Club, Near, Bellary Rd, Allalasandra, Yelahanka, Bengaluru, Karnataka 560065</p>
                 <p>Phone: 070228 78566</p>
             </div>
         </div>
-      
+
         <div class="hotel-card">
             <div class="hotel-image">
                 <img src="../Photo/Hotel/4.png" alt="Taj MG Road">
             </div>
             <div class="hotel-info">
-                <h2><a href="https://www.tajhotels.com/en-in/hotels/taj-mg-road-bangalore" target="_blank">Taj MG (5 Star)</a></h2>
+                <h2><a href="https://www.tajhotels.com/en-in/hotels/taj-mg-road-bangalore" target="_blank">Taj MG (5
+                        Star)</a></h2>
                 <p>Mahatma Gandhi Road, Bangalore‐560001</p>
                 <p>Phone: 080‐56604444</p>
             </div>
         </div>
-      
+
         <div class="hotel-card">
             <div class="hotel-image">
                 <img src="../Photo/Hotel/5.png" alt="Taj West End">
             </div>
             <div class="hotel-info">
-                <h2><a href="https://www.tajhotels.com/en-in/hotels/taj-west-end-bengaluru" target="_blank">The Taj West End (5 Star)</a></h2>
+                <h2><a href="https://www.tajhotels.com/en-in/hotels/taj-west-end-bengaluru" target="_blank">The Taj West
+                        End (5 Star)</a></h2>
                 <p>Race Course Road, Bangalore‐560001</p>
                 <p>Phone: 080‐56605660</p>
             </div>
         </div>
-      
+
         <div class="hotel-card">
             <div class="hotel-image">
                 <img src="../Photo/Hotel/6.png" alt="Le Meridien">
             </div>
             <div class="hotel-info">
-                <h2><a href="https://le-meridien.hotels-in-bangalore.com/en/" target="_blank">Le Meridien (5 Star)</a></h2>
+                <h2><a href="https://le-meridien.hotels-in-bangalore.com/en/" target="_blank">Le Meridien (5 Star)</a>
+                </h2>
                 <p>P.B. No. 174 (Karnataka), Bangalore‐560052</p>
                 <p>Phone: 080‐22262233</p>
             </div>
         </div>
-      
+
         <div class="hotel-card">
             <div class="hotel-image">
                 <img src="../Photo/Hotel/7.png" alt="The Lalit Ashok Bangalore">
             </div>
             <div class="hotel-info">
-                <h2><a href="https://www.thelalit.com/the-lalit-bangalore/" target="_blank">The Lalit Ashok Bangalore Hotel (5 Star)</a></h2>
+                <h2><a href="https://www.thelalit.com/the-lalit-bangalore/" target="_blank">The Lalit Ashok Bangalore
+                        Hotel (5 Star)</a></h2>
                 <p>Kumarakrupa High Grounds, Bangalore‐560001</p>
                 <p>Phone: 080‐30527777</p>
             </div>
         </div>
-      
+
         <div class="hotel-card">
             <div class="hotel-image">
                 <img src="../Photo/Hotel/8.png" alt="The Oberoi Bangalore">
@@ -279,40 +286,48 @@
     </section>
     <section>
         <footer class="footer">
-          <div class="footer-container">
-            <div class="footer-section contact">
-              <h4>Contact Us</h4>
-              <p>Dr Megha Arakeri: +91 90089 77922</p>
-          <p>Dr. Shaleen Bhatnagar: +91 81973 61372</p>
-            </div>
-            <div class="footer-section email">
-              <h4>Email Us</h4>
-              <p><a href="mailto:schas.conference@gmail.com">schas.conference@gmail.com</a></p>
-              <p><a href="mailto:schas2025@manipal.edu">schas2025@manipal.edu</a></p>
-            </div>
-            <div class="footer-section social">
-              <h4>Follow Us</h4>
-                <div class="social-icons">
-                  <!-- <a href="#" class="fa fa-facebook"></a>      
-                <a href="#" class="fa fa-twitter"></a> -->
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-youtube"></a>
-                <a href="#" class="fa fa-linkedin"></a>
+            <div class="footer-container">
+                <div class="footer-section contact">
+                    <h4>Contact Us</h4>
+                    <p>Dr Megha Arakeri: +91 90089 77922</p>
+                    <p>Dr. Shaleen Bhatnagar: +91 81973 61372</p>
                 </div>
-              </div>
-            <div class="footer-section logo0">
-    <img class="footer-img" src="..Photo/SCHAS__2_-removebg-preview.png" alt="schas Logo">            </div>
-          </div>
-          <div class="footer-bottom">
-            <p class="leaglies"> 2025 SCHAS Conference. All Rights Reserved.</p>
-          </div>
+                <div class="footer-section email">
+                    <h4>Email Us</h4>
+                    <p><a href="mailto:schas.conference@gmail.com">schas.conference@gmail.com</a></p>
+                    <p><a href="mailto:schas2025@manipal.edu">schas2025@manipal.edu</a></p>
+                </div>
+                <div class="footer-section social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <!-- <a href="#" class="fa fa-facebook"></a>      
+                <a href="#" class="fa fa-twitter"></a> -->
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+                <div class="footer-section logo0">
+                    <img class="footer-img" src="/Photo/SCHAS__2_-removebg-preview.png" alt="schas Logo">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="leaglies"> 2025 SCHAS Conference. All Rights Reserved.</p>
+            </div>
         </footer>
-        
-      </section>
+
+    </section>
 
     <!-- Bootstrap JS and Popper.js -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
