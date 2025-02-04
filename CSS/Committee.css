@@ -272,6 +272,10 @@ html {
     margin-bottom: 10px;
 }
 
+.contact{
+    font-size: 0.9em;
+    white-space:nowrap;
+}
 .footer-section p, .footer-section a {
     color: white;
     text-decoration: none;
