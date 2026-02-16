@@ -1,4 +1,4 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -13,18 +13,22 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
-    color: #333; /* Default text color */
+    color: #333;
+    /* Default text color */
 }
 
 @font-face {
     font-family: 'MyCustomFont';
     src: url('../Photo/hp-simplified-hans-light.ttf') format('woff2');
-    font-weight: normal; /* Normal weight */
-    font-style: normal; /* Normal style */
+    font-weight: normal;
+    /* Normal weight */
+    font-style: normal;
+    /* Normal style */
 }
+
 body {
-    font-family: 'MyCustomFont', Arial, Helvetica, sans-serif; 
-    
+    font-family: 'MyCustomFont', Arial, Helvetica, sans-serif;
+
 }
 
 body {
@@ -32,19 +36,28 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
 }
+
 .nav-links button {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
+    /* Reduced to match Committee.css */
     color: #000000;
-    padding: 10px;
-    margin: 0px 10px;
+    padding: 5px;
+    /* Reduced padding */
+    margin: 0px 5px;
+    /* Reduced margin */
 }
 
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'MyCustomFont', serif; 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'MyCustomFont', serif;
 }
 
 
@@ -60,12 +73,16 @@ code {
     align-items: center;
     padding: 50px 20px;
     color: white;
-    width: 100%; /* Full width of the container */
-    height: 60vh; /* Full height of the viewport */
+    width: 100%;
+    /* Full width of the container */
+    height: 60vh;
+    /* Full height of the viewport */
     margin: 0 auto;
     position: relative;
-    flex-direction: row; /* Default layout for larger screens */
-    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+    flex-direction: row;
+    /* Default layout for larger screens */
+    box-sizing: border-box;
+    /* Ensure padding doesn't cause overflow */
 }
 
 .hero1:before {
@@ -80,7 +97,8 @@ code {
     background-position: center;
     opacity: 1;
     z-index: -1;
-    filter: blur(1px); /* Add this line to apply a blur */
+    filter: blur(1px);
+    /* Add this line to apply a blur */
 }
 
 /* Hero Section */
@@ -90,12 +108,16 @@ code {
     align-items: center;
     padding: 50px 20px;
     color: white;
-    width: 100%; /* Full width of the container */
-    height: 60vh; /* Full height of the viewport */
+    width: 100%;
+    /* Full width of the container */
+    height: 60vh;
+    /* Full height of the viewport */
     margin: 0 auto;
     position: relative;
-    flex-direction: row; /* Default layout for larger screens */
-    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+    flex-direction: row;
+    /* Default layout for larger screens */
+    box-sizing: border-box;
+    /* Ensure padding doesn't cause overflow */
 }
 
 .hero1:before {
@@ -110,50 +132,69 @@ code {
     background-position: center;
     opacity: 1;
     z-index: -1;
-    filter: blur(1px); /* Add this line to apply a blur */
+    filter: blur(1px);
+    /* Add this line to apply a blur */
 }
 
 /* Hero content */
 .hero-content1 {
-    max-width: 50%; /* Control the width of the content */
-    text-align: left; /* Align the text to the left */
-    z-index: 1; /* Ensure content is above the background */
+    max-width: 50%;
+    /* Control the width of the content */
+    text-align: left;
+    /* Align the text to the left */
+    z-index: 1;
+    /* Ensure content is above the background */
     padding: 20px;
-    margin-left: 0; /* Ensure the content starts from the extreme left */
-    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+    margin-left: 0;
+    /* Ensure the content starts from the extreme left */
+    box-sizing: border-box;
+    /* Ensure padding doesn't cause overflow */
 }
 
 .hero-content1 h1 {
     font-size: 3em;
-    margin-bottom: 10px; /* Space below the h1 */
-    white-space: nowrap; /* Prevent text wrapping for larger screens */
+    margin-bottom: 10px;
+    /* Space below the h1 */
+    white-space: nowrap;
+    /* Prevent text wrapping for larger screens */
 }
 
 .hero-content1 h2 {
     font-size: 2em;
-    margin-bottom: 15px; /* Space below the h2 */
-    white-space: nowrap; /* Prevent text wrapping for larger screens */
+    margin-bottom: 15px;
+    /* Space below the h2 */
+    white-space: nowrap;
+    /* Prevent text wrapping for larger screens */
 }
 
 .hero-content1 p {
     font-size: 1.2em;
-    margin-bottom: 20px; /* Space below the paragraph */
-    white-space: nowrap; /* Prevent text wrapping for larger screens */
+    margin-bottom: 20px;
+    /* Space below the paragraph */
+    white-space: nowrap;
+    /* Prevent text wrapping for larger screens */
 }
 
 /* Style for the Venue Link */
 .venue-link {
-    font-size: 1.0rem; /* Adjust font size */
-    font-weight: bold; /* Make the text bold */
-    color: #f4f4f4; /* Set the color to blue for the link */
-    text-decoration: none; /* Remove the default underline */
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and hover effect */
+    font-size: 1.0rem;
+    /* Adjust font size */
+    font-weight: bold;
+    /* Make the text bold */
+    color: #f4f4f4;
+    /* Set the color to blue for the link */
+    text-decoration: none;
+    /* Remove the default underline */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Smooth transition for color and hover effect */
 }
 
 /* Hover effect for the Venue Link */
 .venue-link:hover {
-    color: #2980b9; /* Darker blue color on hover */
-    transform: scale(1.05); /* Slightly increase the size of the text on hover */
+    color: #2980b9;
+    /* Darker blue color on hover */
+    transform: scale(1.05);
+    /* Slightly increase the size of the text on hover */
 }
 
 /* Submit Paper Button */
@@ -184,7 +225,8 @@ code {
 
 /* Important Dates Section */
 .important-dates {
-    background: linear-gradient(135deg, #ffffff, #f8f9fa); /* Soft gradient background */
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    /* Soft gradient background */
     padding: 30px 40px;
     border-radius: 20px;
     max-width: 1400px;
@@ -205,7 +247,8 @@ code {
     position: relative;
     display: inline-block;
     padding-bottom: 10px;
-    border-bottom: 5px solid #ff7b00; /* Orange highlight */
+    border-bottom: 5px solid #ff7b00;
+    /* Orange highlight */
 }
 
 /* Gradient Animated Background Effect */
@@ -216,11 +259,13 @@ code {
     left: -50px;
     width: 200px;
     height: 200px;
-    background: rgba(0, 102, 255, 0.1); /* Blue circle */
+    background: rgba(0, 102, 255, 0.1);
+    /* Blue circle */
     border-radius: 50%;
     z-index: 0;
     animation: float 6s infinite alternate;
 }
+
 .important-dates::after {
     content: '';
     position: absolute;
@@ -228,11 +273,13 @@ code {
     right: -50px;
     width: 200px;
     height: 200px;
-    background: rgba(153, 51, 255, 0.1); /* Purple circle */
+    background: rgba(153, 51, 255, 0.1);
+    /* Purple circle */
     border-radius: 50%;
     z-index: 0;
     animation: float 6s infinite alternate-reverse;
 }
+
 @keyframes float {
     to {
         transform: translateY(20px);
@@ -268,11 +315,13 @@ code {
 /* Hover effect */
 .date-card:hover {
     transform: translateY(-10px) scale(1.05);
-    background: linear-gradient(135deg, #ff7b00, #7b5bff); /* Orange to Purple gradient */
+    background: linear-gradient(135deg, #ff7b00, #7b5bff);
+    /* Orange to Purple gradient */
     color: #ffffff;
     /* border-color: #ff0ee3; */
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
+
 .date-card:hover h3,
 .date-card:hover p {
     color: #ffffff;
@@ -282,7 +331,8 @@ code {
 .date-card h3 {
     font-size: 1.3em;
     font-weight: 700;
-    color: #007bff; /* Default Blue */
+    color: #007bff;
+    /* Default Blue */
     margin-bottom: 10px;
     transition: color 0.3s ease;
 }
@@ -336,21 +386,23 @@ code {
 
 
 /* About Conference Section */
-.about-conference, .why-attend-section {
+.about-conference,
+.why-attend-section {
     text-align: center;
     margin: 40px auto;
-    background: linear-gradient(to right, #f7f7f7, #e0e0e0); 
+    background: linear-gradient(to right, #f7f7f7, #e0e0e0);
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    max-width: 900px; 
-    position: relative; 
-    overflow: hidden; 
+    max-width: 900px;
+    position: relative;
+    overflow: hidden;
     transition: background-image 0.6s ease-out;
 }
 
 /* Heading Styling */
-.about-conference h2, .why-attend-section h3 {
+.about-conference h2,
+.why-attend-section h3 {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #333;
@@ -361,7 +413,8 @@ code {
 }
 
 /* Paragraph Styling */
-.about-conference p, .why-attend-section p {
+.about-conference p,
+.why-attend-section p {
     font-size: 18px;
     line-height: 1.8;
     text-align: justify;
@@ -371,19 +424,19 @@ code {
 }
 
 
-  
+
 .social-icons img {
     width: 24px;
     height: 24px;
     margin: 0 5px;
     transition: transform 0.3s ease;
 }
-  
+
 .social-icons img:hover {
     transform: scale(1.2);
 }
 
-  
+
 
 /* Logos Section */
 .logos {
@@ -421,20 +474,26 @@ code {
 
 /* About the Organizer Section */
 .about-organizer {
-    background: linear-gradient(to right, #f0f8ff, #e0eafc); /* Soft gradient background */
+    background: linear-gradient(to right, #f0f8ff, #e0eafc);
+    /* Soft gradient background */
     padding: 50px 20px;
     text-align: center;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin-top: 40px; /* Space from the previous section */
-    margin-bottom: 40px; /* Space after the section */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    margin-top: 40px;
+    /* Space from the previous section */
+    margin-bottom: 40px;
+    /* Space after the section */
 }
 
 /* Heading Styling */
 .about-organizer h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #34495e; /* Dark grayish-blue for text */
+    color: #34495e;
+    /* Dark grayish-blue for text */
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -450,21 +509,29 @@ code {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background-color: #3498db; /* Blue color line */
+    background-color: #3498db;
+    /* Blue color line */
     border-radius: 2px;
 }
 
 /* Paragraph Description Styling */
 .organizer-description {
     font-size: 1.1rem;
-    color: #555; /* Medium gray color for readability */
-    line-height: 1.8; /* Improved line spacing */
-    max-width: 850px; /* Set maximum width to keep it centered */
+    color: #555;
+    /* Medium gray color for readability */
+    line-height: 1.8;
+    /* Improved line spacing */
+    max-width: 850px;
+    /* Set maximum width to keep it centered */
     margin: 0 auto;
-    text-align: justify; /* Justify the text for a cleaner look */
-    padding: 0 20px; /* Padding to prevent text from touching the edges */
-    font-family: 'Roboto', sans-serif; /* Smooth font for readability */
-    font-style: italic; /* Make the text italic for a refined look */
+    text-align: justify;
+    /* Justify the text for a cleaner look */
+    padding: 0 20px;
+    /* Padding to prevent text from touching the edges */
+    font-family: 'Roboto', sans-serif;
+    /* Smooth font for readability */
+    font-style: italic;
+    /* Make the text italic for a refined look */
 }
 
 
@@ -472,34 +539,47 @@ code {
 /* Mobile Responsiveness (up to 1024px) */
 @media (max-width: 1024px) {
     .hero1 {
-        flex-direction: column; /* Stack content vertically on smaller screens */
-        padding: 30px 15px; /* Adjust padding */
+        flex-direction: column;
+        /* Stack content vertically on smaller screens */
+        padding: 30px 15px;
+        /* Adjust padding */
     }
 
     .hero-content1 {
-        max-width: 90%; /* Increase content width */
-        text-align: center; /* Center the text */
-        margin-left: 0; /* Remove any left margin */
+        max-width: 90%;
+        /* Increase content width */
+        text-align: center;
+        /* Center the text */
+        margin-left: 0;
+        /* Remove any left margin */
     }
 
     .hero-content1 h1 {
-        font-size: 1.9em; /* Adjust font size for mid-range devices */
-        white-space: normal; /* Allow word wrapping */
+        font-size: 1.9em;
+        /* Adjust font size for mid-range devices */
+        white-space: normal;
+        /* Allow word wrapping */
     }
 
     .hero-content1 h2 {
-        font-size: 1.6em; /* Adjust font size */
-        white-space: normal; /* Allow word wrapping */
+        font-size: 1.6em;
+        /* Adjust font size */
+        white-space: normal;
+        /* Allow word wrapping */
     }
 
     .hero-content1 p {
-        font-size: 1.1em; /* Adjust font size for readability */
-        white-space: normal; /* Allow word wrapping */
+        font-size: 1.1em;
+        /* Adjust font size for readability */
+        white-space: normal;
+        /* Allow word wrapping */
     }
 
     .hero-image1 img {
-        max-width: 100%; /* Ensure image is responsive */
-        margin-top: 20px; /* Space between image and text */
+        max-width: 100%;
+        /* Ensure image is responsive */
+        margin-top: 20px;
+        /* Space between image and text */
     }
 
     /* Important Dates Responsive */
@@ -514,14 +594,18 @@ code {
     }
 
     .date-card-container {
-        display: flex;            /* Ensure it’s a flex container */
-        flex-wrap: wrap;          /* Allow cards to wrap */
-        justify-content: space-between;  /* Distribute space between items */
-        gap: 10px;  
+        display: flex;
+        /* Ensure it’s a flex container */
+        flex-wrap: wrap;
+        /* Allow cards to wrap */
+        justify-content: space-between;
+        /* Distribute space between items */
+        gap: 10px;
     }
 
     .date-card {
-        width: 250px; /* Adjust width for better spacing */
+        width: 250px;
+        /* Adjust width for better spacing */
         height: 111px;
         margin: 10px 0;
     }
@@ -530,32 +614,42 @@ code {
 /* Larger Devices (Above 1024px, no wrapping) */
 @media (min-width: 1025px) {
     .hero1 {
-        flex-direction: row; /* Default row layout */
-        padding: 50px 20px; /* More space on large screens */
+        flex-direction: row;
+        /* Default row layout */
+        padding: 50px 20px;
+        /* More space on large screens */
     }
 
     .hero-content1 {
-        max-width: 50%; /* Set content width to 50% */
+        max-width: 50%;
+        /* Set content width to 50% */
         text-align: left;
     }
 
     .hero-content1 h1 {
-        font-size: 3em; /* Large font size */
-        white-space: nowrap; /* Prevent word wrapping */
+        font-size: 3em;
+        /* Large font size */
+        white-space: nowrap;
+        /* Prevent word wrapping */
     }
 
     .hero-content1 h2 {
-        font-size: 2.5em; /* Large font size */
-        white-space: nowrap; /* Prevent word wrapping */
+        font-size: 2.5em;
+        /* Large font size */
+        white-space: nowrap;
+        /* Prevent word wrapping */
     }
 
     .hero-content1 p {
-        font-size: 1.2em; /* Slightly smaller text for readability */
-        white-space: nowrap; /* Prevent word wrapping */
+        font-size: 1.2em;
+        /* Slightly smaller text for readability */
+        white-space: nowrap;
+        /* Prevent word wrapping */
     }
 
     .hero-image1 img {
-        max-width: 500px; /* Control image size */
+        max-width: 500px;
+        /* Control image size */
     }
 
     /* Important Dates for Large Screens */
@@ -576,41 +670,55 @@ code {
     }
 
     .date-card {
-        width: 180px; /* Keep default width */
+        width: 180px;
+        /* Keep default width */
     }
 }
 
 /* 720px Devices */
 @media (max-width: 720px) {
     .hero1 {
-        flex-direction: column; /* Stack content vertically on smaller screens */
-        padding: 30px 15px; /* Adjust padding */
+        flex-direction: column;
+        /* Stack content vertically on smaller screens */
+        padding: 30px 15px;
+        /* Adjust padding */
     }
 
     .hero-content1 {
-        max-width: 85%; /* Adjust content width for 720px screens */
-        text-align: center; /* Center the text */
-        margin-left: 0; /* Remove any left margin */
+        max-width: 85%;
+        /* Adjust content width for 720px screens */
+        text-align: center;
+        /* Center the text */
+        margin-left: 0;
+        /* Remove any left margin */
     }
 
     .hero-content1 h1 {
-        font-size: 1.7em; /* Adjust font size */
-        white-space: normal; /* Allow word wrapping */
+        font-size: 1.7em;
+        /* Adjust font size */
+        white-space: normal;
+        /* Allow word wrapping */
     }
 
     .hero-content1 h2 {
-        font-size: 1.8em; /* Adjust font size */
-        white-space: normal; /* Allow word wrapping */
+        font-size: 1.8em;
+        /* Adjust font size */
+        white-space: normal;
+        /* Allow word wrapping */
     }
 
     .hero-content1 p {
-        font-size: 1.0em; /* Adjust font size for readability */
-        white-space: normal; /* Allow word wrapping */
+        font-size: 1.0em;
+        /* Adjust font size for readability */
+        white-space: normal;
+        /* Allow word wrapping */
     }
 
     .hero-image1 img {
-        max-width: 100%; /* Ensure image is responsive */
-        margin-top: 20px; /* Space between image and text */
+        max-width: 100%;
+        /* Ensure image is responsive */
+        margin-top: 20px;
+        /* Space between image and text */
     }
 
     /* Important Dates for 720px Devices */
@@ -625,7 +733,8 @@ code {
 
     .date-card-container {
         flex-wrap: wrap;
-        gap: 20px; /* More space between the cards */
+        gap: 20px;
+        /* More space between the cards */
     }
 
     .date-card {
@@ -636,38 +745,52 @@ code {
 /* 520px Devices */
 @media (max-width: 520px) {
     .hero1 {
-        flex-direction: column; /* Stack content vertically */
-        padding: 25px 10px; /* Adjust padding */
+        flex-direction: column;
+        /* Stack content vertically */
+        padding: 25px 10px;
+        /* Adjust padding */
     }
 
     .hero-content1 {
-        max-width: 90%; /* Maximize content width */
-        text-align: center; /* Center the text */
-        margin-left: 0; /* Remove any left margin */
+        max-width: 90%;
+        /* Maximize content width */
+        text-align: center;
+        /* Center the text */
+        margin-left: 0;
+        /* Remove any left margin */
     }
 
     .hero-content1 h1 {
-        font-size: 1.6em; /* Adjust font size */
-        white-space: normal; /* Allow word wrapping */
+        font-size: 1.6em;
+        /* Adjust font size */
+        white-space: normal;
+        /* Allow word wrapping */
     }
 
     .hero-content1 h2 {
-        font-size: 1.7em; /* Adjust font size */
-        white-space: normal; /* Allow word wrapping */
+        font-size: 1.7em;
+        /* Adjust font size */
+        white-space: normal;
+        /* Allow word wrapping */
     }
 
     .hero-content1 p {
-        font-size: 1em; /* Adjust font size for readability */
-        white-space: normal; /* Allow word wrapping */
+        font-size: 1em;
+        /* Adjust font size for readability */
+        white-space: normal;
+        /* Allow word wrapping */
     }
 
     .hero-image1 img {
-        max-width: 100%; /* Ensure image is responsive */
-        margin-top: 20px; /* Space between image and text */
+        max-width: 100%;
+        /* Ensure image is responsive */
+        margin-top: 20px;
+        /* Space between image and text */
     }
 
     .submit-paper-btn {
-        padding: 8px 12px; /* Adjust button padding */
+        padding: 8px 12px;
+        /* Adjust button padding */
     }
 
     /* Important Dates for 520px Devices */
@@ -686,7 +809,8 @@ code {
     }
 
     .date-card {
-        width: 100%; /* Cards will take full width on small screens */
+        width: 100%;
+        /* Cards will take full width on small screens */
         margin-bottom: 20px;
     }
 }
@@ -694,25 +818,32 @@ code {
 /* 480px Devices */
 @media (max-width: 480px) {
     .hero-content1 {
-        max-width: 90%; /* Maximize content width */
-        text-align: center; /* Center the text */
-        margin-left: 0; /* Remove any left margin */
+        max-width: 90%;
+        /* Maximize content width */
+        text-align: center;
+        /* Center the text */
+        margin-left: 0;
+        /* Remove any left margin */
     }
 
     .hero-content1 h1 {
-        font-size: 1.6em; /* Reduce font size for very small devices */
+        font-size: 1.6em;
+        /* Reduce font size for very small devices */
     }
 
     .hero-content1 h2 {
-        font-size: 1.3em; /* Adjust font size for very small devices */
+        font-size: 1.3em;
+        /* Adjust font size for very small devices */
     }
 
     .hero-content1 p {
-        font-size: 0.8em; /* Adjust font size for very small devices */
+        font-size: 0.8em;
+        /* Adjust font size for very small devices */
     }
 
     .submit-paper-btn {
-        padding: 10px 15px; /* Adjust button padding for smaller screens */
+        padding: 10px 15px;
+        /* Adjust button padding for smaller screens */
     }
 
     /* Important Dates for 480px Devices */
@@ -731,7 +862,8 @@ code {
     }
 
     .date-card {
-        width: 100%; /* Full-width for ultra small screens */
+        width: 100%;
+        /* Full-width for ultra small screens */
         margin-bottom: 20px;
     }
 
@@ -751,28 +883,37 @@ code {
 /* For Extremely Small Devices (320px and below) */
 @media (max-width: 380px) {
     .hero-content1 {
-        max-width: 90%; /* Maximize content width */
+        max-width: 90%;
+        /* Maximize content width */
         text-align: center;
-        padding: 10px; /* Reduce padding */
+        padding: 10px;
+        /* Reduce padding */
     }
 
     .hero-content1 h1 {
-        font-size: 1.6em; /* Adjust font size */
-        margin-bottom: 8px; /* Reduce margin */
+        font-size: 1.6em;
+        /* Adjust font size */
+        margin-bottom: 8px;
+        /* Reduce margin */
     }
 
     .hero-content1 h2 {
-        font-size: 1.3em; /* Adjust font size */
-        margin-bottom: 12px; /* Reduce margin */
+        font-size: 1.3em;
+        /* Adjust font size */
+        margin-bottom: 12px;
+        /* Reduce margin */
     }
 
     .hero-content1 p {
-        font-size: 0.8em; /* Adjust font size */
+        font-size: 0.8em;
+        /* Adjust font size */
     }
 
     .submit-paper-btn {
-        padding: 8px 12px; /* Reduce button padding */
-        font-size: 0.9em; /* Reduce font size */
+        padding: 8px 12px;
+        /* Reduce button padding */
+        font-size: 0.9em;
+        /* Reduce font size */
     }
 
     /* Important Dates for Extremely Small Devices */
@@ -790,7 +931,8 @@ code {
     }
 
     .date-card {
-        width: 100%; /* Full-width for extremely small screens */
+        width: 100%;
+        /* Full-width for extremely small screens */
         margin-bottom: 15px;
     }
 

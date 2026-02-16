@@ -8,11 +8,11 @@
 @font-face {
     font-family: 'MyCustomFont';
     src: url('../Photo/hp-simplified-hans-light.ttf') format('woff2');
-    font-weight: bolder; 
+    font-weight: bolder;
     font-style: normal;
 }
 
-li{
+li {
     font-size: larger;
 }
 
@@ -39,9 +39,19 @@ nav {
     flex-wrap: nowrap;
 }
 
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* Add some space between the logos */
+}
+
 .logo img {
-    width: 180px;
-    /* height: 58px; */
+    /* width: 180px; Removed fixed width to allow natural size or control max-width */
+    height: 60px;
+    /* Set a consistent height */
+    width: auto;
+    /* Maintain aspect ratio */
 }
 
 .nav-links {
@@ -50,7 +60,10 @@ nav {
     flex-wrap: nowrap;
     align-items: center;
     white-space: nowrap;
-    overflow-x: auto;
+    /* overflow-x: auto; Removed to prevent scrollbar */
+    width: 100%;
+    justify-content: flex-end;
+    /* Align items to the right or center as needed, likely right next to logo if space permits, or just fill */
 }
 
 .nav-links button {
@@ -58,11 +71,15 @@ nav {
     border: none;
     cursor: pointer;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
+    /* Slightly reduced font size */
     color: #000000;
-    padding: 10px;
-    margin: 0px 10px;
-    flex-shrink: 0;
+    padding: 5px;
+    /* Reduced padding */
+    margin: 0px 5px;
+    /* Reduced margin */
+    flex-shrink: 1;
+    /* Allow shrinking */
 }
 
 .nav-links li {
@@ -115,8 +132,10 @@ nav {
 
 .sponsorship-btn {
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 8px 12px;
+    /* Reduced from 10px 20px */
+    font-size: 14px;
+    /* Reduced from 16px */
     font-weight: bold;
     color: white;
     text-align: center;
@@ -126,7 +145,8 @@ nav {
     background: linear-gradient(45deg, #ff6b35, #f7931e, #fdc830);
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
-    flex-shrink: 0;
+    flex-shrink: 1;
+    /* Changed from 0 to 1 to allow shrinking if needed */
 }
 
 .sponsorship-btn a {
@@ -173,14 +193,18 @@ html {
 
 /* Hamburger Menu Styles */
 .hamburger-icon {
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     cursor: pointer;
     flex-direction: column;
     gap: 5px;
     padding: 10px;
-    position: absolute; /* Position relative to the nearest positioned ancestor */
-    top: 10px; /* Space from the top of the page */
-    left: 20px; /* Move hamburger icon to the left */
+    position: absolute;
+    /* Position relative to the nearest positioned ancestor */
+    top: 10px;
+    /* Space from the top of the page */
+    left: 20px;
+    /* Move hamburger icon to the left */
 }
 
 .hamburger-icon .bar {
@@ -215,26 +239,32 @@ html {
     }
 
     .hamburger-icon {
-        display: flex; /* Display the hamburger icon */
+        display: flex;
+        /* Display the hamburger icon */
     }
 
     .nav-links {
-        display: none; /* Initially hide the navigation */
+        display: none;
+        /* Initially hide the navigation */
         flex-direction: column;
         width: 100%;
         text-align: center;
         margin-top: 20px;
-        justify-content: center;  /* Centers items vertically */
-        align-items: center;      /* Centers items horizontally */
+        justify-content: center;
+        /* Centers items vertically */
+        align-items: center;
+        /* Centers items horizontally */
     }
-    
+
     .nav-links.active {
-        display: flex; /* Show navigation when active */
+        display: flex;
+        /* Show navigation when active */
     }
-    
+
     .nav-links button {
         width: 100%;
-        text-align: center;  /* Centers text within button */
+        text-align: center;
+        /* Centers text within button */
         padding: 15px 0;
     }
 
@@ -260,87 +290,118 @@ html {
 /* Footer */
 .footer {
     position: relative;
-    background: linear-gradient(to bottom right, #ffae3d, #4a50ff); /* Gradient from orange to purple */
+    background: linear-gradient(to bottom right, #ffae3d, #4a50ff);
+    /* Gradient from orange to purple */
     color: white;
-    padding: 10px 20px; /* Reduced padding */
+    padding: 10px 20px;
+    /* Reduced padding */
     text-align: center;
-    border-top-left-radius: 100px; /* Keeps the curve */
+    border-top-left-radius: 100px;
+    /* Keeps the curve */
     border-top-right-radius: 0;
-    overflow: hidden; /* Ensures the content stays within the curve */
-    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden;
+    /* Ensures the content stays within the curve */
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
 }
 
 /* Pseudo-element for the smaller curve */
 .footer::before {
     content: "";
     position: absolute;
-    top: -30px; /* Slightly shallower curve */
-    left: -50px; /* Shift to left */
-    width: 150px; /* Smaller width of the curve */
-    height: 25px; /* Reduced height of the curve */
-    background: linear-gradient(to bottom right, #8e44ad, #004a99); /* Same gradient for the curve */
-    border-radius: 50%; /* Circular shape */
-    z-index: -1; /* Behind the content */
+    top: -30px;
+    /* Slightly shallower curve */
+    left: -50px;
+    /* Shift to left */
+    width: 150px;
+    /* Smaller width of the curve */
+    height: 25px;
+    /* Reduced height of the curve */
+    background: linear-gradient(to bottom right, #8e44ad, #004a99);
+    /* Same gradient for the curve */
+    border-radius: 50%;
+    /* Circular shape */
+    z-index: -1;
+    /* Behind the content */
 }
 
 .footer-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly; /* Evenly distribute the sections */
+    justify-content: space-evenly;
+    /* Evenly distribute the sections */
     align-items: center;
-    gap: 20px; /* Reduced gap between items */
-    max-width: 800px; /* Reduced width */
+    gap: 20px;
+    /* Reduced gap between items */
+    max-width: 800px;
+    /* Reduced width */
     margin: 0 auto;
 }
 
 .footer-section {
     flex: 1;
-    min-width: 180px; /* Slightly smaller minimum width */
-    margin: 8px; /* Smaller margin */
+    min-width: 180px;
+    /* Slightly smaller minimum width */
+    margin: 8px;
+    /* Smaller margin */
 }
 
 .footer-section h4 {
-    font-size: 1em; /* Reduced font size */
+    font-size: 1em;
+    /* Reduced font size */
     margin-bottom: 10px;
 }
 
-.contact{
+.contact {
     font-size: 0.9em;
-    white-space:nowrap;
+    white-space: nowrap;
 }
-.footer-section p, .footer-section a {
+
+.footer-section p,
+.footer-section a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.9em; /* Smaller font size */
+    font-size: 0.9em;
+    /* Smaller font size */
 }
 
 .footer-section a:hover {
     text-decoration: underline;
-    color: #ffae3d; /* Add hover color */
+    color: #ffae3d;
+    /* Add hover color */
 }
 
 .social-icons img {
-    width: 22px; /* Reduced icon size */
-    height: 22px; /* Reduced icon size */
-    margin: 0 4px; /* Smaller margin between icons */
+    width: 22px;
+    /* Reduced icon size */
+    height: 22px;
+    /* Reduced icon size */
+    margin: 0 4px;
+    /* Smaller margin between icons */
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .social-icons img:hover {
-    transform: scale(1.1); /* Slightly increase size on hover */
-    filter: brightness(1.3); /* Increase brightness on hover */
+    transform: scale(1.1);
+    /* Slightly increase size on hover */
+    filter: brightness(1.3);
+    /* Increase brightness on hover */
 }
 
 .footer-bottom {
-    margin-top: 15px; /* Reduced margin-top */
-    font-size: 0.8em; /* Smaller font size */
+    margin-top: 15px;
+    /* Reduced margin-top */
+    font-size: 0.8em;
+    /* Smaller font size */
     color: #cce6ff;
-    margin-bottom: 1rem; /* Smaller bottom margin */
+    margin-bottom: 1rem;
+    /* Smaller bottom margin */
 }
 
 .footer-section.logo img {
-    width: 130px; /* Smaller logo size */
+    width: 130px;
+    /* Smaller logo size */
 }
 
 /* Style all font awesome icons */
@@ -357,7 +418,8 @@ html {
 
 .fa:hover {
     opacity: 0.7;
-    transform: scale(1.05); /* Slightly smaller scale on hover */
+    transform: scale(1.05);
+    /* Slightly smaller scale on hover */
 }
 
 /* Specific color for each social media icon */
