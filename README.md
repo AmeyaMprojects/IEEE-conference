@@ -1,6 +1,8 @@
 # NQComp 2026 — IEEE Conference Website
 
-![NQComp 2026 Logo](./Photo/NQComp-removebg-preview.png)
+<p align="center">
+  <img src="./Photo/NQComp-removebg-preview.png" alt="NQComp 2026 Logo" width="300" style="background-color: white; padding: 15px; border-radius: 10px;">
+</p>
 
 Official website for **NQComp-2026** (Next-Generation Quantum Computing), an IEEE conference organized by the **School of Computer Engineering, MIT Bengaluru, MAHE**.
 
