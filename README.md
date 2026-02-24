@@ -1,40 +1,68 @@
-#  SCHAS 2025 Conference Website
-![SCHAS 2025 Logo](./Photo/SCHAS__1_-removebg-preview.png)
-<p>Welcome to Smart Cities, Healthcare, and Autonomous Systems (SCHAS) 2025, a transformative conference designed
-        to explore the future of technology in urban development, healthcare, and autonomous systems. Our mission is to
-        bring together thought leaders, innovators, and experts from diverse fields to share insights, discuss
-        cutting-edge research, and collaborate on sustainable solutions that shape the cities of tomorrow.</p>
-        <p>
-          <br>
-        As we stand on
-        the brink of a new era of technological advancements, SCHAS 2025 focuses on how smart cities, advanced
-        healthcare solutions, and autonomous systems can work synergistically to improve the quality of life, streamline
-        services, and drive economic growth. With a focus on innovation and practical implementation, this conference
-        aims to foster cross-disciplinary collaboration to solve some of the most pressing challenges facing society
-        today.</p>
-        <br>
-         <p>Whether you're a researcher, a policy maker, a tech enthusiast, or an industry professional, SCHAS 2025 is
-        the ideal platform for discussing emerging technologies and exploring their potential to create sustainable,
-        inclusive, and intelligent solutions for the future.Join us as we pave the way for the next generation of
-        innovation in smart cities, healthcare, and autonomous systems. Together, we can transform our world for the
+# NQComp 2026 — IEEE Conference Website
 
-<!-- 
-## Technical Details
-### Technologies Used -->
+![NQComp 2026 Logo](./Photo/NQComp-removebg-preview.png)
 
-<!-- ### Key Features
+Official website for **NQComp-2026** (Next-Generation Quantum Computing), an IEEE conference organized by the **School of Computer Engineering, MIT Bengaluru, MAHE**.
 
-- **Responsive Design**: The website is fully responsive and works on all devices.
-- **Navigation**: Easy navigation with dropdown menus for different sections.
-- **Hero Section**: A visually appealing hero section with background images and text.
-- **Important Dates**: A section highlighting important dates for the conference.
-- **About Section**: Information about the conference and the organizer.
-- **Committee Pages**: Dedicated pages for different committees involved in the conference.
-- **Paper Submission**: Information and guidelines for paper submission.
-- **Registration**: Details about registration fees and process.
-- **Footer**: Contact information and social media links. -->
+---
 
-### created by  
-Ameya Mhatre
-Rushil Bakori 
-Aditya Jemshetty
+## 🌐 Pages
+
+| Page | File | Description |
+|------|------|-------------|
+| Home | `index.html` | Landing page with hero, about section, important dates |
+| Call for Paper | `HTML/CallForPaper.html` | Paper tracks, submission guidelines |
+| Paper Submission | `HTML/paper_submission.html` | CMT submission link and instructions |
+| Registration | `HTML/Registration.html` | Fee tables (early bird & regular), payment link, hotel info |
+| Organizing Committee | `HTML/Organizing_Committee.html` | Full committee listing (Chief Patron through Website Committee) |
+| Advisory Committee | `HTML/Advisory_Committee.html` | Advisory board members |
+| Technical Program Committee | `HTML/Technical_Program_Committee.html` | TPC members |
+| Pre-Conference Workshop | `HTML/PreConferenceWorkshop.html` | Workshop on Quantum Technologies (4 Mar 2026) |
+
+---
+
+## 🛠 Tech Stack
+
+- **HTML5** — Structure
+- **CSS3** — Custom styling (`CSS/Committee.css`, `CSS/Land.css`, page-specific CSS)
+- **Bootstrap 4.3** — Grid and components
+- **Font Awesome 4.7** — Social icons
+- **Animate.css** — CSS animations
+
+---
+
+## 📁 Project Structure
+
+```
+├── index.html                  # Home page
+├── CSS/
+│   ├── Committee.css           # Shared nav, footer, icon styles
+│   ├── Land.css                # Landing page styles
+│   ├── Registration.css        # Registration page styles
+│   ├── PreConferenceWorkshop.css  # Workshop page styles
+│   └── organizingCommittee.css # Committee list styles
+├── HTML/
+│   ├── Advisory_Committee.html
+│   ├── CallForPaper.html
+│   ├── Organizing_Committee.html
+│   ├── PreConferenceWorkshop.html
+│   ├── Registration.html
+│   ├── Technical_Program_Committee.html
+│   └── paper_submission.html
+├── Photo/                      # Images and logos
+└── public/                     # PDFs (sponsorship flyer, workshop brochure)
+```
+
+---
+
+## 🚀 How to Run
+
+Open `index.html` in any browser. No build step required.
+
+---
+
+### Created by
+
+- Ameya Mhatre
+- Rushil Bakori
+- Aditya Jemshetty

@@ -406,27 +406,26 @@ html {
 
 /* Style all font awesome icons */
 .fa {
-    padding: 8px;
-    font-size: 25px;
-    width: 45px;
-    height: 45px;
+    padding: 6px;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
     transition: transform 0.3s ease;
+    line-height: 18px;
 }
 
 .fa:hover {
     opacity: 0.7;
-    transform: scale(1.05);
-    /* Slightly smaller scale on hover */
+    transform: scale(1.1);
 }
 
 /* Specific color for each social media icon */
 .fa-facebook {
     background: #3B5998;
     color: white;
-    font-size: 25px;
 }
 
 .fa-twitter {
@@ -437,19 +436,16 @@ html {
 .fa-linkedin {
     background: #007bb5;
     color: white;
-    font-size: 25px;
 }
 
 .fa-youtube {
     background: #bb0000;
     color: white;
-    font-size: 25px;
 }
 
 .fa-instagram {
     background: #fe259c;
     color: white;
-    font-size: 25px;
 }
 
 .footer-img {

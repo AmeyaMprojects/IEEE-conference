@@ -1,362 +1,401 @@
 /* Basic Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333; /* Default text color */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  /* Default text color */
 }
 
 /* Apply styles to the entire section */
 .Table {
-    font-family: 'Arial', sans-serif;
-    padding: 20px;
-    background-color: transparent;
-    margin: 20px auto;
-    border-radius: 15px; /* Curved corners */
-    max-width: 90%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border: 4px solid transparent;
-    border-image: linear-gradient(to right, #ff7e5f, #e57cff,blue);
-    border-image-slice: 1; /* Ensures the gradient covers the border */
-    overflow: hidden; /* Prevents child elements from exceeding border-radius */
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background-color: transparent;
+  margin: 20px auto;
+  border-radius: 15px;
+  /* Curved corners */
+  max-width: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 4px solid transparent;
+  border-image: linear-gradient(to right, #ff7e5f, #e57cff, blue);
+  border-image-slice: 1;
+  /* Ensures the gradient covers the border */
+  overflow: hidden;
+  /* Prevents child elements from exceeding border-radius */
 }
 
 
 
 /* Heading styles */
 .Table h2 {
-    text-align: center;
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 20px;
+  text-align: center;
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .Table h3 {
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 15px;
-    text-decoration: underline;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px;
+  text-decoration: underline;
 }
 
 /* Table styling */
 .Table table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-    background-color: transparent; /* Transparent background for the table */
-    border-radius: 10px;
-    overflow: hidden;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: transparent;
+  /* Transparent background for the table */
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 /* Table headers styling */
 .Table th {
-    background-color: transparent; /* Transparent background for table headers */
-    color: #333;
-    font-size: 1.1em;
-    padding: 12px 15px;
-    text-align: center;
-    border: 1px solid #ddd;
+  background-color: transparent;
+  /* Transparent background for table headers */
+  color: #333;
+  font-size: 1.1em;
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #ddd;
 }
 
 /* Table data styling */
 .Table td {
-    padding: 12px 15px;
-    text-align: center;
-    border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #ddd;
 }
 
 /* Even rows background color */
 .Table tr:nth-child(even) {
-    background-color: #f9f9f9;  /* Light gray for alternating rows */
+  background-color: #f9f9f9;
+  /* Light gray for alternating rows */
 }
 
 /* Hover effect for rows */
 .Table tr:hover {
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
 
 /* Style for the last row (extra note) */
 .Table p {
-    font-size: 1.1em;
-    color: #555;
-    line-height: 1.6;
-    margin-top: 20px;
-    text-align: center;
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Note box styling */
+.note-box {
+  background-color: #fff8e1;
+  border: 2px solid #f7931e;
+  border-radius: 10px;
+  padding: 20px 25px;
+  margin: 25px 0;
+  text-align: left;
+}
+
+.note-box h4 {
+  color: #f7931e;
+  font-size: 1.4em;
+  margin-bottom: 12px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.note-box p {
+  font-size: 1em;
+  color: #444;
+  margin-top: 8px;
+  text-align: left;
+  line-height: 1.6;
 }
 
 /* Styling for payment link */
 .Table a {
-    color: #333;
-    font-weight: bold;
-    text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .Table a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Section Styles */
 .hotels-section {
-    text-align: center;
-    padding: 40px;
-    background-color: #f5f5f5;
-    display: flex;
-    flex-wrap: wrap; /* Allow the cards to wrap onto the next line if needed */
-    justify-content: space-around; /* Distribute the cards evenly */
-  }
-  
-  .hotels-section h1 {
-    font-size: 3em;
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    width: 100%;
-  }
-  
-  .hotels-section p {
-    font-size: 1.2em;
-    color: #666;
-    margin-bottom: 40px;
-    width: 100%;
-  }
-  
-  /* Hotel Card Styles */
+  text-align: center;
+  padding: 40px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-wrap: wrap;
+  /* Allow the cards to wrap onto the next line if needed */
+  justify-content: space-around;
+  /* Distribute the cards evenly */
+}
+
+.hotels-section h1 {
+  font-size: 3em;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 100%;
+}
+
+.hotels-section p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+/* Hotel Card Styles */
+.hotel-card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(145deg, #ffffff, #f1f1f1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 500px;
+}
+
+.hotel-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styles */
+.hotel-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #ddd;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Info Section Styles */
+.hotel-info {
+  padding: 20px;
+  background-color: #fff;
+  color: #444;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotel-info h2 {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.hotel-info h2 a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.hotel-info h2 a:hover {
+  color: transparent;
+  /* Make the text transparent to show the gradient */
+  background-image: linear-gradient(45deg, #d89b51, #82325d, #455db2);
+  /* Gradient color */
+  -webkit-background-clip: text;
+  /* For Chrome, Safari, and newer Edge */
+  background-clip: text;
+  /* For other modern browsers */
+}
+
+.hotel-info p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #555;
+}
+
+.hotel-info p:first-of-type {
+  font-weight: 600;
+  color: #333;
+}
+
+.hotel-card .hotel-info p {
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
   .hotel-card {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    margin: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(145deg, #ffffff, #f1f1f1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 500px;
+    width: 250px;
   }
-  
-  .hotel-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 992px) {
+  .hotel-card {
+    width: 45%;
   }
-  
-  /* Image Styles */
-  .hotel-image img {
+}
+
+@media (max-width: 768px) {
+  .hotel-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hotel-card {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 2px solid #ddd;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
   }
-  
-  /* Info Section Styles */
-  .hotel-info {
-    padding: 20px;
-    background-color: #fff;
-    color: #444;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .hotel-info h2 {
-    font-size: 1.6em;
-    margin-bottom: 15px;
-    font-family: 'Segoe UI', sans-serif;
-    color: #333;
-  }
-  
-  .hotel-info h2 a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-  .hotel-info h2 a:hover {
-    color: transparent;  /* Make the text transparent to show the gradient */
-    background-image: linear-gradient(45deg, #d89b51, #82325d, #455db2); /* Gradient color */
-    -webkit-background-clip: text;  /* For Chrome, Safari, and newer Edge */
-    background-clip: text;  /* For other modern browsers */
-  }
-  
-  .hotel-info p {
-    font-size: 1em;
-    line-height: 1.5;
-    color: #555;
-  }
-  
-  .hotel-info p:first-of-type {
-    font-weight: 600;
-    color: #333;
-  }
-  
-  .hotel-card .hotel-info p {
-    margin-bottom: 10px;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 1200px) {
-    .hotel-card {
-      width: 250px;
-    }
-  }
-  
-  @media (max-width: 992px) {
-    .hotel-card {
-      width: 45%; 
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .hotel-card {
-      width: 45%;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .hotel-card {
-      width: 100%;
-    }
-  }
-  
+}
+
 /* Responsive design for small screens */
 
 
 @media (max-width: 1024px) {
-    .nav-links button {
-        font-size: 0.9em;
-    }
-    
-    .Table h2 {
-        font-size: 1.8em;
-    }
+  .nav-links button {
+    font-size: 0.9em;
+  }
 
-    .Table h3 {
-        font-size: 1.3em;
-    }
+  .Table h2 {
+    font-size: 1.8em;
+  }
 
-    .Table th, .Table td {
-        padding: 10px 12px;
-    }
-    
+  .Table h3 {
+    font-size: 1.3em;
+  }
+
+  .Table th,
+  .Table td {
+    padding: 10px 12px;
+  }
+
 }
 
 
 @media screen and (max-width: 768px) {
-    
 
-    .Table h2 {
-        font-size: 1.6em;
-    }
 
-    .Table h3 {
-        font-size: 1.2em;
-    }
+  .Table h2 {
+    font-size: 1.6em;
+  }
 
-    .Table th, .Table td {
-        padding: 8px 10px;
-    }
+  .Table h3 {
+    font-size: 1.2em;
+  }
 
-    .Table table {
-        font-size: 0.9em;
-    }
-    
+  .Table th,
+  .Table td {
+    padding: 8px 10px;
+  }
+
+  .Table table {
+    font-size: 0.9em;
+  }
+
 }
 
 /* 720px Devices */
-@media (max-width: 720px) {
-    
-}
+@media (max-width: 720px) {}
 
 /* 520px Devices */
 @media (max-width: 578px) {
-    .Table h2 {
-        font-size: 1.4em;
-    }
+  .Table h2 {
+    font-size: 1.4em;
+  }
 
-    .Table h3 {
-        font-size: 1.1em;
-    }
+  .Table h3 {
+    font-size: 1.1em;
+  }
 
-    .Table th, .Table td {
-        padding: 6px 8px;
-        font-size: 0.9em;
-    }
+  .Table th,
+  .Table td {
+    padding: 6px 8px;
+    font-size: 0.9em;
+  }
 
-    .Table p {
-        font-size: 1em;
-    }
+  .Table p {
+    font-size: 1em;
+  }
 
-    .Table table {
-        font-size: 0.7em;
-    }
+  .Table table {
+    font-size: 0.7em;
+  }
 
-    
-    
+
+
 }
 
 /* 480px Devices */
 @media (max-width: 417px) {
-    
 
-    .Table{
-        padding: 10px;
-    }
 
-    .Table h2 {
-        font-size: 0.8em;
-    }
+  .Table {
+    padding: 10px;
+  }
 
-    .Table th, .Table td {
-        padding: 3px 4px;
-        font-size: 1em;
-    }
+  .Table h2 {
+    font-size: 0.8em;
+  }
 
-    .Table p {
-        font-size: 1em;
-    }
+  .Table th,
+  .Table td {
+    padding: 3px 4px;
+    font-size: 1em;
+  }
 
-    
-    
+  .Table p {
+    font-size: 1em;
+  }
+
+
+
 }
 
 /* For Extremely Small Devices (320px and below) */
 @media (max-width: 390px) {
-    
-
-    .Table{
-        padding: 10px;
-    }
-
-    .Table h2 {
-        font-size: 0.6em;
-    }
-
-    .Table th, .Table td {
-        padding: 3px 4px;
-        font-size: 0.8em;
-    }
-
-    .Table p {
-        font-size: 0.8em;
-    }
 
 
+  .Table {
+    padding: 10px;
+  }
+
+  .Table h2 {
+    font-size: 0.6em;
+  }
+
+  .Table th,
+  .Table td {
+    padding: 3px 4px;
+    font-size: 0.8em;
+  }
+
+  .Table p {
+    font-size: 0.8em;
+  }
 
 
-   
-    
+
+
+
+
 }
-
-
-
