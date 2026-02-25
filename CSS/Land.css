@@ -445,15 +445,18 @@ code {
     background-color: #f4f4f4;
 }
 
+.logos-container {
+    margin-bottom: 50px;
+}
+
 /* Individual Section Headings */
 .logos-heading {
     font-size: 2.5rem;
     font-weight: bolder;
     color: #333;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    /* Removed the border-bottom line */
     padding-bottom: 5px;
 }
 
@@ -470,6 +473,12 @@ code {
     max-width: 350px;
     max-height: 100px;
     object-fit: contain;
+}
+
+.sponsor-logos .logo-item {
+    mix-blend-mode: multiply;
+    max-height: 150px;
+    max-width: 400px;
 }
 
 /* About the Organizer Section */
