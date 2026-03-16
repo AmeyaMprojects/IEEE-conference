@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Paper Awards – NQCOMP 2026</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" type="image/x-icon" href="/Photo/SACHS_LOGO_WHITE.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/Committee.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .awards-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px 60px;
+        }
+
+        .awards-intro {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 30px 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border: 4px solid transparent;
+            border-image: linear-gradient(to right, #ff7e5f, #e57cff, blue);
+            border-image-slice: 1;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .award-card {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 35px 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border: 4px solid transparent;
+            border-image: linear-gradient(to right, #ff7e5f, #e57cff, blue);
+            border-image-slice: 1;
+            margin-bottom: 30px;
+        }
+
+        .award-card .track-label {
+            display: inline-block;
+            background: linear-gradient(to right, #ff7e5f, #e57cff, blue);
+            color: #fff;
+            font-weight: bold;
+            font-size: 0.95em;
+            padding: 5px 18px;
+            border-radius: 20px;
+            margin-bottom: 18px;
+            letter-spacing: 0.5px;
+        }
+
+        .award-card h3 {
+            font-size: 1.25em;
+            color: #222;
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        .award-card .paper-id {
+            font-size: 0.95em;
+            color: #888;
+            margin-bottom: 14px;
+        }
+
+        .award-card .authors {
+            font-size: 1em;
+            color: #444;
+        }
+
+        .award-card .authors strong {
+            color: #333;
+        }
+
+        .awards-congrats {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 25px 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border: 4px solid transparent;
+            border-image: linear-gradient(to right, #ff7e5f, #e57cff, blue);
+            border-image-slice: 1;
+            text-align: center;
+            font-size: 1.05em;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="Made with love by Ameya and Rushil!">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../Photo/NQComp-removebg-preview.png" alt="NQComp 2026 Conference Logo">
+                    <img src="../Photo/image.png" alt="NQComp 2026 Conference Logo">
+                </a>
+            </div>
+
+            <!-- Hamburger Icon (visible on small screens) -->
+            <div class="hamburger-icon" id="hamburgerIcon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <div class="nav-links" id="navLinks">
+                <button id="aboutBtn"><a href="../index.html#about-section">About</a></button>
+                <button class="CallForPaperr"><a href="CallForPaper.html">Call for Paper</a></button>
+
+                <button class="btn btn-secondary" style="font-weight: bold;" type="button"
+                    onclick="window.location.href='Organizing_Committee.html';">
+                    Committee
+                </button>
+
+                <button class="btn btn-secondary" style="font-weight: bold;" type="button"
+                    onclick="window.location.href='paper_submission.html';">
+                    Paper Submission
+                </button>
+                <button class="btn btn-secondary" style="font-weight: bold;" type="button"
+                    onclick="window.location.href='Registration.html';">
+                    Registration
+                </button>
+                <div class="dropdown">
+                    <button style="font-weight: bold;" class="btn btn-secondary dropdown-toggle" type="button"
+                        id="updatesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Updates
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="updatesDropdown">
+                        <a class="dropdown-item" target="_blank" rel="noopener noreferrer"
+                            href="../public/sponsorship_flyer.pdf">Sponsorship Opportunity</a>
+                        <a class="dropdown-item" target="_blank" rel="noopener noreferrer"
+                            href="../public/NQ Comp_Schedule_Updated_20260304-R1.pdf">Events</a>
+                    </div>
+                </div>
+                <button class="blue-submit-btnn">
+                    <a href="PreConferenceWorkshop.html">Pre-Conference Workshop</a>
+                </button>
+                <button class="btn btn-secondary" style="font-weight: bold;" type="button"
+                    onclick="window.location.href='BestPaperAwards.html';">
+                    Best Paper Awards
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="animate__animated animate__slideInDown">Best Paper Awards</h2>
+        </div>
+    </section>
+
+    <div class="awards-container">
+        <div class="awards-intro">
+            <p>We are pleased to announce the <strong>Best Paper Awards for NQCOMP 2026</strong>. Based on the
+                evaluation by the Technical Program Committee and Session chairs, one paper each has been selected for
+                outstanding research contribution in the following tracks:</p>
+        </div>
+
+        <!-- Quantum Track -->
+        <div class="award-card">
+            <span class="track-label">🏆 Best Paper Award – Quantum Track</span>
+            <h3>QUBO Model for Optimization of Crops in Agricultural Lands using Graph Coloring Technique</h3>
+            <p class="paper-id">Paper ID: 401</p>
+            <p class="authors">
+                <strong>Authors:</strong> Madhumathi Ramasamy
+                <em>(Sri Ramakrishna Engineering College, Coimbatore)</em>,
+                Sai Sakunthala Guddanti
+                <em>(Indian Institute of Technology, Madras)</em>,
+                Anil Prabhakar
+                <em>(Indian Institute of Technology, Madras)</em>
+            </p>
+        </div>
+
+        <!-- Advanced Computing Track -->
+        <div class="award-card">
+            <span class="track-label">🏆 Best Paper Award – Advanced Computing Track</span>
+            <h3>A Novel Hybrid Cosine Similarity and ECC Framework for Lightweight PPG-Based Biometric Authentication
+                in Secure IoMT</h3>
+            <p class="paper-id">Paper ID: 418</p>
+            <p class="authors">
+                <strong>Authors:</strong> Shivashish Gour
+                <em>(Assam University)</em>,
+                Tapodhir Acharjee
+                <em>(Assam University)</em>
+            </p>
+        </div>
+
+        <div class="awards-congrats">
+            <p>We congratulate the award winners and thank all authors for their valuable contributions that made
+                <strong>NQCOMP 2026</strong> a successful conference.
+            </p>
+        </div>
+    </div>
+
+    <section>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section contact">
+                    <h4>Contact Us</h4>
+                    <p>Dr Megha Arakeri: +91 90089 77922</p>
+                    <p>Dr. Shaleen Bhatnagar: +91 81973 61372</p>
+                </div>
+                <div class="footer-section email">
+                    <h4>Email Us</h4>
+                    <p><a href="mailto:nqcompmit@gmail.com">nqcompmit@gmail.com</a></p>
+                </div>
+                <div class="footer-section social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://www.instagram.com/ieeeorg/?hl=en"
+                            class="fa fa-instagram"></a>
+                        <a target="_blank" href="https://www.youtube.com/@mahebengaluru" class="fa fa-youtube"></a>
+                        <a target="_blank"
+                            href="https://www.linkedin.com/in/mit-bengaluru-089168224?originalSubdomain=in"
+                            class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+                <div class="footer-section logo0">
+                    <img class="footer-img" src="../Photo/NQComp-removebg-preview.png" alt="NQComp Logo">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="leaglies"> 2026 NQComp Conference. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('hamburgerIcon').addEventListener('click', function () {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
