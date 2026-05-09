@@ -33,10 +33,10 @@ Official website for the **2nd International Conference on Next-Gen Quantum and 
 |-----------|------|
 | Call for Papers | June 01, 2026 |
 | Paper Submission Deadline | September 01, 2026 |
-| Final Notification | October 01, 2026 |
-| Camera Ready Submission | October 15, 2026 |
-| Early Bird Registration | October 01–15, 2026 |
-| Regular Registration | October 15–30, 2026 |
+| Final Notification | October 31, 2026 |
+| Camera Ready Submission | November 15, 2026 |
+| Early Bird Registration | November 01–08, 2026 |
+| Regular Registration | November 09–15, 2026 |
 | Conference | December 9–11, 2026 |
 
 ---
@@ -94,6 +94,21 @@ Open `index.html` in any browser. No build step required.
 - Updated **Honorary Chairs**: Prasant Misra & Dr. Chengappa M R
 - Added **Dr. Sumana. M** to Technical Program Committee
 - Removed **Updates** dropdown from navigation across all pages
+
+## 📝 Changelog (v3 — May 9, 2026)
+
+- Removed **IEEE Bangalore Section** logo from Technical Co-Sponsors
+- **TPC restructured**: removed 6 names, added 5 new members at top (Prasant Misra, Dr. Chengappa M R, Dr. Sumana M, Dr. Lakshmana, Dr. Piyush Kumar Pareek)
+- Updated **Dr. Vijay Kumar B P** affiliation to IEEE CIS, Bangalore Section in Advisory Committee
+- Added **Dr. Manjunath R Kounte** to Publication Committee
+- Updated **Important Dates**: Final Notification → Oct 31, Camera Ready → Nov 15, Early Bird → Nov 01–08, Regular → Nov 09–15
+- Removed **Paper Submission CMT link**
+- Removed **Payment Link** and **CMT Link** from Registration
+- Removed **Honorary Chairs** section (names moved to TPC)
+- Updated Review Process to **double-blind peer review**
+- Removed **Pre-Conference Workshop** from navigation
+- **Organizing Committee**: replaced 30 members with 10 new members
+- **Merged Conference Chair** section into General Chairs
 
 ---
 
