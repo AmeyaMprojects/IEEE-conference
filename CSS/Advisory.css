@@ -1,44 +1,27 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* ==========================================================
+   ADVISORY COMMITTEE (advisory.css)
+   Styles for Advisory_Committee.html — advisory member lists.
+   Requires: global.css loaded first.
+   ========================================================== */
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333; /* Default text color */
-}
-
-
-/* General Styling for Advisory Committee Sections */
+/* --- Advisory Sections --- */
 .international-advisory-committee,
 .national-advisory-committee {
-    background-color: #ffffff; /* Clean white background */
+    background-color: #ffffff;
     padding: 40px 30px;
     margin: 30px auto;
-    max-width: 900px; /* Limit width for better readability */
+    max-width: 900px;
     border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
 }
-
-/* .nav-links a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease;
-} */
 
 .international-advisory-committee:hover,
 .national-advisory-committee:hover {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* Styling for Heading */
+/* --- Headings --- */
 .international-advisory-committee h3,
 .national-advisory-committee h3 {
     font-size: 32px;
@@ -50,43 +33,99 @@ body {
     letter-spacing: 2px;
 }
 
-/* Remove default list style */
+/* --- Member Lists --- */
 .international-advisory-committee ul,
 .national-advisory-committee ul {
     list-style: none;
     font-size: 18px;
-    color: #34495E; 
-    line-height: 1.8; 
-    margin-left: 40px; 
+    color: #34495E;
+    line-height: 1.8;
+    margin-left: 40px;
     padding-left: 25px;
 }
 
-/* Styling for List Items */
 .international-advisory-committee ul li,
 .national-advisory-committee ul li {
     padding: 8px 0;
-    position: relative; /* To place the bullet icon */
+    position: relative;
     font-family: 'MyCustomFont', Arial, Helvetica, sans-serif;
 }
 
-/* Custom Bullet Points */
+/* --- Custom Bullet Points --- */
 .international-advisory-committee ul li::before,
 .national-advisory-committee ul li::before {
-    content: "•"; /* Custom bullet for the list */
+    content: "•";
     font-size: 24px;
     color: #f7700a;
     position: absolute;
     left: -30px;
     top: 50%;
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
 }
 
-/* Styling for List Item Hover */
+/* --- Hover Effect --- */
 .international-advisory-committee ul li:hover,
 .national-advisory-committee ul li:hover {
     background-color: #F4F6F7;
     border-radius: 5px;
     padding-left: 10px;
-    transition: padding 0.2s ease, background-color 0.3s ease; /* Smooth transition for padding and background */
+    transition: padding 0.2s ease, background-color 0.3s ease;
 }
 
+/* --- Responsive: Tablet --- */
+@media (max-width: 768px) {
+    .international-advisory-committee,
+    .national-advisory-committee {
+        padding: 25px 20px;
+        margin: 20px 15px;
+    }
+
+    .international-advisory-committee h3,
+    .national-advisory-committee h3 {
+        font-size: 24px;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+
+    .international-advisory-committee ul,
+    .national-advisory-committee ul {
+        font-size: 16px;
+        margin-left: 20px;
+        padding-left: 20px;
+    }
+}
+
+/* --- Responsive: Phone --- */
+@media (max-width: 480px) {
+    .international-advisory-committee,
+    .national-advisory-committee {
+        padding: 20px 15px;
+        margin: 15px 10px;
+        border-radius: 8px;
+    }
+
+    .international-advisory-committee h3,
+    .national-advisory-committee h3 {
+        font-size: 20px;
+        letter-spacing: 0.5px;
+        margin-bottom: 15px;
+    }
+
+    .international-advisory-committee ul,
+    .national-advisory-committee ul {
+        font-size: 14px;
+        margin-left: 10px;
+        padding-left: 15px;
+        line-height: 1.6;
+    }
+
+    .international-advisory-committee ul li,
+    .national-advisory-committee ul li {
+        padding: 6px 0;
+    }
+
+    .international-advisory-committee ul li:hover,
+    .national-advisory-committee ul li:hover {
+        padding-left: 0;
+    }
+}

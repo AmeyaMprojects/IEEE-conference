@@ -1,72 +1,42 @@
-html {
-    scroll-behavior: smooth;
-}
+/* ==========================================================
+   HOMEPAGE (homepage.css)
+   Styles for index.html only — hero section, important dates,
+   about conference, sponsors, about organizer.
+   Requires: global.css loaded first.
+   ========================================================== */
 
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-    /* Default text color */
-}
-
-@font-face {
-    font-family: 'MyCustomFont';
-    src: url('../Photo/hp-simplified-hans-light.ttf') format('woff2');
-    font-weight: normal;
-    /* Normal weight */
-    font-style: normal;
-    /* Normal style */
-}
-
-body {
-    font-family: 'MyCustomFont', Arial, Helvetica, sans-serif;
-
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-}
-
+/* --- Nav Button Override --- */
 .nav-links button {
     background-color: transparent;
     border: none;
     cursor: pointer;
     font-size: 14px;
-    /* Reduced to match Committee.css */
     color: #000000;
     padding: 5px;
-    /* Reduced padding */
     margin: 0px 5px;
-    /* Reduced margin */
 }
 
+/* --- Typography --- */
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../Photo/hp-simplified-hans-light.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+body {
+    font-family: 'MyCustomFont', Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
     font-family: 'MyCustomFont', serif;
 }
-
 
 code {
     font-family: 'Courier New', Courier, monospace;
 }
 
-
-/* Hero Section */
+/* --- Hero Section (homepage) --- */
 .hero1 {
     display: flex;
     justify-content: space-between;
@@ -74,15 +44,11 @@ code {
     padding: 50px 20px;
     color: white;
     width: 100%;
-    /* Full width of the container */
     height: 60vh;
-    /* Full height of the viewport */
     margin: 0 auto;
     position: relative;
     flex-direction: row;
-    /* Default layout for larger screens */
     box-sizing: border-box;
-    /* Ensure padding doesn't cause overflow */
 }
 
 .hero1:before {
@@ -98,106 +64,50 @@ code {
     opacity: 1;
     z-index: -1;
     filter: blur(1px);
-    /* Add this line to apply a blur */
 }
 
-/* Hero Section */
-.hero1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 20px;
-    color: white;
-    width: 100%;
-    /* Full width of the container */
-    height: 60vh;
-    /* Full height of the viewport */
-    margin: 0 auto;
-    position: relative;
-    flex-direction: row;
-    /* Default layout for larger screens */
-    box-sizing: border-box;
-    /* Ensure padding doesn't cause overflow */
-}
-
-.hero1:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../Photo/main_baground_image.jpg");
-    background-size: cover;
-    background-position: center;
-    opacity: 1;
-    z-index: -1;
-    filter: blur(1px);
-    /* Add this line to apply a blur */
-}
-
-/* Hero content */
 .hero-content1 {
     max-width: 50%;
-    /* Control the width of the content */
     text-align: left;
-    /* Align the text to the left */
     z-index: 1;
-    /* Ensure content is above the background */
     padding: 20px;
     margin-left: 0;
-    /* Ensure the content starts from the extreme left */
     box-sizing: border-box;
-    /* Ensure padding doesn't cause overflow */
 }
 
 .hero-content1 h1 {
     font-size: 3em;
     margin-bottom: 10px;
-    /* Space below the h1 */
     white-space: nowrap;
-    /* Prevent text wrapping for larger screens */
 }
 
 .hero-content1 h2 {
     font-size: 2em;
     margin-bottom: 15px;
-    /* Space below the h2 */
     white-space: nowrap;
-    /* Prevent text wrapping for larger screens */
 }
 
 .hero-content1 p {
     font-size: 1.2em;
     margin-bottom: 20px;
-    /* Space below the paragraph */
     white-space: nowrap;
-    /* Prevent text wrapping for larger screens */
 }
 
-/* Style for the Venue Link */
+/* --- Venue Link --- */
 .venue-link {
     font-size: 1.0rem;
-    /* Adjust font size */
     font-weight: bold;
-    /* Make the text bold */
     color: #f4f4f4;
-    /* Set the color to blue for the link */
     text-decoration: none;
-    /* Remove the default underline */
     transition: color 0.3s ease, transform 0.3s ease;
-    /* Smooth transition for color and hover effect */
 }
 
-/* Hover effect for the Venue Link */
 .venue-link:hover {
     color: #2980b9;
-    /* Darker blue color on hover */
     transform: scale(1.05);
-    /* Slightly increase the size of the text on hover */
 }
 
-/* Submit Paper Button */
+/* --- Submit Paper Button --- */
 .submit-paper-btn {
     display: inline-block;
     background-color: #e60000;
@@ -214,19 +124,16 @@ code {
     background-color: #b30000;
 }
 
-/* Hero Image */
+/* --- Hero Image --- */
 .hero-image1 img {
     max-width: 500px;
     height: auto;
     border-radius: 10px;
 }
 
-
-
-/* Important Dates Section */
+/* --- Important Dates Section --- */
 .important-dates {
     background: linear-gradient(135deg, #ffffff, #f8f9fa);
-    /* Soft gradient background */
     padding: 30px 40px;
     border-radius: 20px;
     max-width: 1400px;
@@ -237,7 +144,6 @@ code {
     position: relative;
 }
 
-/* Section Heading */
 .important-dates h2 {
     font-size: 2.5em;
     color: #333333;
@@ -248,10 +154,8 @@ code {
     display: inline-block;
     padding-bottom: 10px;
     border-bottom: 5px solid #ff7b00;
-    /* Orange highlight */
 }
 
-/* Gradient Animated Background Effect */
 .important-dates::before {
     content: '';
     position: absolute;
@@ -260,7 +164,6 @@ code {
     width: 200px;
     height: 200px;
     background: rgba(0, 102, 255, 0.1);
-    /* Blue circle */
     border-radius: 50%;
     z-index: 0;
     animation: float 6s infinite alternate;
@@ -274,7 +177,6 @@ code {
     width: 200px;
     height: 200px;
     background: rgba(153, 51, 255, 0.1);
-    /* Purple circle */
     border-radius: 50%;
     z-index: 0;
     animation: float 6s infinite alternate-reverse;
@@ -286,7 +188,7 @@ code {
     }
 }
 
-/* Container for Date Cards */
+/* --- Date Cards --- */
 .date-card-container {
     display: flex;
     justify-content: space-between;
@@ -299,7 +201,6 @@ code {
     position: relative;
 }
 
-/* Date Card */
 .date-card {
     background: linear-gradient(135deg, #ffffff, #fdfdff);
     border: 2px solid #e0e0e0;
@@ -312,13 +213,10 @@ code {
     position: relative;
 }
 
-/* Hover effect */
 .date-card:hover {
     transform: translateY(-10px) scale(1.05);
     background: linear-gradient(135deg, #ff7b00, #7b5bff);
-    /* Orange to Purple gradient */
     color: #ffffff;
-    /* border-color: #ff0ee3; */
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
@@ -327,17 +225,14 @@ code {
     color: #ffffff;
 }
 
-/* Date Card Heading */
 .date-card h3 {
     font-size: 1.3em;
     font-weight: 700;
     color: #007bff;
-    /* Default Blue */
     margin-bottom: 10px;
     transition: color 0.3s ease;
 }
 
-/* Date Card Content */
 .date-card p {
     font-size: 1.1em;
     color: #555;
@@ -346,46 +241,7 @@ code {
     transition: color 0.3s ease;
 }
 
-/* Arrows */
-
-
-
-
-/* Stylish Long Tail Arrows (Pointing Right) */
-/* .arrow {
-    position: relative;
-    width: 70px;
-    height: 20px;
-    margin: 0 10px;
-} */
-
-/* Long Tail Arrow */
-/* .right-arrow::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 60px;
-    height: 2px;
-    background-color: #007bff;
-    transform: translateY(-50%);
-} */
-
-/* .right-arrow::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: -12px;
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 20px solid #007bff;
-    transform: translateY(-50%);
-} */
-
-
-/* About Conference Section */
+/* --- About Conference & Why Attend --- */
 .about-conference,
 .why-attend-section {
     text-align: center;
@@ -400,7 +256,6 @@ code {
     transition: background-image 0.6s ease-out;
 }
 
-/* Heading Styling */
 .about-conference h2,
 .why-attend-section h3 {
     font-size: 2.5em;
@@ -409,10 +264,8 @@ code {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
-    /* text-transform: uppercase; */
 }
 
-/* Paragraph Styling */
 .about-conference p,
 .why-attend-section p {
     font-size: 18px;
@@ -423,22 +276,7 @@ code {
     margin: 0 auto;
 }
 
-
-
-.social-icons img {
-    width: 24px;
-    height: 24px;
-    margin: 0 5px;
-    transition: transform 0.3s ease;
-}
-
-.social-icons img:hover {
-    transform: scale(1.2);
-}
-
-
-
-/* Logos Section */
+/* --- Logos / Sponsors Section --- */
 .logos {
     text-align: center;
     padding: 40px 20px;
@@ -449,7 +287,6 @@ code {
     margin-bottom: 50px;
 }
 
-/* Individual Section Headings */
 .logos-heading {
     font-size: 2.5rem;
     font-weight: bolder;
@@ -460,7 +297,6 @@ code {
     padding-bottom: 5px;
 }
 
-/* Logos Row */
 .logos-row {
     display: flex;
     justify-content: center;
@@ -481,35 +317,27 @@ code {
     max-width: 400px;
 }
 
-/* About the Organizer Section */
+/* --- About the Organizer --- */
 .about-organizer {
     background: linear-gradient(to right, #f0f8ff, #e0eafc);
-    /* Soft gradient background */
     padding: 50px 20px;
     text-align: center;
     border-radius: 10px;
-    /* Rounded corners */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
     margin-top: 40px;
-    /* Space from the previous section */
     margin-bottom: 40px;
-    /* Space after the section */
 }
 
-/* Heading Styling */
 .about-organizer h2 {
     font-size: 2.5rem;
     font-weight: bold;
     color: #34495e;
-    /* Dark grayish-blue for text */
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     position: relative;
 }
 
-/* Decorative Line Under the Heading */
 .about-organizer h2::after {
     content: '';
     position: absolute;
@@ -519,79 +347,70 @@ code {
     width: 80px;
     height: 4px;
     background-color: #3498db;
-    /* Blue color line */
     border-radius: 2px;
 }
 
-/* Paragraph Description Styling */
 .organizer-description {
     font-size: 1.1rem;
     color: #555;
-    /* Medium gray color for readability */
     line-height: 1.8;
-    /* Improved line spacing */
     max-width: 850px;
-    /* Set maximum width to keep it centered */
     margin: 0 auto;
     text-align: justify;
-    /* Justify the text for a cleaner look */
     padding: 0 20px;
-    /* Padding to prevent text from touching the edges */
     font-family: 'Roboto', sans-serif;
-    /* Smooth font for readability */
     font-style: italic;
-    /* Make the text italic for a refined look */
 }
 
+/* --- Social Icons (homepage override) --- */
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+}
 
+.social-icons img:hover {
+    transform: scale(1.2);
+}
 
-/* Mobile Responsiveness (up to 1024px) */
+/* ==========================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================== */
+
+/* --- Tablets (≤1024px) --- */
 @media (max-width: 1024px) {
     .hero1 {
         flex-direction: column;
-        /* Stack content vertically on smaller screens */
         padding: 30px 15px;
-        /* Adjust padding */
     }
 
     .hero-content1 {
         max-width: 90%;
-        /* Increase content width */
         text-align: center;
-        /* Center the text */
         margin-left: 0;
-        /* Remove any left margin */
     }
 
     .hero-content1 h1 {
         font-size: 1.9em;
-        /* Adjust font size for mid-range devices */
         white-space: normal;
-        /* Allow word wrapping */
     }
 
     .hero-content1 h2 {
         font-size: 1.6em;
-        /* Adjust font size */
         white-space: normal;
-        /* Allow word wrapping */
     }
 
     .hero-content1 p {
         font-size: 1.1em;
-        /* Adjust font size for readability */
         white-space: normal;
-        /* Allow word wrapping */
     }
 
     .hero-image1 img {
         max-width: 100%;
-        /* Ensure image is responsive */
         margin-top: 20px;
-        /* Space between image and text */
     }
 
-    /* Important Dates Responsive */
     .important-dates {
         padding: 20px 15px;
         margin: 20px auto;
@@ -604,64 +423,49 @@ code {
 
     .date-card-container {
         display: flex;
-        /* Ensure it’s a flex container */
         flex-wrap: wrap;
-        /* Allow cards to wrap */
         justify-content: space-between;
-        /* Distribute space between items */
         gap: 10px;
     }
 
     .date-card {
         width: 250px;
-        /* Adjust width for better spacing */
         height: 111px;
         margin: 10px 0;
     }
 }
 
-/* Larger Devices (Above 1024px, no wrapping) */
+/* --- Large Screens (≥1025px) --- */
 @media (min-width: 1025px) {
     .hero1 {
         flex-direction: row;
-        /* Default row layout */
         padding: 50px 20px;
-        /* More space on large screens */
     }
 
     .hero-content1 {
         max-width: 50%;
-        /* Set content width to 50% */
         text-align: left;
     }
 
     .hero-content1 h1 {
         font-size: 3em;
-        /* Large font size */
         white-space: nowrap;
-        /* Prevent word wrapping */
     }
 
     .hero-content1 h2 {
         font-size: 2.5em;
-        /* Large font size */
         white-space: nowrap;
-        /* Prevent word wrapping */
     }
 
     .hero-content1 p {
         font-size: 1.2em;
-        /* Slightly smaller text for readability */
         white-space: nowrap;
-        /* Prevent word wrapping */
     }
 
     .hero-image1 img {
         max-width: 500px;
-        /* Control image size */
     }
 
-    /* Important Dates for Large Screens */
     .important-dates {
         padding: 20px 30px;
         margin: 50px auto;
@@ -680,57 +484,42 @@ code {
 
     .date-card {
         width: 180px;
-        /* Keep default width */
     }
 }
 
-/* 720px Devices */
+/* --- 720px Devices --- */
 @media (max-width: 720px) {
     .hero1 {
         flex-direction: column;
-        /* Stack content vertically on smaller screens */
         padding: 30px 15px;
-        /* Adjust padding */
     }
 
     .hero-content1 {
         max-width: 85%;
-        /* Adjust content width for 720px screens */
         text-align: center;
-        /* Center the text */
         margin-left: 0;
-        /* Remove any left margin */
     }
 
     .hero-content1 h1 {
         font-size: 1.7em;
-        /* Adjust font size */
         white-space: normal;
-        /* Allow word wrapping */
     }
 
     .hero-content1 h2 {
         font-size: 1.8em;
-        /* Adjust font size */
         white-space: normal;
-        /* Allow word wrapping */
     }
 
     .hero-content1 p {
         font-size: 1.0em;
-        /* Adjust font size for readability */
         white-space: normal;
-        /* Allow word wrapping */
     }
 
     .hero-image1 img {
         max-width: 100%;
-        /* Ensure image is responsive */
         margin-top: 20px;
-        /* Space between image and text */
     }
 
-    /* Important Dates for 720px Devices */
     .important-dates {
         padding: 20px 15px;
     }
@@ -743,7 +532,6 @@ code {
     .date-card-container {
         flex-wrap: wrap;
         gap: 20px;
-        /* More space between the cards */
     }
 
     .date-card {
@@ -751,58 +539,43 @@ code {
     }
 }
 
-/* 520px Devices */
+/* --- 520px Devices --- */
 @media (max-width: 520px) {
     .hero1 {
         flex-direction: column;
-        /* Stack content vertically */
         padding: 25px 10px;
-        /* Adjust padding */
     }
 
     .hero-content1 {
         max-width: 90%;
-        /* Maximize content width */
         text-align: center;
-        /* Center the text */
         margin-left: 0;
-        /* Remove any left margin */
     }
 
     .hero-content1 h1 {
         font-size: 1.6em;
-        /* Adjust font size */
         white-space: normal;
-        /* Allow word wrapping */
     }
 
     .hero-content1 h2 {
         font-size: 1.7em;
-        /* Adjust font size */
         white-space: normal;
-        /* Allow word wrapping */
     }
 
     .hero-content1 p {
         font-size: 1em;
-        /* Adjust font size for readability */
         white-space: normal;
-        /* Allow word wrapping */
     }
 
     .hero-image1 img {
         max-width: 100%;
-        /* Ensure image is responsive */
         margin-top: 20px;
-        /* Space between image and text */
     }
 
     .submit-paper-btn {
         padding: 8px 12px;
-        /* Adjust button padding */
     }
 
-    /* Important Dates for 520px Devices */
     .important-dates {
         padding: 15px 10px;
     }
@@ -819,43 +592,34 @@ code {
 
     .date-card {
         width: 100%;
-        /* Cards will take full width on small screens */
         margin-bottom: 20px;
     }
 }
 
-/* 480px Devices */
+/* --- 480px Devices --- */
 @media (max-width: 480px) {
     .hero-content1 {
         max-width: 90%;
-        /* Maximize content width */
         text-align: center;
-        /* Center the text */
         margin-left: 0;
-        /* Remove any left margin */
     }
 
     .hero-content1 h1 {
         font-size: 1.6em;
-        /* Reduce font size for very small devices */
     }
 
     .hero-content1 h2 {
         font-size: 1.3em;
-        /* Adjust font size for very small devices */
     }
 
     .hero-content1 p {
         font-size: 0.8em;
-        /* Adjust font size for very small devices */
     }
 
     .submit-paper-btn {
         padding: 10px 15px;
-        /* Adjust button padding for smaller screens */
     }
 
-    /* Important Dates for 480px Devices */
     .important-dates {
         padding: 12px 8px;
     }
@@ -872,7 +636,6 @@ code {
 
     .date-card {
         width: 100%;
-        /* Full-width for ultra small screens */
         margin-bottom: 20px;
     }
 
@@ -889,43 +652,33 @@ code {
     }
 }
 
-/* For Extremely Small Devices (320px and below) */
+/* --- 380px and Below --- */
 @media (max-width: 380px) {
     .hero-content1 {
         max-width: 90%;
-        /* Maximize content width */
         text-align: center;
         padding: 10px;
-        /* Reduce padding */
     }
 
     .hero-content1 h1 {
         font-size: 1.6em;
-        /* Adjust font size */
         margin-bottom: 8px;
-        /* Reduce margin */
     }
 
     .hero-content1 h2 {
         font-size: 1.3em;
-        /* Adjust font size */
         margin-bottom: 12px;
-        /* Reduce margin */
     }
 
     .hero-content1 p {
         font-size: 0.8em;
-        /* Adjust font size */
     }
 
     .submit-paper-btn {
         padding: 8px 12px;
-        /* Reduce button padding */
         font-size: 0.9em;
-        /* Reduce font size */
     }
 
-    /* Important Dates for Extremely Small Devices */
     .important-dates {
         padding: 10px 5px;
     }
@@ -941,7 +694,6 @@ code {
 
     .date-card {
         width: 100%;
-        /* Full-width for extremely small screens */
         margin-bottom: 15px;
     }
 

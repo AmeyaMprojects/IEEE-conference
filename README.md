@@ -44,7 +44,7 @@ Official website for the **2nd International Conference on Next-Gen Quantum and 
 ## 🛠 Tech Stack
 
 - **HTML5** — Structure
-- **CSS3** — Custom styling (`CSS/Committee.css`, `CSS/Land.css`, page-specific CSS)
+- **CSS3** — Custom styling (see `CSS/README.md` for file guide)
 - **Bootstrap 4.3** — Grid and components
 - **Font Awesome 4.7** — Social icons
 - **Animate.css** — CSS animations
@@ -54,13 +54,18 @@ Official website for the **2nd International Conference on Next-Gen Quantum and 
 ## 📁 Project Structure
 
 ```
-├── index.html                  # Home page
+├── index.html                          # Home page
 ├── CSS/
-│   ├── Committee.css           # Shared nav, footer, icon styles
-│   ├── Land.css                # Landing page styles
-│   ├── Registration.css        # Registration page styles
-│   ├── PreConferenceWorkshop.css  # Workshop page styles
-│   └── organizingCommittee.css # Committee list styles
+│   ├── README.md                       # CSS file guide for contributors
+│   ├── global.css                      # Shared: nav, footer, icons, buttons, reset
+│   ├── homepage.css                    # Home page: hero, dates, about, sponsors
+│   ├── call-for-paper.css              # Call for Paper: track cards
+│   ├── paper-submission.css            # Paper Submission: manuscript sections
+│   ├── registration.css                # Registration: fee tables, hotel cards
+│   ├── organizing-committee.css        # Organizing Committee: member lists
+│   ├── advisory.css                    # Advisory Committee: advisory lists
+│   ├── technical-program.css           # TPC: member list
+│   └── pre-conference-workshop.css     # Workshop: details, brochure
 ├── HTML/
 │   ├── Advisory_Committee.html
 │   ├── BestPaperAward.html
@@ -71,8 +76,8 @@ Official website for the **2nd International Conference on Next-Gen Quantum and 
 │   ├── Registration.html
 │   ├── Technical_Program_Committee.html
 │   └── paper_submission.html
-├── Photo/                      # Images and logos
-└── public/                     # PDFs (sponsorship flyer, workshop brochure)
+├── Photo/                              # Images and logos
+└── public/                             # PDFs (sponsorship flyer, workshop brochure)
 ```
 
 ---
@@ -83,19 +88,42 @@ Open `index.html` in any browser. No build step required.
 
 ---
 
-## 📝 Changelog (v2 — May 2026)
+## 📝 Changelog
 
-- Updated title to **2nd International Conference**
-- Changed conference dates to **December 9–11, 2026**
-- Updated IEEE Xplore text to **(To be approved)**
-- Updated all **Important Dates** to new schedule
-- Replaced IEEE Computer Society logo with **IEEE CIS Bangalore Chapter** logo in Technical Co-Sponsors
-- Removed **QuantrolOx** sponsor section
-- Updated **Honorary Chairs**: Prasant Misra & Dr. Chengappa M R
-- Added **Dr. Sumana. M** to Technical Program Committee
-- Removed **Updates** dropdown from navigation across all pages
+### v4 — May 14, 2026
 
-## 📝 Changelog (v3 — May 9, 2026)
+**Security Hardening**
+- Fixed **mailto phishing** — all `mailto:` links now point to `nqcompmit@gmail.com` (were incorrectly pointing to defunct `schas.conference@gmail.com`)
+- Added **`rel="noopener noreferrer"`** to all `target="_blank"` links (social media, hotels, IEEE template) to prevent reverse tabnabbing
+- Added **SRI integrity hashes** to Font Awesome CDN and all jQuery/Popper/Bootstrap scripts
+- Fixed **paper_submission.html** using mismatched CDN versions (jQuery 3.6.0 → 3.3.1, Popper 1.16 → 1.14.7)
+- Updated **`og:url`** meta tag from stale `schas2025` to `nqcomp2026`
+- Fixed all stale **alt text** from "SCHAS 2025" / "NQComp 2025" → "NQComp 2026"
+- Removed leftover **debug comments** and unreachable code
+
+**CSS Reorganization**
+- Renamed all 9 CSS files to **consistent kebab-case** naming (e.g., `Committee.css` → `global.css`, `Land.css` → `homepage.css`, `Paper_Submitt.css` → `paper-submission.css`)
+- Removed **massive code duplication** — duplicate `.hero1` block, triple `body {}` declarations, 6 redundant resets
+- Removed **~30 lines of dead commented-out code** (arrow styles, nav overrides)
+- Added **file headers** and section markers to every CSS file
+- Added **`CSS/README.md`** — file structure guide for contributors
+- Scoped page-specific `body` font overrides to **content containers only**, so nav font stays consistent
+
+**Responsive Improvements**
+- Added **3-tier responsive breakpoints** to global nav (1200px tablet, 1067px hamburger, 480px phone)
+- Added **slide-down animation** on hamburger menu open
+- Added **footer vertical stacking** on phones
+- Added **phone breakpoints** to 5 pages that had none (Advisory, TPC, Paper Submission, Workshop, Organizing Committee)
+- Added **horizontal scroll** for registration tables on mobile
+- **Disabled hover animations** on touch devices (unusable on mobile)
+
+**Content Updates**
+- Updated **Patrons**: replaced Lt. Gen. (Dr.) M. D. Venkatesh → Dr. Sharath. K. Rao (VC, MAHE)
+- Updated **General Chairs** titles: Dr. Megha → "Professor & Associate Dean, SoCE", Dr. Shaleen → "SoCE"
+- Added **MIT Bengaluru** affiliation to 3 Publication Committee members
+- Updated **Website Committee** academic year from 1st → 2nd year BTech
+
+### v3 — May 9, 2026
 
 - Removed **IEEE Bangalore Section** logo from Technical Co-Sponsors
 - **TPC restructured**: removed 6 names, added 5 new members at top (Prasant Misra, Dr. Chengappa M R, Dr. Sumana M, Dr. Lakshmana, Dr. Piyush Kumar Pareek)
@@ -109,6 +137,18 @@ Open `index.html` in any browser. No build step required.
 - Removed **Pre-Conference Workshop** from navigation
 - **Organizing Committee**: replaced 30 members with 10 new members
 - **Merged Conference Chair** section into General Chairs
+
+### v2 — May 2026
+
+- Updated title to **2nd International Conference**
+- Changed conference dates to **December 9–11, 2026**
+- Updated IEEE Xplore text to **(To be approved)**
+- Updated all **Important Dates** to new schedule
+- Replaced IEEE Computer Society logo with **IEEE CIS Bangalore Chapter** logo in Technical Co-Sponsors
+- Removed **QuantrolOx** sponsor section
+- Updated **Honorary Chairs**: Prasant Misra & Dr. Chengappa M R
+- Added **Dr. Sumana. M** to Technical Program Committee
+- Removed **Updates** dropdown from navigation across all pages
 
 ---
 

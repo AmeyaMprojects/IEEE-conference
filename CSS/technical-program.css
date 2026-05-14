@@ -1,0 +1,128 @@
+/* ==========================================================
+   TECHNICAL PROGRAM COMMITTEE (technical-program.css)
+   Styles for Technical_Program_Committee.html — TPC member list.
+   Requires: global.css loaded first.
+   ========================================================== */
+
+/* --- TPC Section --- */
+.technical-program-committee {
+    background-color: #ffffff;
+    padding: 40px 60px;
+    margin: 30px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.technical-program-committee:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Heading --- */
+.technical-program-committee h3 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2C3E50;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* --- Member List --- */
+.technical-program-committee ul {
+    font-size: 18px;
+    color: #34495E;
+    line-height: 1.8;
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.technical-program-committee ul li {
+    padding-left: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: relative;
+    font-family: 'MyCustomFont', Arial, Helvetica, sans-serif;
+    transition: padding-left 0.3s ease;
+}
+
+/* --- Custom Bullet Points --- */
+.technical-program-committee ul li::before {
+    content: "•";
+    font-size: 24px;
+    color: #941f6e;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* --- Hover Effect --- */
+.technical-program-committee ul li:hover {
+    background-color: #F4F6F7;
+    border-radius: 5px;
+    padding-left: 60px;
+    transition: padding-left 0.3s ease, background-color 0.3s ease;
+}
+
+/* --- Responsive: Tablet --- */
+@media (max-width: 768px) {
+    .technical-program-committee {
+        padding: 25px 30px;
+        margin: 20px 15px;
+    }
+
+    .technical-program-committee h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .technical-program-committee ul {
+        font-size: 16px;
+    }
+
+    .technical-program-committee ul li {
+        padding-left: 30px;
+    }
+
+    .technical-program-committee ul li:hover {
+        padding-left: 45px;
+    }
+}
+
+/* --- Responsive: Phone --- */
+@media (max-width: 480px) {
+    .technical-program-committee {
+        padding: 20px 15px;
+        margin: 15px 10px;
+        border-radius: 8px;
+    }
+
+    .technical-program-committee h3 {
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+    }
+
+    .technical-program-committee ul {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .technical-program-committee ul li {
+        padding-left: 25px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    .technical-program-committee ul li::before {
+        font-size: 20px;
+    }
+
+    .technical-program-committee ul li:hover {
+        padding-left: 25px;
+    }
+}

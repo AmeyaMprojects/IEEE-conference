@@ -1,0 +1,195 @@
+/* ==========================================================
+   CALL FOR PAPERS (call-for-paper.css)
+   Styles for CallForPaper.html — track cards and topic lists.
+   Requires: global.css loaded first.
+   ========================================================== */
+
+/* --- Base Override (content only, nav inherits from global.css) --- */
+.track-container,
+.para {
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f7f9fc;
+}
+
+/* --- Paragraph Section --- */
+.para {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.para h4 {
+    margin-top: 2rem;
+    font-size: 20px;
+    text-align: center;
+    max-width: 90%;
+}
+
+/* --- Call For Paper Nav Link --- */
+.CallForPaperr a {
+    text-decoration: none;
+}
+
+/* --- Track Cards Container --- */
+.track-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* --- Individual Track Card --- */
+.track {
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: 350px;
+    min-width: 260px;
+    border-radius: 10px;
+    padding: 30px;
+    background: linear-gradient(145deg, #f3f4f6, #e0e3e8);
+    border: 0.5px solid #000000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: left;
+}
+
+.track:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Track Title --- */
+.track h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+/* --- Track Topic List --- */
+.track ul {
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.track li {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 8px;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+.track li:hover {
+    color: transparent;
+    background-image: linear-gradient(45deg, #d89b51, #82325d, #455db2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    cursor: pointer;
+}
+
+/* --- Main Layout --- */
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* ==========================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================== */
+
+/* --- Tablets (≤1024px) --- */
+@media (max-width: 1024px) {
+    .hero {
+        height: 250px;
+    }
+
+    .hero-content {
+        max-width: 70%;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+        text-shadow: 0px 0px 3px #8e1f58;
+    }
+
+    .para h4 {
+        font-size: 18px;
+    }
+
+    .track-container {
+        justify-content: space-between;
+    }
+
+    .track {
+        width: 45%;
+    }
+
+    .track h3 {
+        font-size: 16px;
+    }
+
+    .track li {
+        font-size: 16px;
+    }
+}
+
+/* --- Small Tablets (≤768px) --- */
+@media (max-width: 768px) {
+    .para h4 {
+        font-size: 16px;
+        max-width: 95%;
+    }
+
+    .track-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .track {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .track h3 {
+        font-size: 18px;
+    }
+
+    .track li {
+        font-size: 16px;
+    }
+}
+
+/* --- Phones (≤480px) --- */
+@media (max-width: 480px) {
+    .para h4 {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .track-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .track {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .track h3 {
+        font-size: 14px;
+    }
+
+    .track li {
+        font-size: 14px;
+    }
+}

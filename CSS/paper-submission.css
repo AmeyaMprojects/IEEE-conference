@@ -1,0 +1,170 @@
+/* ==========================================================
+   PAPER SUBMISSION (paper-submission.css)
+   Styles for paper_submission.html — manuscript prep, upload,
+   guidelines sections.
+   Requires: global.css loaded first.
+   ========================================================== */
+
+/* --- Base Override (content only, nav inherits from global.css) --- */
+body {
+    background-color: #ffffff;
+}
+
+main,
+.content {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+/* --- Main Content Area --- */
+main {
+    width: 80%;
+    margin: 2em auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 0;
+}
+
+/* --- Headings --- */
+.content h2 {
+    font-size: 1.8em;
+    color: #0044cc;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #0044cc;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.4em;
+    color: #0044cc;
+    margin-top: 1.5em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 3px;
+}
+
+/* --- Text & Lists --- */
+p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    margin-bottom: 1em;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 2em;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin-bottom: 0.6em;
+}
+
+strong {
+    font-weight: bold;
+    color: #000;
+}
+
+/* --- Content Sections --- */
+section {
+    margin-bottom: 2.5em;
+}
+
+#manuscript-prep,
+#general-guidelines {
+    padding: 20px;
+    border-left: 4px solid #ff8c00;
+}
+
+#paper-upload {
+    padding: 20px;
+    border-left: 4px solid #ff0088;
+}
+
+#general-guidelines {
+    padding: 20px;
+    border-left: 4px solid #0037ff;
+}
+
+/* --- Links --- */
+.content a {
+    color: #0044cc;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid #0044cc;
+}
+
+.content a:hover {
+    color: #002d73;
+    border-bottom: 2px solid #002d73;
+}
+
+/* --- Important Text --- */
+strong {
+    color: #d9534f;
+}
+
+/* --- Responsive: Tablet --- */
+@media (max-width: 768px) {
+    main {
+        width: 92%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    p, ul li {
+        font-size: 1em;
+    }
+
+    #manuscript-prep,
+    #paper-upload,
+    #general-guidelines {
+        padding: 15px;
+    }
+}
+
+/* --- Responsive: Phone --- */
+@media (max-width: 480px) {
+    main {
+        width: 100%;
+        margin: 1em auto;
+        padding: 12px;
+    }
+
+    .content h2 {
+        font-size: 1.3em;
+        margin-bottom: 0.6em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+        margin-top: 1em;
+    }
+
+    p {
+        font-size: 0.95em;
+        line-height: 1.5em;
+    }
+
+    ul {
+        margin-left: 1.2em;
+    }
+
+    ul li {
+        font-size: 0.95em;
+        margin-bottom: 0.4em;
+    }
+
+    #manuscript-prep,
+    #paper-upload,
+    #general-guidelines {
+        padding: 12px;
+        border-left-width: 3px;
+    }
+}
