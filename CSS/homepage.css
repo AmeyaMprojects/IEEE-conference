@@ -191,12 +191,12 @@ code {
 /* --- Date Cards --- */
 .date-card-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: stretch;
     gap: 20px;
     padding-top: 20px;
-    overflow-x: auto;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     z-index: 1;
     position: relative;
 }
@@ -208,9 +208,15 @@ code {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 20px 15px;
-    width: 200px;
+    width: 260px;
+    height: 130px;
+    box-sizing: border-box;
+    flex-shrink: 0;
     transition: all 0.4s ease;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .date-card:hover {
@@ -239,6 +245,7 @@ code {
     line-height: 1.4;
     margin: 0;
     transition: color 0.3s ease;
+    white-space: normal;
 }
 
 /* --- About Conference & Why Attend --- */
@@ -424,14 +431,13 @@ code {
     .date-card-container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 10px;
+        justify-content: center;
+        gap: 15px;
     }
 
     .date-card {
-        width: 250px;
-        height: 111px;
-        margin: 10px 0;
+        width: 260px;
+        height: 130px;
     }
 }
 
@@ -479,11 +485,14 @@ code {
     .date-card-container {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 15px;
+        padding-bottom: 20px;
     }
 
     .date-card {
-        width: 180px;
+        width: 260px;
+        height: 130px;
     }
 }
 
@@ -531,11 +540,13 @@ code {
 
     .date-card-container {
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 15px;
+        justify-content: center;
     }
 
     .date-card {
-        width: 220px;
+        width: 260px;
+        height: 130px;
     }
 }
 
@@ -588,11 +599,14 @@ code {
     .date-card-container {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 15px;
     }
 
     .date-card {
         width: 100%;
-        margin-bottom: 20px;
+        height: auto;
+        min-height: 120px;
+        margin-bottom: 0;
     }
 }
 
@@ -632,11 +646,14 @@ code {
     .date-card-container {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 15px;
     }
 
     .date-card {
         width: 100%;
-        margin-bottom: 20px;
+        height: auto;
+        min-height: 120px;
+        margin-bottom: 0;
     }
 
     .date-card h3 {
@@ -690,11 +707,14 @@ code {
     .date-card-container {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 15px;
     }
 
     .date-card {
         width: 100%;
-        margin-bottom: 15px;
+        height: auto;
+        min-height: 120px;
+        margin-bottom: 0;
     }
 
     .date-card h3 {

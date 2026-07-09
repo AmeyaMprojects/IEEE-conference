@@ -1,12 +1,12 @@
-# NQComp 2026 — 2nd International IEEE Conference Website
+# NQComp 2027 — 2nd International IEEE Conference Website
 
 <p align="center">
-  <img src="./Photo/NQComp-removebg-preview.png" alt="NQComp 2026 Logo" width="300" style="background-color: white; padding: 15px; border-radius: 10px;">
+  <img src="./Photo/NQComp-removebg-preview.png" alt="NQComp 2027 Logo" width="300" style="background-color: white; padding: 15px; border-radius: 10px;">
 </p>
 
-Official website for the **2nd International Conference on Next-Gen Quantum and Advanced Computing: Algorithms, Security, and Beyond (NQComp-2026)**, an IEEE conference organized by the **School of Computer Engineering, MIT Bengaluru, MAHE**.
+Official website for the **2nd International Conference on Next-Gen Quantum and Advanced Computing: Algorithms, Security, and Beyond (NQComp 2027)**, an IEEE conference organized by the **School of Computer Engineering, MIT Bengaluru, MAHE**.
 
-📅 **Conference Dates:** December 9–11, 2026  
+📅 **Conference Dates:** January 21–23, 2027  
 📍 **Venue:** Manipal Institute of Technology, Bengaluru
 
 ---
@@ -31,13 +31,13 @@ Official website for the **2nd International Conference on Next-Gen Quantum and 
 
 | Milestone | Date |
 |-----------|------|
-| Call for Papers | June 01, 2026 |
-| Paper Submission Deadline | September 01, 2026 |
-| Final Notification | October 31, 2026 |
-| Camera Ready Submission | November 15, 2026 |
-| Early Bird Registration | November 01–08, 2026 |
-| Regular Registration | November 09–15, 2026 |
-| Conference | December 9–11, 2026 |
+| Call for Papers | July 15, 2026 |
+| Paper Submission Deadline | September 30, 2026 |
+| Final Notification | November 15, 2026 |
+| Camera Ready Submission | December 1, 2026 |
+| Early Bird Registration | November 25–30, 2026 |
+| Regular Registration | December 1–7, 2026 |
+| Conference | January 21–23, 2027 |
 
 ---
 
@@ -89,6 +89,14 @@ Open `index.html` in any browser. No build step required.
 ---
 
 ## 📝 Changelog
+
+### v5 — July 2026
+
+- Updated title to **NQComp 2027**
+- Changed conference dates to **January 21–23, 2027**
+- Updated all **Important Dates** to the new 2026-2027 schedule
+- Replaced logo with inverted black version
+- Fixed responsive layout and text wrapping of date cards on the homepage
 
 ### v4 — May 14, 2026
 
