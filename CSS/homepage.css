@@ -313,8 +313,8 @@ code {
 }
 
 .logo-item {
-    max-width: 350px;
-    max-height: 100px;
+    max-width: 500px;
+    max-height: 160px;
     object-fit: contain;
 }
 
