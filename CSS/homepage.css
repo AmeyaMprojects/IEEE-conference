@@ -308,7 +308,7 @@ code {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 80px;
     flex-wrap: wrap;
 }
 
@@ -316,10 +316,10 @@ code {
     max-width: 500px;
     max-height: 160px;
     object-fit: contain;
+    mix-blend-mode: multiply;
 }
 
 .sponsor-logos .logo-item {
-    mix-blend-mode: multiply;
     max-height: 150px;
     max-width: 400px;
 }

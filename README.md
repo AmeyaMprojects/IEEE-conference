@@ -90,6 +90,14 @@ Open `index.html` in any browser. No build step required.
 
 ## 📝 Changelog
 
+### v6 — September 2026
+
+- Replaced IEEE Computer Society sponsor logo with the IEEE CIS Bengaluru logo and removed the standard IEEE CIS logo.
+- Improved sponsor logo spacing and visual alignment (increased gap to 80px, shifted left logo up by 20px).
+- Fixed white backgrounds on sponsor JPG logos blending improperly using `mix-blend-mode: multiply`.
+- Upgraded icon library from FontAwesome v4 to **FontAwesome v6** across all pages.
+- Completely redesigned social media footer icons with a modern circular style, brand colors, hover float animations, and crisp font-smoothing.
+
 ### v5 — July 2026
 
 - Updated title to **NQComp 2027**
