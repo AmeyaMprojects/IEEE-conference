@@ -40,6 +40,12 @@
 .note-box { background-color: #fff8e1; border: 2px solid #f7931e; border-radius: 10px; padding: 20px 25px; margin: 25px 0; text-align: left; }
 .note-box h4 { color: #f7931e; font-size: 1.4em; margin-bottom: 12px; font-weight: bold; text-align: left; }
 .note-box p { font-size: 1em; color: #444; margin-top: 8px; text-align: left; line-height: 1.6; }
+.note-box ul { font-size: 1em; color: #444; line-height: 1.8; }
+.note-box a { color: #f7931e; font-weight: bold; text-decoration: none; word-break: break-all; }
+.note-box a:hover { text-decoration: underline; }
+
+/* --- Payment Link --- */
+.Table h3 a { word-break: break-all; }
 
 /* --- Hotels Section --- */
 .hotels-section { text-align: center; padding: 40px; background-color: #f5f5f5; display: flex; flex-wrap: wrap; justify-content: space-around; }
@@ -60,10 +66,51 @@
 
 /* --- Responsive --- */
 @media (max-width: 1200px) { .hotel-card { width: 250px; } }
-@media (max-width: 1024px) { .nav-links button { font-size: 0.9em; } .Table h2 { font-size: 1.8em; } .Table h3 { font-size: 1.3em; } .Table th, .Table td { padding: 10px 12px; } }
+@media (max-width: 1024px) {
+  .nav-links button { font-size: 0.9em; }
+  .Table h2 { font-size: 1.8em; }
+  .Table h3 { font-size: 1.3em; }
+  .Table th, .Table td { padding: 10px 12px; }
+}
 @media (max-width: 992px) { .hotel-card { width: 45%; } }
-@media screen and (max-width: 768px) { .hotel-card { width: 45%; } .Table h2 { font-size: 1.6em; } .Table h3 { font-size: 1.2em; } .Table th, .Table td { padding: 8px 10px; } .Table table { font-size: 0.9em; } }
-@media (max-width: 578px) { .Table h2 { font-size: 1.4em; } .Table h3 { font-size: 1.1em; } .Table th, .Table td { padding: 6px 8px; font-size: 0.9em; } .Table p { font-size: 1em; } .Table table { font-size: 0.7em; } }
+@media screen and (max-width: 768px) {
+  .hotel-card { width: 45%; }
+  .Table h2 { font-size: 1.6em; }
+  .Table h3 { font-size: 1.2em; }
+  .Table th, .Table td { padding: 8px 10px; }
+  .Table table { font-size: 0.9em; }
+  .note-box { padding: 15px 18px; margin: 20px 0; }
+  .note-box h4 { font-size: 1.2em; }
+  .note-box p, .note-box ul { font-size: 0.95em; }
+}
+@media (max-width: 578px) {
+  .Table h2 { font-size: 1.4em; }
+  .Table h3 { font-size: 1.1em; }
+  .Table th, .Table td { padding: 6px 8px; font-size: 0.9em; }
+  .Table p { font-size: 1em; }
+  .Table table { font-size: 0.7em; }
+  .note-box { padding: 12px 14px; margin: 15px 0; }
+  .note-box h4 { font-size: 1.1em; }
+  .note-box p, .note-box ul { font-size: 0.9em; }
+  .note-box ul { padding-left: 18px; }
+}
 @media (max-width: 480px) { .hotel-card { width: 100%; } }
-@media (max-width: 417px) { .Table { padding: 10px; } .Table h2 { font-size: 0.8em; } .Table th, .Table td { padding: 3px 4px; font-size: 1em; } .Table p { font-size: 1em; } }
-@media (max-width: 390px) { .Table { padding: 10px; } .Table h2 { font-size: 0.6em; } .Table th, .Table td { padding: 3px 4px; font-size: 0.8em; } .Table p { font-size: 0.8em; } }
+@media (max-width: 417px) {
+  .Table { padding: 10px; }
+  .Table h2 { font-size: 0.8em; }
+  .Table th, .Table td { padding: 3px 4px; font-size: 1em; }
+  .Table p { font-size: 1em; }
+  .note-box { padding: 10px 12px; }
+  .note-box h4 { font-size: 1em; margin-bottom: 8px; }
+  .note-box p, .note-box ul { font-size: 0.85em; }
+  .note-box ul { padding-left: 15px; }
+}
+@media (max-width: 390px) {
+  .Table { padding: 10px; }
+  .Table h2 { font-size: 0.6em; }
+  .Table th, .Table td { padding: 3px 4px; font-size: 0.8em; }
+  .Table p { font-size: 0.8em; }
+  .note-box { padding: 8px 10px; }
+  .note-box h4 { font-size: 0.9em; }
+  .note-box p, .note-box ul { font-size: 0.8em; }
+}

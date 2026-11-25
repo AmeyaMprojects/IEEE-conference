@@ -90,6 +90,17 @@ Open `index.html` in any browser. No build step required.
 
 ## 📝 Changelog
 
+### v7 — November 25, 2026
+
+- Added **Sponsorship** button to navbar across all 10 pages — opens the sponsorship flyer PDF in a new tab
+- Styled sponsorship button with a professional outlined pill design (blue border, hover fill) to stand out without clashing with the nav
+- Updated **sponsorship brochure** PDF (`public/sponsorship_flyer.pdf`)
+- Added **Payment Link** (`https://tinyurl.com/3pbzhfkz`) to Registration page after fee tables
+- Added **registration category guidance** (MAHE vs Non-MAHE, GST applicability, sub-categories) in a Note box
+- Added **international participant instructions** — email details to `nqcompmit@gmail.com` for invoice generation
+- Removed **C-DAC** logo and "Co-hosted by" section from homepage
+- Added responsive CSS for note boxes, payment link, and bullet lists across all breakpoints (768px → 390px)
+
 ### v6 — September 2026
 
 - Replaced IEEE Computer Society sponsor logo with the IEEE CIS Bengaluru logo and removed the standard IEEE CIS logo.

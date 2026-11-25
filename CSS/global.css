@@ -137,28 +137,26 @@ nav {
 /* --- Sponsorship Button --- */
 .sponsorship-btn {
     display: inline-block;
-    padding: 8px 12px;
+    padding: 6px 16px;
     font-size: 14px;
     font-weight: bold;
-    color: white;
+    color: #0056b3;
     text-align: center;
     text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    background: linear-gradient(45deg, #ff6b35, #f7931e, #fdc830);
+    border: 2px solid #0056b3;
+    border-radius: 20px;
+    background: transparent;
     cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: all 0.3s ease;
     flex-shrink: 1;
-}
-
-.sponsorship-btn a {
-    color: white;
-    text-decoration: none;
+    font-family: 'MyCustomFont', Arial, Helvetica, sans-serif !important;
 }
 
 .sponsorship-btn:hover {
+    background-color: #0056b3;
+    color: #ffffff;
     transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.5);
+    box-shadow: 0 2px 8px rgba(0, 86, 179, 0.3);
 }
 
 /* --- Hero Banner (subpages) --- */
@@ -360,7 +358,7 @@ nav {
     }
 
     .sponsorship-btn {
-        padding: 6px 10px;
+        padding: 5px 12px;
         font-size: 13px;
     }
 }
